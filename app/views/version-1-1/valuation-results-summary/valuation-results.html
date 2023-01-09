@@ -1,0 +1,184 @@
+{% extends "includes/layout.html" %}
+
+{% block pageTitle %}
+
+  Check your scheme information is up-to-date
+{% endblock %}
+{% block beforeContent %}
+  {% include "includes/backlink.html" %}
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <form class="form" action="" method="POST">
+
+      <fieldset class="govuk-fieldset">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+          <h1 class="govuk-fieldset__heading">
+            Submit your valuation results summary
+          </h1>
+        </legend>
+
+        <p class="govuk-body govuk-!-font-weight-bold">Last updaed</p>
+        <p>XX XXX XXXXX</P>
+
+          <div class="govuk-inset-text">
+            You can also upload a <a href="">valuation results summary</a>
+          </div>
+
+<h2 class="govuk-heading-m">Part 3 Valuation</h2>
+
+
+<dl class="govuk-summary-list govuk-!-margin-bottom-9">
+          <div class="govuk-summary-list__row">
+            <dd class="govuk-summary-list__value">
+              Market value of the scheme
+            </dd>
+            <dd class="govuk-summary-list__value">
+              £123,456
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dd class="govuk-summary-list__value">
+              Liabilities for active members
+            </dd>
+            <dd class="govuk-summary-list__value">
+              £123,456
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dd class="govuk-summary-list__value">
+              Liabilities for deferred members
+            </dd>
+            <dd class="govuk-summary-list__value">
+              £123,456
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dd class="govuk-summary-list__value">
+              Liabilities for pensioner members
+            </dd>
+            <dd class="govuk-summary-list__value">
+              £123,456
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dd class="govuk-summary-list__value">
+            Expense reserves (all types)
+            </dd>
+            <dd class="govuk-summary-list__value">
+              £123,456
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dd class="govuk-summary-list__value">
+      <span class="govuk-body govuk-!-font-weight-bold">  Total </span>
+            </dd>
+            <dd class="govuk-summary-list__value">
+              £617,280
+            </dd>
+          </div>
+        </dl>
+
+
+
+
+
+<h2 class="govuk-heading-m">S179 Valuation</h2>
+
+<dl class="govuk-summary-list govuk-!-margin-bottom-9">
+          <div class="govuk-summary-list__row">
+            <dd class="govuk-summary-list__value">
+              Market value of the scheme
+            </dd>
+            <dd class="govuk-summary-list__value">
+              £123,456
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dd class="govuk-summary-list__value">
+              Liabilities for active members
+            </dd>
+            <dd class="govuk-summary-list__value">
+              £123,456
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dd class="govuk-summary-list__value">
+              Liabilities for deferred members
+            </dd>
+            <dd class="govuk-summary-list__value">
+              £123,456
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dd class="govuk-summary-list__value">
+              Liabilities for pensioner members
+            </dd>
+            <dd class="govuk-summary-list__value">
+              £123,456
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dd class="govuk-summary-list__value">
+            Expense reserves (all types)
+            </dd>
+            <dd class="govuk-summary-list__value">
+              £123,456
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dd class="govuk-summary-list__value">
+      <span class="govuk-body govuk-!-font-weight-bold">  Total </span>
+            </dd>
+            <dd class="govuk-summary-list__value">
+              £617,280
+            </dd>
+          </div>
+        </dl>
+
+
+
+
+
+  <div class="govuk-form-group {{ errors.capacityUploadClass }}">
+    <fieldset class="govuk-fieldset">
+      <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+        Have you compelted this section?
+      </legend>
+
+
+      <div class="govuk-radios">
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="valuation-results-yes"
+          name="next-page" type="radio" value="../tasklist" data-value="Yes" >
+          <label class="govuk-label govuk-radios__label" for="capacity-upload-yes">
+            Yes, I've completed this section
+          </label>
+        </div>
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="valuation-results-no"
+            name="next-page" type="radio" value="../tasklist" data-value="No" >
+          <label class="govuk-label govuk-radios__label" for="capacity-upload-no">
+            No, I'll come back later
+          </label>
+        </div>
+      </div>
+
+
+
+      </div>
+      <input type="hidden" name="valuation-results">
+
+      <button type="submit" class="govuk-button" data-module="govuk-button">Save and continue</button>
+  </fieldset>
+    </form>
+
+  </div>
+
+</div>
+<script src="/public/javascripts/radio-to-hidden.js"></script>
+{% endblock %}
