@@ -1,0 +1,132 @@
+{% extends "includes/layout.html" %}
+
+{% block pageTitle %}
+
+  Check your scheme information is up-to-date
+{% endblock %}
+{% block beforeContent %}
+  {% include "includes/backlink.html" %}
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+
+    <form class="form" action="" method="POST">
+
+      <fieldset class="govuk-fieldset">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+          <h1 class="govuk-fieldset__heading">
+            Check your scheme information is up-to-date
+          </h1>
+        </legend>
+
+<h2 class="govuk-heading-m">Scheme details</h2>
+            <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+
+              <div class="govuk-summary-list__row">
+
+                <div class="govuk-summary-list__row">
+                  <dt class="govuk-summary-list__key govuk-!-font-weight-regular hmrc-summary-list__key">
+                    ABC Scheme<br>
+                        <br>
+                      <a href="">Update</a>
+                  </dt>
+                  <dt class="govuk-summary-list__key govuk-!-font-weight-regular hmrc-summary-list__key">
+                    123 Road <br>
+                    Some town <br>
+                    AB1 2CD<br>
+                    <br>
+                    <a href="">Update</a>
+                  </dt>
+                  </div>
+
+
+            </dl>
+            <h2 class="govuk-heading-m">Trustees</h2>
+
+
+            <dl class="govuk-summary-list hmrc-list-with-actions hmrc-list-with-actions--short">
+    <div class="govuk-summary-list__row">
+      <dt class="govuk-summary-list__key govuk-!-font-weight-regular hmrc-summary-list__key">
+        Sydney Russell
+      </dt>
+      <dt class="govuk-summary-list__key govuk-!-font-weight-regular hmrc-summary-list__key">
+        123 Road <br>
+        Some town <br>
+        AB1 2CD<br>
+      </dt>
+      <dt class="govuk-summary-list__key govuk-!-font-weight-regular hmrc-summary-list__key">
+      Employer appointed<br>
+      Non Professional <br>
+      (Chair)<br>
+      </dt>
+      <dd class="govuk-summary-list__actions hmrc-summary-list__actions">
+        <ul class="govuk-summary-list__actions-list">
+          <li class="govuk-summary-list__actions-list-item"><a class="govuk-link" href="#"><span aria-hidden="true">Update</span><span class="govuk-visually-hidden">Change Sydney Russell</span></a></li>
+          <li class="govuk-summary-list__actions-list-item"><a class="govuk-link" href="#"><span aria-hidden="true">Remove</span><span class="govuk-visually-hidden">Remove Sydney Russell from the list</span></a></li>
+        </ul>
+      </dd>
+    </div>
+    <div class="govuk-summary-list__row">
+      <dt class="govuk-summary-list__key govuk-!-font-weight-regular hmrc-summary-list__key">
+        Sydney Russell
+      </dt>
+      <dt class="govuk-summary-list__key govuk-!-font-weight-regular hmrc-summary-list__key">
+        123 Road <br>
+        Some town <br>
+        AB1 2CD<br>
+      </dt>
+      <dt class="govuk-summary-list__key govuk-!-font-weight-regular hmrc-summary-list__key">
+      Employer appointed<br>
+      Non Professional <br>
+      (Chair)<br>
+      </dt>
+      <dd class="govuk-summary-list__actions hmrc-summary-list__actions">
+        <ul class="govuk-summary-list__actions-list">
+          <li class="govuk-summary-list__actions-list-item"><a class="govuk-link" href="#"><span aria-hidden="true">Update</span><span class="govuk-visually-hidden">Change Sydney Russell</span></a></li>
+          <li class="govuk-summary-list__actions-list-item"><a class="govuk-link" href="#"><span aria-hidden="true">Remove</span><span class="govuk-visually-hidden">Remove Sydney Russell from the list</span></a></li>
+        </ul>
+      </dd>
+    </div>
+
+  </dl>
+  <div class="govuk-form-group {{ errors.capacityUploadClass }}">
+    <fieldset class="govuk-fieldset">
+      <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+        Have you compelted this section?
+      </legend>
+
+
+      <div class="govuk-radios">
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="check-scheme-yes"
+          name="next-page" type="radio" value="../tasklist" data-value="Yes" >
+          <label class="govuk-label govuk-radios__label" for="check-scheme-yes">
+            Yes, I've completed this section
+          </label>
+        </div>
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="check-scheme-no"
+            name="next-page" type="radio" value="../tasklist" data-value="No" >
+          <label class="govuk-label govuk-radios__label" for="check-scheme-no">
+            No, I'll come back later
+          </label>
+        </div>
+      </div>
+
+
+
+      </div>
+      <input type="hidden" name="check-scheme">
+
+      <button type="submit" class="govuk-button" data-module="govuk-button">Save and continue</button>
+  </fieldset>
+    </form>
+
+  </div>
+
+</div>
+<script src="/public/javascripts/radio-to-hidden.js"></script>
+{% endblock %}

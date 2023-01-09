@@ -1,0 +1,208 @@
+{% extends "includes/layout.html" %}
+
+{% block pageTitle %}
+ABC scheme Valuation
+{% endblock %}
+
+{% block beforeContent %}
+<a class="govuk-back-link" onclick="history.go(-1);return false;">Scheme overview</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-xl">
+      ABC Scheme Valuation
+    </h1>
+
+
+<h2 class="govuk-heading-s govuk-!-margin-bottom-2">Scheme valuation incomplete</h2>
+<p class="govuk-body govuk-!-margin-bottom-7">You have completed 0 of 4 sections.</p>
+
+
+<ol class="app-task-list">
+
+
+
+      <li>
+        <h2 class="app-task-list__section">
+     1. Check before you start
+        </h2>
+        <ul class="app-task-list__items">
+
+
+          <li class="app-task-list__item"">
+
+
+                            {% if  data['check-scheme'] == 'Yes' %}
+                            <a class="task-name" href="check-your-scheme/" aria-describedby="read-declaration-completed">
+                            Scheme information
+                            </a>
+                              <strong class="govuk-tag app-task-list__tag" id="eligibility-status">Completed</strong>
+                            {% elif  data['check-scheme'] == 'No' %}
+                            <a class="task-name" href="check-your-scheme/up-to-date" aria-describedby="read-declaration-completed">
+                            Scheme information
+                            </a>
+                            <strong class="govuk-tag govuk-tag--blue app-task-list__tag" id="contact-details-status">In progress</strong>
+                            {% else %}
+                            <a class="task-name" href="check-your-scheme/up-to-date" aria-describedby="read-declaration-completed">
+                            Scheme information
+                            </a>
+                              <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="eligibility-status">Not started</strong>
+                            {% endif %}
+          </li>
+
+
+
+  </ul>
+</li>
+
+
+
+
+      <li>
+        <h2 class="app-task-list__section">
+        2.  Scheme funding
+        </h2>
+    <ul class="app-task-list__items">
+
+
+       <li class="app-task-list__item">
+
+          {% if  data['valuation-results'] == 'Yes' %}
+          <a class="task-name" href="valuation-results-summary/valuation-results" aria-describedby="read-declaration-completed">
+           Valuation results
+          </a>
+          <strong class="govuk-tag app-task-list__tag" id="eligibility-status">Completed</strong>
+          {% elif  data['valuation-results'] == 'No' %}
+          <a class="task-name" href="valuation-results-summary/valuation-results" aria-describedby="read-declaration-completed">
+         Valuation results
+          </a>
+          <strong class="govuk-tag govuk-tag--blue app-task-list__tag" id="contact-details-status">In progress</strong>
+            {% else %}
+            <a class="task-name" href="valuation-results-summary/valuation-results" aria-describedby="read-declaration-completed">
+             Valuation results
+            </a>
+                  <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="eligibility-status">Not started</strong>
+            {% endif %}
+    </li>
+
+     <li class="app-task-list__item">
+
+                          {% if data['contingent-assets'] == 'Yes' %}
+                            <a class="task-name" href="" aria-describedby="read-declaration-completed">
+                                     Contingent assets (optional)
+                            </a>
+                            <strong class="govuk-tag app-task-list__tag" id="eligibility-status">Completed</strong>
+                          {% elif   data['contingent-assets'] == 'Yes' %}
+                          <a class="task-name" href="" aria-describedby="read-declaration-completed">
+                                   Contingent assets (optional)
+                          </a>
+                          <strong class="govuk-tag govuk-tag--blue app-task-list__tag" id="contact-details-status">In progress</strong>
+                            {% else %}
+                            <a class="task-name" href="" aria-describedby="read-declaration-completed">
+                                     Contingent assets (optional)
+                            </a>
+                                  <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="eligibility-status">Not started</strong>
+
+                            {% endif %}
+    </li>
+
+    <li class="app-task-list__item">
+
+                         {% if data['financial'] == 'Yes' %}
+                           <a class="task-name" href="" aria-describedby="read-declaration-completed">
+                                Financial and demographic assumptions
+                           </a>
+                           <strong class="govuk-tag app-task-list__tag" id="eligibility-status">Completed</strong>
+                         {% elif   data['financial'] == 'No' %}
+                         <a class="task-name" href="" aria-describedby="read-declaration-completed">
+                                Financial and demographic assumptions
+                         </a>
+                         <strong class="govuk-tag govuk-tag--blue app-task-list__tag" id="contact-details-status">In progress</strong>
+                           {% else %}
+                           <a class="task-name" href="" aria-describedby="read-declaration-completed">
+                                Financial and demographic assumptions
+                           </a>
+                                 <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="eligibility-status">Not started</strong>
+
+                           {% endif %}
+                         </li>
+
+      </ul>
+    </li>
+
+
+
+<li>
+          <h2 class="app-task-list__section">
+          3. Supporting documents
+          </h2>
+
+          <ul class="app-task-list__items">
+
+            <li class="app-task-list__item">
+
+             {% if data['supporting-information-completed'] == 'true' %}
+               <a class="task-name" href="" aria-describedby="read-declaration-completed">
+                    Provide supporting information
+               </a>
+               <strong class="govuk-tag app-task-list__tag" id="eligibility-status">Completed</strong>
+             {% elif   data['supporting-information'] == 'true' %}
+             <a class="task-name" href="" aria-describedby="read-declaration-completed">
+                  Provide supporting information
+             </a>
+             <strong class="govuk-tag govuk-tag--blue app-task-list__tag" id="contact-details-status">In progress</strong>
+               {% else %}
+               <a class="task-name" href="" aria-describedby="read-declaration-completed">
+                      Provide supporting information
+               </a>
+               <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="eligibility-status">Not started</strong>
+
+              {% endif %}
+            </li>
+
+
+
+
+
+
+
+          </ul>
+
+
+
+
+      <li>
+        <h2 class="app-task-list__section">
+      4. Submission declaration
+        </h2>
+                <ul class="app-task-list__items">
+                  <li class="app-task-list__item">
+                    <span class="app-task-list__task-name">
+                            Sign and submit
+                    </span>
+                    <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="eligibility-status">Cannot start yet</strong>
+                  </li>
+
+
+
+                </ul>
+      </li>
+
+
+
+
+
+    </ol>
+  </div>
+
+
+
+  </div>
+
+
+
+{% endblock %}

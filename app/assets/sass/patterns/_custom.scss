@@ -1,0 +1,20 @@
+.govuk-header {
+    font-family: "GDS Transport", arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+    font-size: 14px;
+    font-size: 0.875rem;
+    line-height: 1.1428571429;
+    border-bottom: 10px solid #ffffff;
+    color: #ffffff;
+    background: #483b8b;
+  }
+
+
+  .govuk-header__container {
+      position: relative;
+      margin-bottom: -10px;
+      padding-top: 10px;
+      border-bottom: 10px solid #3d3d3d;
+  }
