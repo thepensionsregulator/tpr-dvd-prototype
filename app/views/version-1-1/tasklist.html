@@ -20,7 +20,7 @@ ABC scheme Valuation
 
 <h2 class="govuk-heading-s govuk-!-margin-bottom-2">Scheme valuation incomplete</h2>
 
-    {% if  data['check-scheme'] == 'Yes' %}
+    {% if  data['check-scheme'] and data['check-trustees'] == 'Yes' %}
 <p class="govuk-body govuk-!-margin-bottom-7">You have completed 1 of 4 sections.</p>
 {% else %}
 <p class="govuk-body govuk-!-margin-bottom-7">You have completed 0 of 4 sections.</p>
@@ -42,18 +42,38 @@ ABC scheme Valuation
 
 
                             {% if  data['check-scheme'] == 'Yes' %}
-                            <a class="task-name" href="check-your-scheme/" aria-describedby="read-declaration-completed">
-                            Scheme information
+                            <a class="task-name" href="check-your-scheme/up-to-date" aria-describedby="read-declaration-completed">
+                            Check your scheme information
                             </a>
                               <strong class="govuk-tag app-task-list__tag" id="eligibility-status">Completed</strong>
                             {% elif  data['check-scheme'] == 'No' %}
                             <a class="task-name" href="check-your-scheme/up-to-date" aria-describedby="read-declaration-completed">
-                            Scheme information
+                            Check your scheme information
                             </a>
                             <strong class="govuk-tag govuk-tag--blue app-task-list__tag" id="contact-details-status">In progress</strong>
                             {% else %}
                             <a class="task-name" href="check-your-scheme/up-to-date" aria-describedby="read-declaration-completed">
-                            Scheme information
+                        Check your scheme information
+                            </a>
+                              <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="eligibility-status">Not started</strong>
+                            {% endif %}
+          </li>
+          <li class="app-task-list__item"">
+
+
+                            {% if  data['check-trustees'] == 'Yes' %}
+                            <a class="task-name" href="check-your-trustees/up-to-date" aria-describedby="read-declaration-completed">
+                            Check your trustees information
+                            </a>
+                              <strong class="govuk-tag app-task-list__tag" id="eligibility-status">Completed</strong>
+                            {% elif  data['check-trustees'] == 'No' %}
+                            <a class="task-name" href="check-your-trustees/up-to-date" aria-describedby="read-declaration-completed">
+                            Check your trustees information
+                            </a>
+                            <strong class="govuk-tag govuk-tag--blue app-task-list__tag" id="contact-details-status">In progress</strong>
+                            {% else %}
+                            <a class="task-name" href="check-your-trustees/up-to-date" aria-describedby="read-declaration-completed">
+                      Check your trustees information
                             </a>
                               <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="eligibility-status">Not started</strong>
                             {% endif %}
