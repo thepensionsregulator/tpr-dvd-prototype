@@ -1,0 +1,104 @@
+{% extends "includes/layout.html" %}
+
+{% block pageTitle %}
+
+  Check your scheme information is up-to-date
+{% endblock %}
+{% block beforeContent %}
+  {% include "includes/backlink.html" %}
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+
+
+
+
+          <h1 class="govuk-heading-l">
+            Check your scheme information is up-to-date
+          </h1>
+
+        <br>
+
+<h2 class="govuk-heading-m">Scheme details</h2>
+            <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+
+
+                <div class="govuk-summary-list__row">
+
+             <dt class="govuk-summary-list__key">
+               Scheme name
+             </dt>
+             <dd class="govuk-summary-list__value">
+               ABC Scheme
+             </dd>
+
+             <dd class="govuk-summary-list__actions">
+               <a class="govuk-link" href="#">
+                 Change<span class="govuk-visually-hidden"> name</span>
+               </a>
+             </dd>
+           </div>
+           <div class="govuk-summary-list__row">
+
+        <dt class="govuk-summary-list__key">
+          Scheme address
+        </dt>
+        <dd class="govuk-summary-list__value">
+          123 Road<br>
+          Some Town<br>
+          AB1 2CD<br>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a class="govuk-link" href="#">
+            Change<span class="govuk-visually-hidden"> name</span>
+          </a>
+        </dd>
+        </div>
+</dl>
+
+<form class="form" action="check-scheme" method="POST">
+<div class="govuk-form-group {{ errors.capacityUploadClass }}">
+<fieldset class="govuk-fieldset">
+  <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+  Have you completed this section?
+  </legend>
+
+
+  <div class="govuk-radios">
+    <div class="govuk-radios__item">
+
+      <input class="govuk-radios__input" id="check-scheme"
+      name="next-page" type="radio" value="../tasklist"  data-value="Yes" >
+      <label class="govuk-label govuk-radios__label" for="check-scheme">
+        Yes, I've completed this section
+      </label>
+    </div>
+    <div class="govuk-radios__item">
+      <input class="govuk-radios__input" id="check-scheme"
+        name="next-page" type="radio" value="../tasklist"  data-value="No" >
+      <label class="govuk-label govuk-radios__label" for="check-scheme">
+        No, I'll come back later
+      </label>
+    </div>
+  </div>
+
+
+
+  </div>
+
+
+
+
+      <input class="govuk-button" type="submit" value="Save and continue"  />
+      <input type="hidden" name="check-scheme" value="Yes">
+
+</fieldset>
+</form>
+
+</div>
+<script src="/public/javascripts/radio-to-hidden.js"></script>
+{% endblock %}
