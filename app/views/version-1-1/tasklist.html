@@ -205,12 +205,22 @@ ABC scheme Valuation
       4. Submission declaration
         </h2>
                 <ul class="app-task-list__items">
+                      {% if  data['check-scheme'] and data['check-trustees'] and data['valuation-results']  == 'Yes' %}
                   <li class="app-task-list__item">
                     <span class="app-task-list__task-name">
                             Sign and submit
                     </span>
                     <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="eligibility-status">Cannot start yet</strong>
                   </li>
+                  {% else %}
+                  <li class="app-task-list__item">
+                    <a class="task-name" href="submit/submit-scheme" aria-describedby="read-declaration-completed">
+                          Sign and submit
+                    </a>
+                    <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="eligibility-status">Not started</strong>
+                  </li>
+
+                  {% endif %}
 
 
 
