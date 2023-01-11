@@ -17,9 +17,12 @@ ABC scheme Valuation
       Service Name Goes Here
     </h1>
 
-<h2 class="govuk-heading-s govuk-!-margin-bottom-2">ABC Scheme Valuation</h2>
+{% if  data['sign-and-submit'] == 'Yes' %}
+<h2 class="govuk-heading-s govuk-!-margin-bottom-2">ABC Scheme valuation complete</h2>
+{% else %}
+<h2 class="govuk-heading-s govuk-!-margin-bottom-2">ABC Scheme valuation incomplete</h2>
+{% endif %}
 
-<h2 class="govuk-heading-s govuk-!-margin-bottom-2">Scheme valuation incomplete</h2>
 
     {% if  data['check-scheme'] and data['check-trustees'] == 'Yes' %}
 <p class="govuk-body govuk-!-margin-bottom-7">You have completed 1 of 4 sections.</p>
