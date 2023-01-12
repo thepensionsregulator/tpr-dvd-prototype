@@ -1,0 +1,37 @@
+{% extends "includes/layout.html" %}
+
+{% block page_title %}{% endblock %}
+
+{% block backHidden %}{% endblock %}
+
+
+{% block beforeContent %}
+  {% include "includes/backlink.html" %}
+{% endblock %}
+{% block content %}
+
+    <main id="content" role="main">
+
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+                <h1 class="govuk-heading-l">what you will need for this sectoin</h1>
+
+                <form action="scheme-name-correct" method="POST">
+
+
+
+
+
+                    <div class="form-group">
+                            <input type="hidden" name="check-scheme-inprogress" value="true">
+                            <input class="govuk-button" type="submit" value="Continue"  />
+                    </div>
+                </form>
+
+            <p><a href="../tasklist.html" class="govuk-link">Save and return</a></p>
+            </div>
+        </div>
+    </main>
+</body>
+{% endblock %}
