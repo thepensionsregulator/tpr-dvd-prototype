@@ -24,8 +24,10 @@ ABC scheme Valuation
 {% endif %}
 
 
-    {% if  data['check-scheme'] and data['check-trustees'] == 'Yes' %}
-<p class="govuk-body govuk-!-margin-bottom-7">You have completed 1 of 4 sections.</p>
+    {% if  data['check-scheme-completed'] == 'true' or  data['valuations-completed'] == 'true' %}
+<p class="govuk-body govuk-!-margin-bottom-7">You have completed 1 of 7 sections.</p>
+{% elif data['valuations-completed'] == 'true' and  data['check-scheme-completed'] == 'true' %}
+<p class="govuk-body govuk-!-margin-bottom-7">You have completed 2 of 7 sections.</p>
 {% else %}
 <p class="govuk-body govuk-!-margin-bottom-7">You have completed 0 of 4 sections.</p>
 {% endif %}
@@ -100,18 +102,18 @@ ABC scheme Valuation
 
        <li class="app-task-list__item">
 
-          {% if  data['valuation-results'] == 'Yes' %}
-          <a class="task-name" href="" aria-describedby="read-declaration-completed">
+          {% if  data['valuations-completed'] == 'true' %}
+          <a class="task-name" href="valuation-results-summary/check-your-answers" aria-describedby="read-declaration-completed">
            Valuation results
           </a>
           <strong class="govuk-tag app-task-list__tag" id="eligibility-status">Completed</strong>
-          {% elif  data['valuation-results'] == 'No' %}
-          <a class="task-name" href="" aria-describedby="read-declaration-completed">
+          {% elif  data['valuations-inprogress'] == 'true' %}
+          <a class="task-name" href="valuation-results-summary/check-your-answers" aria-describedby="read-declaration-completed">
          Valuation results
           </a>
           <strong class="govuk-tag govuk-tag--blue app-task-list__tag" id="contact-details-status">In progress</strong>
             {% else %}
-            <a class="task-name" href="" aria-describedby="read-declaration-completed">
+            <a class="task-name" href="valuation-results-summary/what-you-will-need" aria-describedby="read-declaration-completed">
              Valuation results
             </a>
                   <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="eligibility-status">Not started</strong>

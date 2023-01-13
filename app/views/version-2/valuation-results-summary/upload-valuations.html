@@ -1,0 +1,40 @@
+{% extends "includes/layout.html" %}
+
+{% block pageTitle %}
+
+  Check your scheme information is up-to-date
+{% endblock %}
+{% block beforeContent %}
+  {% include "includes/backlink.html" %}
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">Upload your file</h1>
+
+    <form action="check-your-answers" method="post" enctype="multipart/form-data">
+
+      <div class="govuk-form-group">
+    <label class="govuk-label" for="file-upload-1">
+      Upload a file
+    </label>
+    <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+  </div>
+
+      <button class="govuk-button" data-module="govuk-button">
+        Save and continue
+      </button>
+  <p><a href="../tasklist.html" class="govuk-link">Save and return</a></p>
+    </form>
+  </div>
+</div>
+
+
+<script src="/public/javascripts/radio-to-hidden.js"></script>
+
+
+{% endblock %}
