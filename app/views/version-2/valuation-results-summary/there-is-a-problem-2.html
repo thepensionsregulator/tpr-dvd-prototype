@@ -1,0 +1,151 @@
+{% extends "includes/layout.html" %}
+
+{% block pageTitle %}
+There is a problem with your file
+{% endblock %}
+
+{% block beforeContent %}
+  {% include "includes/backlink.html" %}
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds-from-desktop">
+
+    <h1 class="govuk-heading-l">There is a problem with your file</h1>
+
+    <h2 class="govuk-heading-m">Your file contains formatting errors.</h2>
+
+    <p class="govuk-body">Before you can send us the valuation results summary you must:</p>
+
+    <ul class="govuk-list govuk-list--bullet">
+      <li>correct all the errors in your file</li>
+      <li><a href="../valuation-results-summary/upload-valuations" class="govuk-link">upload and check the report again</a></li>
+      </ul>
+
+      <h2 class="govuk-heading-m">Errors found in valuation-final-2.xlsx</h2>
+
+      <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Cell
+          </dt>
+          <dd class="govuk-summary-list__value">
+            A1
+          </dd>
+          </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Error
+          </dt>
+          <dd class="govuk-summary-list__value">
+            ‘Market value of scheme’ must be a number
+          </dd>
+        </div>
+      </dl>
+      
+      <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Cell
+          </dt>
+          <dd class="govuk-summary-list__value">
+            B2 to B5
+          </dd>
+          </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Error
+          </dt>
+          <dd class="govuk-summary-list__value">
+            ‘Total for Part 3 Valuation’ must add up to 100%
+        </dd>
+        </div>
+      </dl>
+
+      <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Cell
+          </dt>
+          <dd class="govuk-summary-list__value">
+            C6
+          </dd>
+          </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Error
+          </dt>
+          <dd class="govuk-summary-list__value">
+            'Liabilities for active members' must have an entry
+        </dd>
+        </div>
+      </dl>
+
+
+      <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Cell
+          </dt>
+          <dd class="govuk-summary-list__value">
+            D2
+          </dd>
+          </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Error
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Date of submission must be in format DD/MM/YYYY. For example 31/12/2022
+        </dd>
+        </div>
+      </dl>
+
+
+      <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Cell
+          </dt>
+          <dd class="govuk-summary-list__value">
+            E11
+          </dd>
+          </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Error
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Some more example error text
+        </dd>
+        </div>
+      </dl>
+
+
+      <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Cell
+          </dt>
+          <dd class="govuk-summary-list__value">
+            F12
+          </dd>
+          </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Error
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Even more example error text
+        </dd>
+        </div>
+      </dl>
+
+<p>Alternative version: <a href="./there-is-a-problem.html" class="govuk-link">Problem page prototype 1</a></p>
+  <p><a href="../tasklist.html" class="govuk-link">Save and return</a></p>
+  </div>
+</div>
+<script src="/public/javascripts/radio-to-hidden.js"></script>
+{% endblock %}
