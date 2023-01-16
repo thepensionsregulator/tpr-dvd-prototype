@@ -1,7 +1,7 @@
 {% extends "includes/layout.html" %}
 
 {% block pageTitle %}
-There is a problem
+There is a problem with your file
 {% endblock %}
 
 {% block beforeContent %}
@@ -13,17 +13,64 @@ There is a problem
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds-from-desktop">
 
-    <h1 class="govuk-heading-l">There is a problem</h1>
+    <h1 class="govuk-heading-l">There is a problem with your file</h1>
 
+    <h2 class="govuk-heading-m">Your file contains formatting errors.</h2>
 
+    <p class="govuk-body">Before you can send us the valuation results summary you must:</p>
 
+    <ul class="govuk-list govuk-list--bullet">
+      <li>correct all the errors in your file</li>
+      <li><a href="../valuation-results-summary/upload-valuations" class="govuk-link">upload and check the report again</a></li>
+      </ul>
 
+      <h2 class="govuk-heading-m">Errors found in valuation-final-2.xlsx</h2>
 
+      <table class="govuk-table">
+        <caption class="govuk-table__caption govuk-table__caption--m">Errors found</caption>
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th scope="col" class="govuk-table__header">Column</th>
+            <th scope="col" class="govuk-table__header">Row</th>
+            <th scope="col" class="govuk-table__header">Error</th>
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">A</td>
+            <td class="govuk-table__cell">1</td>
+            <td class="govuk-table__cell">‘Market value of scheme’ must be a number</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">B</td>
+            <td class="govuk-table__cell">2 to 5</td>
+            <td class="govuk-table__cell">'Total for Part 3 Valuation' must add up to 100%</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">C</td>
+            <td class="govuk-table__cell">6</td>
+            <td class="govuk-table__cell">‘Liabilities for active members’ must have an entry</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">D</td>
+            <td class="govuk-table__cell">10</td>
+            <td class="govuk-table__cell">Date of submission must be in format DD/MM/YYYY. For example 31/12/2022</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">E</td>
+            <td class="govuk-table__cell">11</td>
+            <td class="govuk-table__cell">Some more example error text</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">F</td>
+            <td class="govuk-table__cell">12</td>
+            <td class="govuk-table__cell">Even more example error text</td>
+          </tr>
+        </tbody>
+      </table>
 
-
-
-
-  <p><a href="../tasklist.html" class="govuk-link">Back to tasklist</a></p>
+<p>Alternative version: <a href="./there-is-a-problem-2.html" class="govuk-link">Problem page prototype 2</a></p>
+  <p><a href="../tasklist.html" class="govuk-link">Save and return</a></p>
   </div>
 </div>
 <script src="/public/javascripts/radio-to-hidden.js"></script>
