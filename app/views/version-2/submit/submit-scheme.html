@@ -2,7 +2,7 @@
 
 {% block pageTitle %}
 
-  Check your scheme information is up-to-date
+Declaration
 {% endblock %}
 {% block beforeContent %}
   {% include "includes/backlink.html" %}
@@ -16,7 +16,32 @@
     <h1 class="govuk-heading-l">Declaration</h1>
 
 
-    <p>Im sure there is some legal declaration</p>
+    <div class="govuk-form-group">
+      <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+        <div class="govuk-checkboxes__item">
+          <input class="govuk-checkboxes__input" id="declaration" name="declaration" type="checkbox" value="Declare the above to be true">
+          <label class="govuk-label govuk-checkboxes__label" for="access-code-7-days">
+            I declare that:
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <ul class="govuk-list govuk-list--bullet">
+      <li>I am authorised to submit the scheme return on behalf of the scheme trustees/ scheme manager (non-trust based schemes)</li>
+      
+      <li>The scheme trustees/manager are aware of the information supplied on this form</li>
+
+      <li>The information supplied on this form is true and correct to the best of my
+        knowledge</li>
+
+      <li>The scheme trustees/manager are aware that the levy-specific data will be used to calculate certain levies for this scheme, where appropriate. If any of this information ceases to be correct prior to 31 March 2024, I certify that I will provide the Pensions Regulator with an update no later than 31 March 2024.</li>
+
+      </ul>
+
+      <p class="govuk-body">Please be aware that it is a criminal offence under section 195 of the Pensions Act 2004 to knowingly or recklessly supply false or misleading information on this electronic form.</p>
+
+
     <form class="form" action="submit-confirmed" method="post">
 
 
