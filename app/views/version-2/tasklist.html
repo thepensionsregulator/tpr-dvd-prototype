@@ -17,17 +17,18 @@ ABC scheme Valuation
       Service Name Goes Here
     </h1>
 
-{% if  data['sign-and-submit'] == 'Yes' %}
+{% if  data['sign-and-submit'] == 'true' %}
 <h2 class="govuk-heading-s govuk-!-margin-bottom-2">ABC Scheme valuation complete</h2>
 {% else %}
 <h2 class="govuk-heading-s govuk-!-margin-bottom-2">ABC Scheme valuation incomplete</h2>
 {% endif %}
 
-
-{% if  data['check-scheme-completed'] == 'true' or  data['valuations-completed'] == 'true' %}
-<p class="govuk-body govuk-!-margin-bottom-7">You have completed 1 of 3 sections.</p>
-{% elif data['valuations-completed'] == 'true' and  data['check-scheme-completed'] == 'true' %}
+{% if  data['check-scheme-completed'] == 'true' and data['valuations-completed'] == 'true' and data['sign-and-submit'] == 'true' %}
+<p class="govuk-body govuk-!-margin-bottom-7">You have completed 3 of 3 sections.</p>
+{% elif  data['check-scheme-completed'] == 'true' and data['valuations-completed'] == 'true' %}
 <p class="govuk-body govuk-!-margin-bottom-7">You have completed 2 of 3 sections.</p>
+{% elif data['check-scheme-completed'] == 'true' or data['valuations-completed'] == 'true' %}
+<p class="govuk-body govuk-!-margin-bottom-7">You have completed 1 of 3 sections.</p>
 {% else %}
 <p class="govuk-body govuk-!-margin-bottom-7">You have completed 0 of 3 sections.</p>
 {% endif %}
@@ -199,17 +200,26 @@ ABC scheme Valuation
                         </a>
                         <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="eligibility-status">Not started</strong>
                       </li>
-                  {% else %}
+
+                      {% elif data['valuations-completed'] == 'true' and data['check-scheme-completed'] == 'true' and data['sign-and-submit'] == 'true'%}
+                      <li class="app-task-list__item">
+                        <a class="task-name" href="submit/submit-scheme" aria-describedby="read-declaration-completed">
+                              Sign and submit
+                        </a>
+                        <strong class="govuk-tag app-task-list__tag" id="eligibility-status">Completed</strong>
+                      </li>
+                      {% else %}
 
 
-                  <li class="app-task-list__item">
-                    <span class="app-task-list__task-name">
-                            Sign and submit
-                    </span>
-                    <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="eligibility-status">Cannot start yet</strong>
-                  </li>
 
-                  {% endif %}
+                      <li class="app-task-list__item">
+                        <span class="app-task-list__task-name">
+                                Sign and submit
+                        </span>
+                        <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="eligibility-status">Cannot start yet</strong>
+                      </li>
+
+                    {% endif %}
 
 
 
