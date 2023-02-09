@@ -5,7 +5,7 @@ ABC scheme Valuation
 {% endblock %}
 
 {% block beforeContent %}
-<a class="govuk-back-link" onclick="history.go(-1);return false;">Scheme overview</a>
+<a class="govuk-back-link" onclick="history.go(-1);return false;">Back</a>
 {% endblock %}
 
 {% block content %}
@@ -96,7 +96,7 @@ ABC scheme Valuation
           </a>
           <strong class="govuk-tag govuk-tag--blue app-task-list__tag" id="contact-details-status">In progress</strong>
             {% else %}
-            <a class="task-name" href="valuation-results-summary/what-you-will-need" aria-describedby="read-declaration-completed">
+            <a class="task-name" href="valuation-results-summary/upload-valuations" aria-describedby="read-declaration-completed">
            Upload your valuation results summary
             </a>
                   <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="eligibility-status">Not started</strong>
@@ -196,7 +196,7 @@ ABC scheme Valuation
                 <ul class="app-task-list__items">
                   {% if data['valuations-completed'] == 'true' and data['check-scheme-completed'] == 'true' %}
                       <li class="app-task-list__item">
-                        <a class="task-name" href="submit/submit-scheme" aria-describedby="read-declaration-completed">
+                        <a class="task-name" href="submit/who-submit" aria-describedby="read-declaration-completed">
                               Sign and submit
                         </a>
                         <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="eligibility-status">Not started</strong>
@@ -204,7 +204,7 @@ ABC scheme Valuation
 
                       {% elif data['valuations-completed'] == 'true' and data['check-scheme-completed'] == 'true' and data['sign-and-submit'] == 'true'%}
                       <li class="app-task-list__item">
-                        <a class="task-name" href="submit/submit-scheme" aria-describedby="read-declaration-completed">
+                        <a class="task-name" href="submit/who-submit" aria-describedby="read-declaration-completed">
                               Sign and submit
                         </a>
                         <strong class="govuk-tag app-task-list__tag" id="eligibility-status">Completed</strong>
