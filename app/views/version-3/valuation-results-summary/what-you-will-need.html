@@ -1,0 +1,50 @@
+{% extends "includes/layout.html" %}
+
+{% block page_title %}Before you start{% endblock %}
+
+{% block backHidden %}{% endblock %}
+
+
+{% block beforeContent %}
+  {% include "includes/backlink.html" %}
+{% endblock %}
+{% block content %}
+
+    <main id="content" role="main">
+
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+                <h1 class="govuk-heading-l">Before you start</h1>
+
+                <p class="govuk-body">You’ll need to upload your valuation results summary in a specific format. 
+                </p>
+
+                <p class="govuk-body">Before you start:</p>
+                <ul class="govuk-list govuk-list--bullet">
+                <li><a href="" class="govuk-link">Download the template and instructions (2 files).</a></li>
+                
+                <li>Read the instructions and complete the template.</li>
+                </ul>
+              
+                <p class="govuk-body">You will not be able to upload any documents that do not match the template.
+                </p>
+
+                <form action="upload-valuations" method="POST">
+
+
+
+
+
+                    <div class="form-group">
+                            <input type="hidden" name="valuations-inprogress" value="true">
+                            <input class="govuk-button" type="submit" value="Continue"  />
+                    </div>
+                </form>
+
+            <p><a href="../tasklist.html" class="govuk-link">Save and return</a></p>
+            </div>
+        </div>
+    </main>
+</body>
+{% endblock %}
