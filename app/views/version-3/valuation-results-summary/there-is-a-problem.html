@@ -12,7 +12,7 @@ There is a problem with your file
 
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds-from-desktop">
-      <span class="govuk-caption-xl">ABC Scheme</span>
+    {% include "includes/psr-number.html" %}
     <h1 class="govuk-heading-l">There is a problem with your file</h1>
 
     <h2 class="govuk-heading-m">Your file contains formatting errors.</h2>
@@ -26,7 +26,19 @@ There is a problem with your file
 
       <h2 class="govuk-heading-m">Errors found in valuation-final-2.xlsx</h2>
 
-      <p><a href="">download link for errors</a></p>
+      <p>
+
+        <%= render "govuk_publishing_components/components/attachment", {
+          attachment: {
+            title: "Errors found in valuation final-2.xlsx",
+            url: "",
+            filename: "errors-found-in-valuation-final-2.xlsx.csv",
+            content_type: "text/csv",
+            file_size: 20000
+          }
+        } %>
+
+      </p>
 
       <table class="govuk-table">
         <caption class="govuk-table__caption govuk-table__caption--m">Errors found</caption>
@@ -42,25 +54,25 @@ There is a problem with your file
             <td class="govuk-table__cell">‘Market value of scheme’ must be a number</td>
           </tr>
           <tr class="govuk-table__row">
-            <td class="govuk-table__cell">B2 to B5</td>
+            <td class="govuk-table__cell">C2 to C5</td>
             <td class="govuk-table__cell">'Total for Part 3 Valuation' must add up to 100%</td>
           </tr>
           <tr class="govuk-table__row">
-            <td class="govuk-table__cell">C6</td>
+            <td class="govuk-table__cell">E6</td>
 
             <td class="govuk-table__cell">‘Liabilities for active members’ must have an entry</td>
           </tr>
           <tr class="govuk-table__row">
-            <td class="govuk-table__cell">D10</td>
+            <td class="govuk-table__cell">G10</td>
 
             <td class="govuk-table__cell">Date of submission must be in format DD/MM/YYYY. For example 31/12/2022</td>
           </tr>
           <tr class="govuk-table__row">
-            <td class="govuk-table__cell">E11</td>
+            <td class="govuk-table__cell">I11</td>
             <td class="govuk-table__cell">The proportions of service for active members do not add to 100%</td>
           </tr>
           <tr class="govuk-table__row">
-            <td class="govuk-table__cell">F12</td>
+            <td class="govuk-table__cell">K12</td>
             <td class="govuk-table__cell">The proportions of service for pensioner members do not add to 100%</td>
           </tr>
         </tbody>
