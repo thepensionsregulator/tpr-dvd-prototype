@@ -2,7 +2,7 @@
 
 {% block pageTitle %}
 
-  Is this the scheme's address?
+  Is this the scheme's principal employer?
 {% endblock %}
 {% block beforeContent %}
   {% include "includes/backlink.html" %}
@@ -22,11 +22,11 @@
 <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
       <span class="govuk-caption-xl">ABC Scheme</span>
   <h1 class="govuk-fieldset__heading">
-  Is this the scheme's company?
+  Is this the principal employer's name in full?
   </h1>
 </legend>
 <div id="changed-name-hint" class="govuk-inset-text">
-  ABC Company name
+  ABC Employer LTD
 </div>
 <div class="govuk-radios">
   <div class="govuk-radios__item">
@@ -40,7 +40,14 @@
     <input class="govuk-radios__input" id="check-scheme-no"
       name="next-page" type="radio" value="scheme-company-change"  data-value="No" >
     <label class="govuk-label govuk-radios__label" for="check-scheme-no">
-      No
+      No - change it
+    </label>
+  </div>
+  <div class="govuk-radios__item">
+    <input class="govuk-radios__input" id="check-scheme-no"
+      name="next-page" type="radio" value="scheme-company-contact"  data-value="No" >
+    <label class="govuk-label govuk-radios__label" for="check-scheme-no">
+      No - contact us
     </label>
   </div>
 </div>
