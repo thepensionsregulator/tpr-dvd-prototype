@@ -1,0 +1,50 @@
+{% extends "includes/layout.html" %}
+
+{% block pageTitle %}
+There is a problem with your file
+{% endblock %}
+
+{% block beforeContent %}
+  {% include "includes/backlink.html" %}
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds-from-desktop">
+    {% include "includes/psr-number.html" %}
+    <h1 class="govuk-heading-l">There is a problem with your file</h1>
+
+    <h2 class="govuk-heading-m">Your file contains 4 errors and 2 warnings</h2>
+
+      <p class="govuk-body">Before you can send us the valuation results summary you must:</p>
+
+    <ul class="govuk-list govuk-list--bullet">
+      <li>correct all the errors in your file</li>
+      <li>check all the warnings in your file</li>
+      <li><a href="../valuation-results-summary/upload-valuations-2" class="govuk-link">upload and check the report again</a></li>
+      </ul>
+
+      <h2 class="govuk-heading-m">Download your list of errors and warnings</h2>
+
+      <p>
+
+        <%= render "govuk_publishing_components/components/attachment", {
+          attachment: {
+            title: "Errors and warnings found in valuation final-2.xlsx",
+            url: "",
+            filename: "errors-and-warnings-found-in-valuation-final-2.xlsx.csv",
+            content_type: "text/csv",
+            file_size: 20000
+          }
+        } %>
+
+      </p>
+
+      <p>Alternative version: <a href="./there-is-a-problem.html" class="govuk-link">Problem page prototype 2</a></p>
+
+  <p><a href="../tasklist.html" class="govuk-link">Save and return</a></p>
+  </div>
+</div>
+<script src="/public/javascripts/radio-to-hidden.js"></script>
+{% endblock %}
