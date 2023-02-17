@@ -2,8 +2,7 @@
 
 {% block pageTitle %}
 
-  What is the scheme's address?
-{% endblock %}
+Enter the address manually{% endblock %}
 {% block beforeContent %}
   {% include "includes/backlink.html" %}
 {% endblock %}
@@ -17,7 +16,7 @@
 
 <form class="form" action="../check-your-answers" method="POST">
       {% include "includes/psr-number.html" %}
-  <h1 class="govuk-heading-l">Enter address manual</h1>
+  <h1 class="govuk-heading-l">Enter the address manually</h1>
   <div class="govuk-form-group">
      <label class="govuk-label" for="address-line-1">
        Address line 1
