@@ -77,3 +77,45 @@ $govuk-assets-path: '/govuk/assets/';
     background-color: govuk-colour("light-grey");
   }
 }
+
+.gem-c-attachment__thumbnail-image {
+
+    width: auto;
+    max-width: 99px;
+    height: 140px;
+    border: rgba(11,12,12,0.1);
+    outline: 5px solid rgba(11,12,12,0.1);
+    background: #fff;
+    box-shadow: 0 2px 2px rgb(11 12 12 / 40%);
+    fill: #b1b4b6;
+    stroke: #b1b4b6;
+}
+
+.gem-c-attachment {
+    font-family: "GDS Transport",arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.25;
+    position: relative;
+}
+
+.gem-attachment-float {
+  float: right;
+  padding-bottom: 30px;
+  padding-right: 220px;
+}
+
+
+.gem-c-attachment__title {
+    font-family: "GDS Transport",arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+    font-size: 18px;
+    font-size: 1.125rem;
+    line-height: 1.1111111111;
+    margin: 0 0 15px;
+}
