@@ -2,8 +2,7 @@
 
 {% block pageTitle %}
 
-  What is the scheme's address?
-{% endblock %}
+Who is submitting the valuation?{% endblock %}
 {% block beforeContent %}
   {% include "includes/backlink.html" %}
 {% endblock %}
@@ -22,9 +21,12 @@
     <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
     {% include "includes/psr-number.html" %}
       <h1 class="govuk-fieldset__heading">
-    who is submitting
+    Who is submitting the valuation?
       </h1>
     </legend>
+
+<p class="govuk-body">Enter the name of the person submitting the valuation, who is authorised to do so by the scheme trustees/scheme manager.</p>
+
     <div class="govuk-form-group">
     <label class="govuk-label" for="address-line-1">
       Full name
