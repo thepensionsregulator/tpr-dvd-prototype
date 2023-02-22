@@ -1,6 +1,6 @@
 {% extends "includes/layout.html" %}
 
-{% block page_title %}Before you start{% endblock %}
+{% block page_title %}You need to use the new template{% endblock %}
 
 {% block backHidden %}{% endblock %}
 
@@ -15,9 +15,9 @@
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-two-thirds">
               {% include "includes/psr-number.html" %}
-                <h1 class="govuk-heading-l">You'll use the new template</h1>
+                <h1 class="govuk-heading-l">You need to use the new template</h1>
 
-                <p class="govuk-body">Based on your last Part 3 valuation date of 01 October 2023, you'll need to use our new service to submit your valuation.
+                <p class="govuk-body">Based on your last scheme funding (Part 3) valuation date of 01 October 2023, you need to use our new service to submit your valuation.
                 </p>
 
                 <p class="govuk-body">You’ll need to upload your valuation results summary in a specific format.
@@ -36,16 +36,14 @@
                 <form action="tasklist" method="POST">
 
 
-
-
-
                     <div class="form-group">
 
                             <input class="govuk-button" type="submit" value="Continue"  />
                     </div>
                 </form>
 
-            <p><a href="../tasklist.html" class="govuk-link">Save and return</a></p>
+                <p class="govuk-body"><a href="return-to-exchange.html">Prototype option 2</a></p>
+          
             </div>
         </div>
     </main>
