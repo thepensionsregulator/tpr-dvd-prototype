@@ -95,11 +95,20 @@ ABC scheme Valuation
            Upload your valuation results summary
           </a>
           <strong class="govuk-tag govuk-tag--blue app-task-list__tag" id="contact-details-status">In progress</strong>
+
+          {% elif  data['check-scheme-completed'] == 'true' %}
+          <a class="task-name" href="valuation-results-summary/upload-valuations" aria-describedby="read-declaration-completed">
+         Upload your valuation results summary
+          </a>
+                <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="eligibility-status">Not started</strong>
             {% else %}
-            <a class="task-name" href="valuation-results-summary/upload-valuations" aria-describedby="read-declaration-completed">
-           Upload your valuation results summary
-            </a>
-                  <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="eligibility-status">Not started</strong>
+          
+              <span class="app-task-list__task-name">
+                   Upload your valuation results summary
+              </span>
+              <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="eligibility-status">Cannot start yet</strong>
+
+
             {% endif %}
     </li>
 
