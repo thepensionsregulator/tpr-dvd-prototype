@@ -1,0 +1,43 @@
+{% extends "includes/layout.html" %}
+
+{% block pageTitle %}
+
+  What is the scheme's full name?
+{% endblock %}
+{% block beforeContent %}
+  {% include "includes/backlink.html" %}
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+
+
+<form class="form" action="scheme-company-correct" method="POST">
+
+    <div class="govuk-form-group">
+<fieldset class="govuk-fieldset">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+    {% include "includes/psr-number.html" %}
+      <h1 class="govuk-fieldset__heading">
+    What is the scheme's full name?
+      </h1>
+    </legend>
+
+<input class="govuk-input" id="event-name" name="scheme-name" type="text">
+
+
+</fieldset>
+</div>
+
+      <input class="govuk-button" type="submit" value="Save and continue"  />
+
+      <p><a href="../tasklist.html" class="govuk-link">Save and return</a></p>
+
+</form>
+
+</div>
+<script src="/public/javascripts/radio-to-hidden.js"></script>
+{% endblock %}
