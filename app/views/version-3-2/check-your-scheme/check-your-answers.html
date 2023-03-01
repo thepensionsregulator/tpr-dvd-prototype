@@ -24,9 +24,9 @@ Check your answers
         <dt class="govuk-summary-list__key">
       Valuation date
         </dt>
-        {% if data['valuation-date-day"']%}
+        {% if data['valuation-date-day']%}
         <dd class="govuk-summary-list__value">
-          {{ data["valuation-date-day"]}}  {{ data["valuation-date-month"]}} {{ data["valuation-date-year"]}}
+          {{ data['valuation-date-day']}}  {{ data['valuation-date-month']}} {{ data['valuation-date-year']}}
         </dd>
         {% else %}
         <dd class="govuk-summary-list__value">
@@ -43,16 +43,12 @@ Check your answers
         <dt class="govuk-summary-list__key">
         Scheme name
         </dt>
-        {% if data['scheme-name']%}
-        <dd class="govuk-summary-list__value">
-          {{ data["scheme-name"]}}
-        </dd>
-        {% else %}
+      
         <dd class="govuk-summary-list__value">
           ABC Scheme
         </dd>
 
-        {% endif %}
+
         <dd class="govuk-summary-list__actions">
 
         </dd>
@@ -62,16 +58,12 @@ Check your answers
         <dt class="govuk-summary-list__key">
         Scheme company name
         </dt>
-        {% if data['scheme-company-name']%}
-        <dd class="govuk-summary-list__value">
-          {{ data["scheme-company-name"]}}
-        </dd>
-        {% else %}
+
         <dd class="govuk-summary-list__value">
           ABC Company name
         </dd>
 
-        {% endif %}
+
         <dd class="govuk-summary-list__actions">
 
         </dd>
@@ -83,22 +75,13 @@ Check your answers
         <dt class="govuk-summary-list__key">
         Chair of trustees
         </dt>
-          {% if data['scheme-trustees-name']%}
-        <dd class="govuk-summary-list__value">
-          <p class="govuk-body">{{ data["scheme-trustees-name"]}}</p>
-          <p class="govuk-body">{{ data["scheme-address-line-1"]}}</p>
-          <p class="govuk-body">{{ data["scheme-address-line-2"]}}</p>
-          <p class="govuk-body">{{ data["scheme-address-town"]}}</p>
-          <p class="govuk-body">{{ data["scheme-address-county"]}}</p>
-          <p class="govuk-body">{{ data["scheme-address-postcode"]}}</p>
-        </dd>
-        {% else %}
-          David Robert Jones<br>
+
+        David Robert Jones<br>
         123 Road<br>
         Some Town<br>
         AB1 2CD<br>
 
-        {% endif %}
+
         <dd class="govuk-summary-list__actions">
 
         </dd>
