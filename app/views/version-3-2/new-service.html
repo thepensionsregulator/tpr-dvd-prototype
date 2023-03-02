@@ -11,27 +11,41 @@
 {% block content %}
 
     <main id="content" role="main">
+
       <div class="govuk-grid-row">
-        <div class="govuk-grid-column-full">
-          <div class="govuk-panel govuk-panel--interruption">
+        <div class="govuk-grid-column-two-thirds">
+            {% include "includes/psr-number.html" %}
+                <h1 class="govuk-heading-l">There's a new way to submit your valuation results summary</h1>
+
+                <p class="govuk-body">We’ll ask you some questions to make sure we hold the right information for the scheme.</p>
+
+                <p class="govuk-body">Before you start, make sure you have the:</p>
+
+                <ul class="govuk-list govuk-list--bullet">
+<li>effective date of the most recent scheme funding (part 3) valuation</li>
+<li>scheme name</li>
+<li>principal employer's name in full</li>
+<li>chair of trustees' name and address</li>
+                </ul>
+
+<p class="govuk-body">We'll let you know whether you need to use the new service to submit your valuation summary, or if you can use Exchange.</p>
+                <form action="valuation-date" method="POST">
 
 
 
 
-                    <h1 class="govuk-heading-xl" id="start_new_claim">There's a new way to submit your valuation results summary.
-                    </h1>
 
-<p>We'll ask you for the effective date of the most recent scheme funding (Part 3) valuation of the scheme. If it's after 1 October 2023 then you'll need to use the new service to submit your valuation summary, and we'll give you instructions on how to do that.</p>
+                    <div class="form-group">
+                            <input type="hidden" name="check-scheme-inprogress" value="true">
+                            <input class="govuk-button" type="submit" value="Continue"  />
+                    </div>
+                </form>
 
-<p>If it's before 1 October 2023 then you'll be able to use Exchange to submit your valuation summary the same way you have before.</p>
-
-<form action="valuation-date">
-  <button class="govuk-button" data-module="govuk-button">
-  Continue
-  </button>
-  </form>
-
-          </div>
+            <p><a href="../tasklist.html" class="govuk-link">Save and return</a></p>
+            </div>
         </div>
-      </div>
+
+    
+
+         
 {% endblock %}
