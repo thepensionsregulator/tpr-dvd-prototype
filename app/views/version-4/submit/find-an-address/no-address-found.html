@@ -1,0 +1,35 @@
+{% extends "includes/layout.html" %}
+
+{% block pageTitle %}
+
+  No address found
+{% endblock %}
+{% block beforeContent %}
+  {% include "includes/backlink.html" %}
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+
+
+<form class="form" action="confirm-address" method="POST">
+
+  <div class="govuk-width-container">
+        {% include "includes/psr-number.html" %}
+  <h1 class="govuk-heading-l">No address found</h1>
+  <p>We could not find an address that matches <b>1</b> and <b>WR1 1NL</b>. You can search again or enter the address manually.</p>
+  <p><a href="#">Search again</a></p>
+  <p class="govuk-body govuk-!-margin-bottom-0"><a href="address-manual" class="govuk-link">Enter address manually</a></p>
+  </div>
+
+
+  <p><a href="../tasklist.html" class="govuk-link">Save and return</a></p>
+
+</form>
+
+</div>
+<script src="/public/javascripts/radio-to-hidden.js"></script>
+{% endblock %}

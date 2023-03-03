@@ -1,0 +1,62 @@
+{% extends "includes/layout.html" %}
+
+{% block pageTitle %}
+
+  Is this the scheme's address?
+{% endblock %}
+{% block beforeContent %}
+  {% include "includes/backlink.html" %}
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+
+
+<form class="form" action="" method="POST">
+
+    <div class="govuk-form-group">
+<fieldset class="govuk-fieldset" aria-describedby="scheme-name-hint">
+<legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+      {% include "includes/psr-number.html" %}
+  <h1 class="govuk-fieldset__heading">
+  Is this the chair of trustees?  </h1>
+</legend>
+<div id="changed-name-hint" class="govuk-inset-text">
+  David Robert Jones <br>
+  123 Road<br>
+  Some Town<br>
+  AB1 2CD<br>
+
+</div>
+<div class="govuk-radios">
+  <div class="govuk-radios__item">
+    <input class="govuk-radios__input" id="check-scheme-yes"
+    name="next-page" type="radio" value="check-your-answers"  data-value="Yes" >
+    <label class="govuk-label govuk-radios__label" for="check-scheme-yes">
+      Yes
+    </label>
+  </div>
+  <div class="govuk-radios__item">
+    <input class="govuk-radios__input" id="check-scheme-no"
+      name="next-page" type="radio" value="scheme-trustees-contact"  data-value="No" >
+    <label class="govuk-label govuk-radios__label" for="check-scheme-no">
+      No
+    </label>
+  </div>
+</div>
+
+</fieldset>
+</div>
+
+      <input class="govuk-button" type="submit" value="Save and continue"  />
+
+      <!-- <p><a href="../tasklist.html" class="govuk-link">Save and return</a></p> -->
+
+</form>
+
+</div>
+<script src="/public/javascripts/radio-to-hidden.js"></script>
+{% endblock %}

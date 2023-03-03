@@ -1,0 +1,59 @@
+{% extends "includes/layout.html" %}
+
+{% block pageTitle %}
+
+Enter the address manually{% endblock %}
+{% block beforeContent %}
+  {% include "includes/backlink.html" %}
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+
+
+<form class="form" action="../check-your-answers" method="POST">
+      {% include "includes/psr-number.html" %}
+  <h1 class="govuk-heading-l">Enter the address manually</h1>
+  <div class="govuk-form-group">
+     <label class="govuk-label" for="address-line-1">
+       Address line 1
+     </label>
+     <input class="govuk-input" id="address-line-1" name="scheme-address-line-1"  type="text" autocomplete="address-line1">
+   </div>
+   <div class="govuk-form-group">
+     <label class="govuk-label" for="address-line-2">
+       Address line 2 (optional)
+     </label>
+     <input class="govuk-input" id="address-line-2" name="scheme-address-line-2"  type="text" autocomplete="address-line2">
+   </div>
+   <div class="govuk-form-group">
+     <label class="govuk-label" for="address-town">
+       Town or city
+     </label>
+     <input class="govuk-input govuk-!-width-two-thirds" id="address-town"  name="scheme-address-town" type="text" autocomplete="address-level2">
+   </div>
+   <div class="govuk-form-group">
+     <label class="govuk-label" for="address-county">
+       County (optional)
+     </label>
+     <input class="govuk-input govuk-!-width-two-thirds" id="address-county"  name="scheme-address-county" type="text">
+   </div>
+   <div class="govuk-form-group">
+     <label class="govuk-label" for="address-postcode">
+       Postcode
+     </label>
+     <input class="govuk-input govuk-input--width-10" id="address-postcode" name="scheme-address-postcode" type="text" autocomplete="postal-code">
+   </div>
+
+<input class="govuk-button" type="submit" value="Use this address">
+
+  <p><a href="../tasklist.html" class="govuk-link">Save and return</a></p>
+
+</form>
+
+</div>
+<script src="/public/javascripts/radio-to-hidden.js"></script>
+{% endblock %}
