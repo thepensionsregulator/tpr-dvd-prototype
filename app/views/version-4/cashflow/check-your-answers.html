@@ -14,14 +14,15 @@ Check your answers
   <div class="govuk-grid-column-two-thirds-from-desktop">
 {% include "includes/psr-number.html" %}
     <h1 class="govuk-heading-l">Check your answers before completing this section</h1>
-    </div>
-      <div class="govuk-grid-column-full">
+
 
 
         <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
         <div id="myChart" style="width:100%; max-width:600px; height:500px;"></div>
 
+
+  
         <script>
         google.charts.load('current',{packages:['corechart']});
         google.charts.setOnLoadCallback(drawChart);
@@ -41,10 +42,12 @@ Check your answers
           vAxis: {title: 'Years'},
           legend: 'none'
         };
+
         // Draw
         var chart = new google.visualization.ScatterChart(document.getElementById('myChart'));
         chart.draw(data, options);
         }
+
         </script>
 
 
