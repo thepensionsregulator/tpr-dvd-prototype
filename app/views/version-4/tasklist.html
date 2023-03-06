@@ -25,13 +25,13 @@ ABC scheme Valuation
 {% endif %}
 
 {% if  data['check-scheme-completed'] == 'true' and data['valuations-completed'] == 'true' and data['sign-and-submit'] == 'true' %}
-<p class="govuk-body govuk-!-margin-bottom-7">You have completed 3 of 4 sections.</p>
+<p class="govuk-body govuk-!-margin-bottom-7">You have completed 3 of 5 sections.</p>
 {% elif  data['check-scheme-completed'] == 'true' and data['valuations-completed'] == 'true' %}
-<p class="govuk-body govuk-!-margin-bottom-7">You have completed 2 of 4 sections.</p>
+<p class="govuk-body govuk-!-margin-bottom-7">You have completed 2 of 5 sections.</p>
 {% elif data['check-scheme-completed'] == 'true' or data['valuations-completed'] == 'true' %}
-<p class="govuk-body govuk-!-margin-bottom-7">You have completed 1 of 4 sections.</p>
+<p class="govuk-body govuk-!-margin-bottom-7">You have completed 1 of 5 sections.</p>
 {% else %}
-<p class="govuk-body govuk-!-margin-bottom-7">You have completed 0 of 4 sections.</p>
+<p class="govuk-body govuk-!-margin-bottom-7">You have completed 0 of 5 sections.</p>
 {% endif %}
 
 
@@ -147,17 +147,17 @@ ABC scheme Valuation
             <li class="app-task-list__item">
 
              {% if data['demographic-completed'] == 'true' %}
-               <a class="task-name" href="" aria-describedby="read-declaration-completed">
+               <a class="task-name" href="cashflow/demographic/male" aria-describedby="read-declaration-completed">
                  Demographic
                </a>
                <strong class="govuk-tag app-task-list__tag" id="eligibility-status">Completed</strong>
              {% elif  data['demographic-inprogress'] == 'true' %}
-             <a class="task-name" href="" aria-describedby="read-declaration-completed">
+             <a class="task-name" href="cashflow/demographic/check-answers" aria-describedby="read-declaration-completed">
                    Demographic
              </a>
              <strong class="govuk-tag govuk-tag--blue app-task-list__tag" id="contact-details-status">In progress</strong>
                {% else %}
-               <a class="task-name" href="" aria-describedby="read-declaration-completed">
+               <a class="task-name" href="cashflow/demographic/male" aria-describedby="read-declaration-completed">
                       Demographic
                </a>
                <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="eligibility-status">Not started</strong>

@@ -1,0 +1,55 @@
+{% extends "includes/layout.html" %}
+
+{% block pageTitle %}
+
+Upload your valuation results
+{% endblock %}
+{% block beforeContent %}
+  {% include "includes/backlink.html" %}
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+  {% include "includes/psr-number.html" %}
+    <h1 class="govuk-heading-xl">Male</h1>
+
+    <div class="govuk-form-group">
+      <label class="govuk-label" for="event-name">
+  Male cohort expected age of death, for current pensioners aged 65 at valuation date
+      </label>
+      <input class="govuk-input" id="event-name" name="event-name" type="text">
+    </div>
+    <div class="govuk-form-group">
+    <label class="govuk-label" for="event-name">
+  Male period expected age of death, for current pensioners aged 65 at valuation date  </label>
+    <input class="govuk-input" id="event-name" name="event-name" type="text">
+  </div>
+  <div class="govuk-form-group">
+    <label class="govuk-label" for="event-name">
+  Male cohort expected age of death, for future pensioners aged 65 at a date 20 years after valuation date
+    </label>
+    <input class="govuk-input" id="event-name" name="event-name" type="text">
+  </div>
+
+
+
+    <form action="female" method="post">
+
+
+        <input type="hidden" name="demographic-inprogress" value="true">
+      <button class="govuk-button" data-module="govuk-button">
+    Save and continue
+      </button>
+      <p><a href="../tasklist.html" class="govuk-link">Save and return</a></p>
+    </form>
+  </div>
+</div>
+
+<script src="/public/javascripts/radio-to-hidden.js"></script>
+
+
+
+{% endblock %}

@@ -1,0 +1,128 @@
+{% extends "includes/layout.html" %}
+
+{% block pageTitle %}
+Check your answers
+{% endblock %}
+
+{% block beforeContent %}
+  {% include "includes/backlink.html" %}
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds-from-desktop">
+{% include "includes/psr-number.html" %}
+    <h1 class="govuk-heading-l">Check your answers before completing this section</h1>
+
+
+      <h2 class="govuk-heading-m">Male</h2>
+
+        <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+          Male cohort expected age of death, for current pensioners aged 65 at valuation date
+          </dt>
+          <dd class="govuk-summary-list__value">
+          {{data['']}}
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="#">
+              Change<span class="govuk-visually-hidden"> name</span>
+            </a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+        Male period expected age of death, for current pensioners aged 65 at valuation date
+          </dt>
+          <dd class="govuk-summary-list__value">
+        {{data['']}}
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="#">
+              Change<span class="govuk-visually-hidden"> date of birth</span>
+            </a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+                Male period expected age of death, for current pensioners aged 65 at valuation date
+          </dt>
+          <dd class="govuk-summary-list__value">
+            {{data['']}}
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="#">
+              Change<span class="govuk-visually-hidden"> address</span>
+            </a>
+          </dd>
+        </div>
+
+      </dl>
+
+      <h2 class="govuk-heading-m">Female</h2>
+
+
+        <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+          Male cohort expected age of death, for current pensioners aged 65 at valuation date
+          </dt>
+          <dd class="govuk-summary-list__value">
+          {{data['']}}
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="#">
+              Change<span class="govuk-visually-hidden"> name</span>
+            </a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+        Male period expected age of death, for current pensioners aged 65 at valuation date
+          </dt>
+          <dd class="govuk-summary-list__value">
+        {{data['']}}
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="#">
+              Change<span class="govuk-visually-hidden"> date of birth</span>
+            </a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+                Male period expected age of death, for current pensioners aged 65 at valuation date
+          </dt>
+          <dd class="govuk-summary-list__value">
+            {{data['']}}
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="#">
+              Change<span class="govuk-visually-hidden"> address</span>
+            </a>
+          </dd>
+        </div>
+
+      </dl>
+
+
+
+    <form action="../../tasklist" method="post" novalidate>
+
+      <input type="hidden" name="demographic-completed" value="true">
+
+      <button class="govuk-button" data-module="govuk-button">
+        Save and continue
+      </button>
+
+    </form>
+  <p><a href="../tasklist.html" class="govuk-link">Save and return</a></p>
+
+
+
+  </div>
+</div>
+<script src="/public/javascripts/radio-to-hidden.js"></script>
+{% endblock %}
