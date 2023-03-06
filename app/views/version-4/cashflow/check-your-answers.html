@@ -1,0 +1,67 @@
+{% extends "includes/layout.html" %}
+
+{% block pageTitle %}
+Check your answers
+{% endblock %}
+
+{% block beforeContent %}
+  {% include "includes/backlink.html" %}
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds-from-desktop">
+{% include "includes/psr-number.html" %}
+    <h1 class="govuk-heading-l">Check your answers before completing this section</h1>
+    </div>
+      <div class="govuk-grid-column-full">
+
+
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+        <div id="myChart" style="width:100%; max-width:600px; height:500px;"></div>
+
+        <script>
+        google.charts.load('current',{packages:['corechart']});
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+        // Set Data
+        var data = google.visualization.arrayToDataTable([
+          ['Pay increases', 'RPI'],
+          [50,7],[60,8],[70,8],[80,9],[90,9],
+          [100,9],[110,10],[120,11],
+          [130,14],[140,14],[150,15]
+        ]);
+        // Set Options
+        var options = {
+          title: 'Cashflow',
+          hAxis: {title: 'Square Meters'},
+          vAxis: {title: 'Years'},
+          legend: 'none'
+        };
+        // Draw
+        var chart = new google.visualization.ScatterChart(document.getElementById('myChart'));
+        chart.draw(data, options);
+        }
+        </script>
+
+
+    <form action="../tasklist" method="post" novalidate>
+
+      <input type="hidden" name="cashflow-completed" value="true">
+
+      <button class="govuk-button" data-module="govuk-button">
+        Save and continue
+      </button>
+
+    </form>
+  <p><a href="../tasklist.html" class="govuk-link">Save and return</a></p>
+
+
+    <p><a href="check-your-answers-alt" class="govuk-link">Playback Alt verison</a></p>
+  </div>
+</div>
+<script src="/public/javascripts/radio-to-hidden.js"></script>
+{% endblock %}

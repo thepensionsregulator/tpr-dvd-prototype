@@ -1,0 +1,67 @@
+{% extends "includes/layout.html" %}
+
+{% block pageTitle %}
+
+
+        Check your upload
+
+{% endblock %}
+
+{% block beforeContent %}
+  {% include "includes/backlink.html" %}
+{% endblock %}
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+    {% include "includes/psr-number.html" %}
+      <h1 class="govuk-fieldset__heading">
+        Check your upload
+      </h1>
+    </legend>
+
+
+    <div class="govuk-inset-text">
+      <a href=""><strong>{{data['file-upload-valuation']}}</strong></a>, (5MB)
+    </div>
+
+
+    <form class="form" action="" method="post">
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+            Is this file correct?
+          </legend>
+
+
+          <div class="govuk-radios">
+            <div class="govuk-radios__item">
+
+                <input class="govuk-radios__input" id="capacity-upload" name="next-page" type="radio" value="check-your-answers" data-value="Yes" >
+
+              <label class="govuk-label govuk-radios__label" for="capacity-upload">
+                Yes, add this file
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="capacity-upload"
+                name="next-page" type="radio" value="upload-cashflow" data-value="No" >
+              <label class="govuk-label govuk-radios__label" for="capacity-upload">
+                No, I want to choose a different file
+              </label>
+            </div>
+          </div>
+
+        </fieldset>
+      </div>
+
+      <button type="submit" class="govuk-button" data-module="govuk-button">Continue</button>
+
+    </form>
+  <p><a href="../tasklist.html" class="govuk-link">Save and return</a></p>
+  </div>
+</div>
+<script src="/public/javascripts/radio-to-hidden.js"></script>
+{% endblock %}
