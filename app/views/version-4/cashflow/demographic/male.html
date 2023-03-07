@@ -2,7 +2,7 @@
 
 {% block pageTitle %}
 
-Enter your demographic data
+Male life expectancy
 {% endblock %}
 {% block beforeContent %}
   {% include "includes/backlink.html" %}
@@ -14,24 +14,26 @@ Enter your demographic data
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
   {% include "includes/psr-number.html" %}
-    <h1 class="govuk-heading-xl">Male</h1>
-
-    <div class="govuk-form-group">
+    <h1 class="govuk-heading-xl">Male life expectancy</h1>
+<p class="govuk-body">Please provide the expected age of death for the male members of this scheme. The figures can be accurate to 2 decimal places.</p>
+<h2 class="govuk-heading-m">Current pensioners aged 65 at valuation date</h2>
+<div class="govuk-form-group">
       <label class="govuk-label" for="event-name">
-  Male cohort expected age of death, for current pensioners aged 65 at valuation date
+  Cohort
       </label>
-      <input class="govuk-input" id="event-name" name="event-name" type="text">
+      <input class="govuk-input govuk-input--width-5" id="event-name" name="event-name" type="text">
     </div>
     <div class="govuk-form-group">
     <label class="govuk-label" for="event-name">
-  Male period expected age of death, for current pensioners aged 65 at valuation date  </label>
-    <input class="govuk-input" id="event-name" name="event-name" type="text">
+  Period </label>
+  <input class="govuk-input govuk-input--width-5" id="event-name" name="event-name" type="text">
   </div>
+  <h2 class="govuk-heading-m">Future pensioners aged 65 at a date 20 years after valuation date</h2>
   <div class="govuk-form-group">
     <label class="govuk-label" for="event-name">
-  Male cohort expected age of death, for future pensioners aged 65 at a date 20 years after valuation date
+Cohort
     </label>
-    <input class="govuk-input" id="event-name" name="event-name" type="text">
+    <input class="govuk-input govuk-input--width-5" id="event-name" name="event-name" type="text">
   </div>
 
 
