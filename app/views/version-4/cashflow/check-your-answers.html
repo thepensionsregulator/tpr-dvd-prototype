@@ -9,48 +9,141 @@ Check your answers
 {% endblock %}
 
 {% block content %}
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds-from-desktop">
 {% include "includes/psr-number.html" %}
     <h1 class="govuk-heading-l">Check your answers before completing this section</h1>
 
+</div>
+
+<div class="govuk-grid-column-one-half govuk-!-margin-bottom-8">
+      <canvas id="myChart" style="width:100%;max-width:700px"></canvas>
+</div>
+<div class="govuk-grid-column-one-half govuk-!-margin-bottom-8">
+    <canvas id="myChart1" style="width:100%;max-width:700px"></canvas>
+</div>
+<div class="govuk-grid-column-one-half govuk-!-margin-bottom-8">
+    <canvas id="myChart2" style="width:100%;max-width:700px"></canvas>
+</div>
+<div class="govuk-grid-column-one-half govuk-!-margin-bottom-8">
+        <canvas id="myChart3" style="width:100%;max-width:700px"></canvas>
+</div>
+<div class="govuk-grid-column-one-half govuk-!-margin-bottom-8">
+      <canvas id="myChart4" style="width:100%;max-width:700px"></canvas>
+</div>
 
 
-        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-
-        <div id="myChart" style="width:100%; max-width:600px; height:500px;"></div>
-
-
-  
+<div class="govuk-grid-column-two-thirds-from-desktop">
         <script>
-        google.charts.load('current',{packages:['corechart']});
-        google.charts.setOnLoadCallback(drawChart);
+          var xyValues = [
+      {x:50, y:7},
+      {x:60, y:8},
+      {x:70, y:8},
+      {x:80, y:9},
+      {x:90, y:9},
+      {x:100, y:9},
+      {x:110, y:10},
+      {x:120, y:11},
+      {x:130, y:14},
+      {x:140, y:14},
+      {x:150, y:15}
+    ];
 
-        function drawChart() {
-        // Set Data
-        var data = google.visualization.arrayToDataTable([
-          ['Pay increases', 'RPI'],
-          [50,7],[60,8],[70,8],[80,9],[90,9],
-          [100,9],[110,10],[120,11],
-          [130,14],[140,14],[150,15]
-        ]);
-        // Set Options
-        var options = {
-          title: 'Cashflow',
-          hAxis: {title: 'Square Meters'},
-          vAxis: {title: 'Years'},
-          legend: 'none'
-        };
-
-        // Draw
-        var chart = new google.visualization.ScatterChart(document.getElementById('myChart'));
-        chart.draw(data, options);
+    new Chart("myChart", {
+      type: "scatter",
+      data: {
+        datasets: [{
+          pointRadius: 4,
+          pointBackgroundColor: "rgb(0,0,255)",
+          data: xyValues
+        }]
+      },
+      options: {
+        legend: {display: false},
+        scales: {
+          xAxes: [{ticks: {min: 40, max:160}}],
+          yAxes: [{ticks: {min: 6, max:16}}],
         }
+      }
+    });
+    new Chart("myChart1", {
+      type: "scatter",
+      data: {
+        datasets: [{
+          pointRadius: 4,
+          pointBackgroundColor: "rgb(0,0,255)",
+          data: xyValues
+        }]
+      },
+      options: {
+        legend: {display: false},
+        scales: {
+          xAxes: [{ticks: {min: 40, max:160}}],
+          yAxes: [{ticks: {min: 6, max:16}}],
+        }
+      }
+    });
+
+    new Chart("myChart2", {
+      type: "scatter",
+      data: {
+        datasets: [{
+          pointRadius: 4,
+          pointBackgroundColor: "rgb(0,0,255)",
+          data: xyValues
+        }]
+      },
+      options: {
+        legend: {display: false},
+        scales: {
+          xAxes: [{ticks: {min: 40, max:160}}],
+          yAxes: [{ticks: {min: 6, max:16}}],
+        }
+      }
+    });
+
+    new Chart("myChart3", {
+      type: "scatter",
+      data: {
+        datasets: [{
+          pointRadius: 4,
+          pointBackgroundColor: "rgb(0,0,255)",
+          data: xyValues
+        }]
+      },
+      options: {
+        legend: {display: false},
+        scales: {
+          xAxes: [{ticks: {min: 40, max:160}}],
+          yAxes: [{ticks: {min: 6, max:16}}],
+        }
+      }
+    });
+    new Chart("myChart4", {
+      type: "scatter",
+      data: {
+        datasets: [{
+          pointRadius: 4,
+          pointBackgroundColor: "rgb(0,0,255)",
+          data: xyValues
+        }]
+      },
+      options: {
+        legend: {display: false},
+        scales: {
+          xAxes: [{ticks: {min: 40, max:160}}],
+          yAxes: [{ticks: {min: 6, max:16}}],
+        }
+      }
+    });
+
 
         </script>
 
-
+<br>
+<br>
     <form action="../tasklist" method="post" novalidate>
 
       <input type="hidden" name="cashflow-completed" value="true">
@@ -63,7 +156,9 @@ Check your answers
   <p><a href="../tasklist.html" class="govuk-link">Save and return</a></p>
 
 
-    <p><a href="check-your-answers-alt" class="govuk-link">Playback Alt verison</a></p>
+    <p>Alternative version:<a href="check-your-answers-alt" class="govuk-link">Data table</a></p>
+    <p>Alternative version:<a href="check-your-answers-1" class="govuk-link">One graph</a></p>
+    <p>Alternative version:<a href="check-your-answers-pay" class="govuk-link">One graph per page</a></p>
   </div>
 </div>
 <script src="/public/javascripts/radio-to-hidden.js"></script>

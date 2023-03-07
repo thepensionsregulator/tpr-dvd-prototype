@@ -1,0 +1,81 @@
+{% extends "includes/layout.html" %}
+
+{% block pageTitle %}
+Check your answers
+{% endblock %}
+
+{% block beforeContent %}
+  {% include "includes/backlink.html" %}
+{% endblock %}
+
+{% block content %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds-from-desktop">
+{% include "includes/psr-number.html" %}
+    <h1 class="govuk-heading-l">Check your answers before completing this section</h1>
+
+</div>
+
+<div class="govuk-grid-column-one-half govuk-!-margin-bottom-8">
+      <canvas id="myChart" style="width:100%;max-width:700px"></canvas>
+</div>
+
+
+<div class="govuk-grid-column-two-thirds-from-desktop">
+        <script>
+          var xValues = [10,20,30,40,50,60,70,80,90,100];
+
+          new Chart("myChart", {
+            type: "line",
+            data: {
+              labels: xValues,
+              datasets: [{
+                data: [860,1140,1060,1060,1070,1110,1330,2210,7830,2478],
+                borderColor: "red",
+                fill: false
+              },{
+                data: [1600,1700,1700,1900,2000,2700,4000,5000,6000,7000],
+                borderColor: "green",
+                fill: false
+              },{
+                data: [300,700,2000,5000,6000,4000,2000,1000,200,100],
+                borderColor: "blue",
+                fill: false
+              },{
+                data: [100,300,200,5000,10000,430,2000,1000,200,100],
+                borderColor: "orange",
+                fill: false
+              },{
+                data: [300,700,20,5000,6000,40,2000,1,200,100],
+                borderColor: "purple",
+                fill: false
+              }]
+            },
+            options: {
+              legend: {display: false}
+            }
+          });
+
+
+        </script>
+
+
+    <form action="../tasklist" method="post" novalidate>
+
+      <input type="hidden" name="cashflow-completed" value="true">
+
+      <button class="govuk-button" data-module="govuk-button">
+        Save and continue
+      </button>
+
+    </form>
+  <p><a href="../tasklist.html" class="govuk-link">Save and return</a></p>
+
+
+    <p><a href="check-your-answers-alt" class="govuk-link">Playback Alt verison</a></p>
+  </div>
+</div>
+<script src="/public/javascripts/radio-to-hidden.js"></script>
+{% endblock %}
