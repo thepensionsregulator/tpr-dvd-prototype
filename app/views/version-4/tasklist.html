@@ -23,8 +23,11 @@ ABC scheme Valuation
 {% else %}
 <h2 class="govuk-heading-s govuk-!-margin-bottom-2">ABC Scheme valuation incomplete</h2>
 {% endif %}
-
-{% if  data['check-scheme-completed'] == 'true' and data['valuations-completed'] == 'true' and data['sign-and-submit'] == 'true' %}
+{% if  data['check-scheme-completed'] == 'true' and data['valuations-completed'] == 'true' and data['cashflow-completed'] == 'true' and  data['sign-and-submit'] == 'true'  %}
+<p class="govuk-body govuk-!-margin-bottom-7">You have completed 5 of 5 sections.</p>
+{% elif  data['check-scheme-completed'] == 'true' and data['valuations-completed'] == 'true' and data['cashflow-completed'] == 'true' and  data['demographic-completed'] == 'true'  %}
+<p class="govuk-body govuk-!-margin-bottom-7">You have completed 4 of 5 sections.</p>
+{% elif  data['check-scheme-completed'] == 'true' and data['valuations-completed'] == 'true' and data['cashflow-completed'] == 'true' %}
 <p class="govuk-body govuk-!-margin-bottom-7">You have completed 3 of 5 sections.</p>
 {% elif  data['check-scheme-completed'] == 'true' and data['valuations-completed'] == 'true' %}
 <p class="govuk-body govuk-!-margin-bottom-7">You have completed 2 of 5 sections.</p>
@@ -96,17 +99,11 @@ ABC scheme Valuation
           </a>
           <strong class="govuk-tag govuk-tag--blue app-task-list__tag" id="contact-details-status">In progress</strong>
 
-          {% elif  data['check-scheme-completed'] == 'true' %}
+          {% else %}
           <a class="task-name" href="valuation-results-summary/upload-valuations" aria-describedby="read-declaration-completed">
          Upload your valuation results summary
           </a>
-                <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="eligibility-status">Not started</strong>
-            {% else %}
-
-              <span class="app-task-list__task-name">
-                   Upload your valuation results summary
-              </span>
-              <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="eligibility-status">Cannot start yet</strong>
+          <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="eligibility-status">Not started</strong>
 
 
             {% endif %}
