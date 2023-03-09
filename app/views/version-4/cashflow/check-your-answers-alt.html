@@ -1,7 +1,7 @@
 {% extends "includes/layout.html" %}
 
 {% block pageTitle %}
-Check your answers
+We have received your data
 {% endblock %}
 
 {% block beforeContent %}
@@ -13,8 +13,12 @@ Check your answers
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds-from-desktop">
 {% include "includes/psr-number.html" %}
-    <h1 class="govuk-heading-l">Check your answers before completing this section</h1>
+    <h1 class="govuk-heading-l">We have received your data
+    </h1>
     </div>
+    <div class="govuk-grid-column-full">
+      <p class="govuk-body">You can review the data below before completing this section.</p>
+      </div>
       <div class="govuk-grid-column-full">
         <table class="govuk-table">
 
@@ -173,6 +177,10 @@ Check your answers
 
     </form>
   <p><a href="../tasklist.html" class="govuk-link">Save and return</a></p>
+
+  <p>Alternative version: <a href="check-your-answers" class="govuk-link">Multiple graphs</a></p>
+  <p>Alternative version: <a href="check-your-answers-1" class="govuk-link">One graph</a></p>
+  <p>Alternative version: <a href="check-your-answers-pay" class="govuk-link">One graph per page</a></p>
   </div>
 </div>
 <script src="/public/javascripts/radio-to-hidden.js"></script>
