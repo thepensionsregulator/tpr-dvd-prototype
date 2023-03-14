@@ -17,23 +17,24 @@ Female life expectancy
   <h1 class="govuk-heading-xl">Female life expectancy</h1>
   <p class="govuk-body">Please provide the expected age of death for the female members of this scheme. The figures can be accurate to 2 decimal places.</p>
   <h2 class="govuk-heading-m">Current pensioners aged 65 at valuation date</h2>
+    <form action="check-your-answers" method="post">
   <div class="govuk-form-group">
         <label class="govuk-label" for="event-name">
     Cohort
         </label>
-        <input class="govuk-input govuk-input--width-5" id="event-name" name="event-name" type="text">
+        <input class="govuk-input govuk-input--width-5" id="event-name" name="female-cohort" data-value="female-cohort" type="text">
       </div>
       <div class="govuk-form-group">
       <label class="govuk-label" for="event-name">
     Period </label>
-    <input class="govuk-input govuk-input--width-5" id="event-name" name="event-name" type="text">
+    <input class="govuk-input govuk-input--width-5" id="event-name" name="female-period" data-value="female-period" type="text">
     </div>
     <h2 class="govuk-heading-m">Future pensioners aged 65 at a date 20 years after valuation date</h2>
     <div class="govuk-form-group">
       <label class="govuk-label" for="event-name">
   Cohort
       </label>
-      <input class="govuk-input govuk-input--width-5" id="event-name" name="event-name" type="text">
+      <input class="govuk-input govuk-input--width-5" id="event-name" name="female-future" data-value="female-future" type="text">
     </div>
 
 
@@ -41,7 +42,7 @@ Female life expectancy
     <button class="govuk-button" data-module="govuk-button">
   Save and continue
     </button>
-    <p><a href="../tasklist.html" class="govuk-link">Save and return</a></p>
+    <p><a href="../../tasklist.html" class="govuk-link">Save and return</a></p>
   </form>
 
   </div>

@@ -1,0 +1,60 @@
+{% extends "includes/layout.html" %}
+
+{% block page_title %}You need to use the new template{% endblock %}
+
+{% block backHidden %}{% endblock %}
+
+
+{% block beforeContent %}
+  {% include "includes/backlink.html" %}
+{% endblock %}
+{% block content %}
+
+    <main id="content" role="main">
+
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+              {% include "includes/psr-number.html" %}
+                <h1 class="govuk-heading-l">You need to use the new service</h1>
+
+                <p class="govuk-body">Based on your last scheme funding (Part 3) valuation date of 01 October 2023, you need to use our new service to submit your valuation.
+                </p>
+
+                <p class="govuk-body">You’ll need to upload your valuation results summary in a specific format.
+                </p>
+
+                <h2 class="govuk-heading-m">Before you start</h2>
+                <p class="govuk-body">You’ll need to download:
+                </p>
+                <ul class="govuk-list govuk-list--bullet">
+                <!-- <li><a href="/public/downloads/blank-template.xlsx" download class="govuk-link">the scheme valuation template (xlsx, 139KB).</a></li> -->
+                <li><a href="/public/downloads/cashflow-template-v2.ods" download  class="govuk-link">the actuarial template (ODS, 5KB).</a></li>
+                <li><a href="/public/downloads/cashflow-template-v2.ods" download  class="govuk-link">the covenant advisor (ODS, 5KB).</a></li>
+                <li><a href="" class="govuk-link">the instructions (ODT, 50KB).</a></li>
+                </ul>
+                <p class="govuk-body">You’ll also need to:
+                <ul class="govuk-list govuk-list--bullet">
+                <li>Read the instructions and complete the templates.</li>
+                <li>Have your 'expected age of death' demographic data ready.</li>
+                </ul>
+
+
+                <p class="govuk-body">You will not be able to upload any documents that do not match the template.
+                </p>
+
+                <form action="check-details" method="POST">
+
+    <input type="hidden" name="check-scheme-completed" value="true">
+                    <div class="form-group">
+
+                            <input class="govuk-button" type="submit" value="Continue"  />
+                    </div>
+                </form>
+
+                <p class="govuk-body"><a href="return-to-exchange.html">Prototype option 2</a></p>
+
+            </div>
+        </div>
+    </main>
+</body>
+{% endblock %}

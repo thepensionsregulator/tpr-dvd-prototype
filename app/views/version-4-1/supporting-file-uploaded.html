@@ -1,0 +1,103 @@
+{% extends "includes/layout.html" %}
+
+{% block pageTitle %}
+Check your answers
+{% endblock %}
+
+{% block beforeContent %}
+  {% include "includes/backlink.html" %}
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds-from-desktop">
+  {% include "includes/psr-number.html" %}
+    <h1 class="govuk-heading-l">Upload your supporting information</h1>
+
+
+    <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+      <h2 class="govuk-heading-m">Files added</h2>
+
+         <dl class="govuk-summary-list">
+
+           <div class="govuk-summary-list__row">
+             <dt class="govuk-summary-list__key">
+               File 1
+             </dt>
+             <dd class="govuk-summary-list__value">
+               <a download href="/" class="govuk-link">receipta.jpg</a>, 2MB
+             </dd>
+
+             <dd class="govuk-summary-list__actions">
+
+               <a class="govuk-link" href="#">
+                 Delete<span class="govuk-visually-hidden"> file 1</span>
+               </a>
+
+             </dd>
+
+           </div>
+
+           <div class="govuk-summary-list__row">
+             <dt class="govuk-summary-list__key">
+               File 2
+             </dt>
+             <dd class="govuk-summary-list__value">
+               <a download href="/" class="govuk-link">receipt2.jpg</a>, 5MB
+             </dd>
+
+             <dd class="govuk-summary-list__actions">
+
+               <a class="govuk-link" href="#">
+                 Delete<span class="govuk-visually-hidden"> file 2</span>
+               </a>
+
+             </dd>
+
+           </div>
+
+         </dl>
+
+       </div>
+     </div>
+
+    <form action="" method="post" novalidate>
+
+      <div class="govuk-form-group">
+  <fieldset class="govuk-fieldset" aria-describedby="scheme-name-hint">
+  <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+    <h1 class="govuk-fieldset__heading">
+Do you want to upload another file?
+    </h1>
+  </legend>
+  <div class="govuk-radios">
+    <div class="govuk-radios__item">
+      <input class="govuk-radios__input" id="check-scheme-yes"
+      name="next-page" type="radio" value="upload-supporting"  data-value="Yes" >
+      <label class="govuk-label govuk-radios__label" for="check-scheme-yes">
+        Yes
+      </label>
+    </div>
+  <div class="govuk-radios__item">
+    <input class="govuk-radios__input" id="check-scheme-no"
+      name="next-page" type="radio" value="submit/who-submit"  data-value="No" >
+    <label class="govuk-label govuk-radios__label" for="check-scheme-no">
+      No
+    </label>
+  </div>
+  </fieldset>
+  </div>
+
+      <input type="hidden" name="check-scheme-completed" value="true">
+
+      <button class="govuk-button" data-module="govuk-button">
+        Save and continue
+      </button>
+
+    </form>
+  <!-- <p><a href="../tasklist.html" class="govuk-link">Save and return</a></p> -->
+  </div>
+</div>
+<script src="/public/javascripts/radio-to-hidden.js"></script>
+{% endblock %}

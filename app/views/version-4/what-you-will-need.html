@@ -27,8 +27,8 @@
                 <p class="govuk-body">You’ll need to download:
                 </p>
                 <ul class="govuk-list govuk-list--bullet">
-                <li><a href="" class="govuk-link">the scheme valuation template (CSV, 139KB).</a></li>
-                <li><a href="" class="govuk-link">the cashflow template (CSV, 80KB).</a></li>
+                <!-- <li><a href="/public/downloads/blank-template.xlsx" download class="govuk-link">the scheme valuation template (xlsx, 139KB).</a></li> -->
+                <li><a href="/public/downloads/cashflow-template-v2.ods" download  class="govuk-link">the cashflow template (ODS, 5KB).</a></li>
                 <li><a href="" class="govuk-link">the instructions (ODT, 50KB).</a></li>
                 </ul>
                 <p class="govuk-body">You’ll also need to:
@@ -36,14 +36,14 @@
                 <li>Read the instructions and complete the templates.</li>
                 <li>Have your 'expected age of death' demographic data ready.</li>
                 </ul>
-                
+
 
                 <p class="govuk-body">You will not be able to upload any documents that do not match the template.
                 </p>
 
-                <form action="check-your-scheme/scheme-name-correct" method="POST">
+                <form action="check-your-scheme/check-details" method="POST">
 
-
+    <input type="hidden" name="check-scheme-completed" value="true">
                     <div class="form-group">
 
                             <input class="govuk-button" type="submit" value="Continue"  />

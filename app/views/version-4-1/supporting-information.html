@@ -1,0 +1,52 @@
+{% extends "includes/layout.html" %}
+
+{% block page_title %}You need to use the new template{% endblock %}
+
+{% block backHidden %}{% endblock %}
+
+
+{% block beforeContent %}
+  {% include "includes/backlink.html" %}
+{% endblock %}
+{% block content %}
+
+    <main id="content" role="main">
+
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+              {% include "includes/psr-number.html" %}
+                <h1 class="govuk-heading-l">You need to give us these things</h1>
+
+
+                <p class="govuk-body"> something something because of the information you give us you etc</p>
+
+
+                <p class="govuk-body">You’ll need give us:
+                </p>
+                <ul class="govuk-list govuk-list--bullet">
+
+                <li>Copy of your recovery plan </li>
+                <li> Funding and investment storagegy </li>
+                <li>Schedule of contributions </li>
+                </ul>
+
+
+
+
+
+                <form action="upload-supporting" method="POST">
+
+    <input type="hidden" name="check-scheme-completed" value="true">
+                    <div class="form-group">
+
+                            <input class="govuk-button" type="submit" value="Continue"  />
+                    </div>
+                </form>
+
+                <!-- <p class="govuk-body"><a href="return-to-exchange.html">Prototype option 2</a></p> -->
+
+            </div>
+        </div>
+    </main>
+</body>
+{% endblock %}
