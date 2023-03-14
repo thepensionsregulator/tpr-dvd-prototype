@@ -1,0 +1,64 @@
+{% extends "includes/layout.html" %}
+
+{% block pageTitle %}
+
+Upload your actuarial template
+{% endblock %}
+{% block beforeContent %}
+  {% include "includes/backlink.html" %}
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+  {% include "includes/psr-number.html" %}
+    <h1 class="govuk-heading-xl">Upload your actuarial template</h1>
+
+    <p class="govuk-body">Upload a completed template below and we'll automatically check it for errors.</p>
+
+    <p class="govuk-body">Your file must:</p>
+
+    <ul class="govuk-list govuk-list--bullet">
+      <li>be in the same format as the template</li>
+      <li>contain the mandatory information explained in the instructions</li>
+      </ul>
+
+
+
+    <details class="govuk-details" data-module="govuk-details">
+      <summary class="govuk-details__summary">
+        <span class="govuk-details__summary-text">
+          Check you have the right template
+        </span>
+      </summary>
+      <div class="govuk-details__text">
+        <p class ="govuk-body">Templates can change depending on the effective date of the last scheme funding (Part 3) valuation.</p>
+
+    <p class="govuk-body">Make sure that you have <a href="" class="govuk-link">downloaded the correct template and instructions.</a></p>
+      </div>
+    </details>
+
+
+    <form action="upload-actuarial-confirm" method="post">
+
+      <div class="govuk-form-group">
+    <label class="govuk-label" for="file-upload-1">
+      Upload a file
+    </label>
+    <input class="govuk-file-upload" id="file-upload-1"  type="file" name="file-upload-valuation">
+  </div>
+
+      <button class="govuk-button" data-module="govuk-button">
+      Continue
+      </button>
+    </form>
+  </div>
+</div>
+
+<script src="/public/javascripts/radio-to-hidden.js"></script>
+
+
+
+{% endblock %}
