@@ -141,7 +141,7 @@ ABC scheme Valuation
 
               <li>
                   <h2 class="app-task-list__section">
-                  3. Supporting
+                  3. Supporting evidence
                   </h2>
 
                   <ul class="app-task-list__items">
@@ -150,28 +150,70 @@ ABC scheme Valuation
 
                      {% if  data['actuarial-completed'] == 'true' and  data['convenant-completed'] == 'true' and data['supporting-completed'] == 'true' %}
                      <li class="app-task-list__item">
-                  <a class="task-name" href="supporting-upload/supporting-file-uploaded" aria-describedby="read-declaration-completed">
-                       Upload your supporting
-                  </a>
-                  <strong class="govuk-tag app-task-list__tag" id="eligibility-status">Completed</strong>
+
+                       Upload your recovery plan
+              
+                  <strong class="govuk-tag app-task-list__tag govuk-tag--orange" id="eligibility-status">Not required</strong>
               </li>
 
-                     {% elif data['actuarial-completed'] == 'true' and  data['convenant-completed'] == 'true' %}
-                     <li class="app-task-list__item">
-                   <a class="task-name" href="supporting-upload/supporting-information" aria-describedby="read-declaration-completed">
-                                Upload your supporting
-                   </a>
-                   <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="eligibility-status">Not started</strong>
-                   </li>
 
                        {% else %}
                        <li class="app-task-list__item">
                          <span class="app-task-list__task-name">
-                                Upload your supporting
+                                Upload your recovery plan
                          </span>
                          <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="eligibility-status">Cannot start yet</strong>
                        </li>
                       {% endif %}
+
+                      {% if  data['actuarial-completed'] == 'true' and  data['convenant-completed'] == 'true' and data['supporting-completed'] == 'true' %}
+                      <li class="app-task-list__item">
+                   <a class="task-name" href="supporting-upload/supporting-file-uploaded" aria-describedby="read-declaration-completed">
+                        Upload your funding and investment storagegy
+                   </a>
+                   <strong class="govuk-tag app-task-list__tag" id="eligibility-status">Completed</strong>
+               </li>
+
+                      {% elif data['actuarial-completed'] == 'true' and  data['convenant-completed'] == 'true' %}
+                      <li class="app-task-list__item">
+                    <a class="task-name" href="supporting-upload/supporting-information" aria-describedby="read-declaration-completed">
+                                 Upload your funding and investment storagegy
+                    </a>
+                    <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="eligibility-status">Not started</strong>
+                    </li>
+
+                        {% else %}
+                        <li class="app-task-list__item">
+                          <span class="app-task-list__task-name">
+                                 Upload your funding and investment storagegy
+                          </span>
+                          <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="eligibility-status">Cannot start yet</strong>
+                        </li>
+                       {% endif %}
+                       {% if  data['actuarial-completed'] == 'true' and  data['convenant-completed'] == 'true' and data['supporting-completed'] == 'true' %}
+                       <li class="app-task-list__item">
+                     <a class="task-name" href="supporting-upload/supporting-file-uploaded" aria-describedby="read-declaration-completed">
+                         Upload your Schedule of contributions
+                     </a>
+                     <strong class="govuk-tag app-task-list__tag" id="eligibility-status">Completed</strong>
+                     </li>
+
+                       {% elif data['actuarial-completed'] == 'true' and  data['convenant-completed'] == 'true' %}
+                       <li class="app-task-list__item">
+                     <a class="task-name" href="supporting-upload/supporting-information" aria-describedby="read-declaration-completed">
+                                  Upload your Schedule of contributions
+                     </a>
+                     <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="eligibility-status">Not started</strong>
+                     </li>
+
+                         {% else %}
+                         <li class="app-task-list__item">
+                           <span class="app-task-list__task-name">
+                                  Upload your Schedule of contributions
+                           </span>
+                           <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="eligibility-status">Cannot start yet</strong>
+                         </li>
+                        {% endif %}
 
 
                     </ul>

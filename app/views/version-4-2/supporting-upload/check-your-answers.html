@@ -16,32 +16,10 @@ Check your answers
     <h1 class="govuk-heading-l">Check your answers details</h1>
 
 
-    <dl class="govuk-summary-list govuk-!-margin-bottom-9">
-      <div class="govuk-summary-list__row">
-        <dt class="govuk-summary-list__key">
-      Valuation date
-        </dt>
-        {% if data['valuation-date-day']%}
-        <dd class="govuk-summary-list__value">
-          {{ data['valuation-date-day']}}  {{ data['valuation-date-month']}} {{ data['valuation-date-year']}}
-        </dd>
-        {% else %}
-        <dd class="govuk-summary-list__value">
-          01/03/2023
-        </dd>
-
-        {% endif %}
-        <dd class="govuk-summary-list__actions">
-          <a class="govuk-link" href="../valuation-date">
-               Change<span class="govuk-visually-hidden">  Valuation date</span>
-             </a>
-        </dd>
-      </div>
-
 
       <div class="govuk-summary-list__row">
         <dt class="govuk-summary-list__key">
-      Actuarial template
+      recovery plan
         </dt>
 
         <dd class="govuk-summary-list__value">
@@ -94,7 +72,7 @@ Check your answers
       </button>
 
     </form>
-<p><a href="../tasklist.html" class="govuk-link">Save and return</a></p> 
+<p><a href="../tasklist.html" class="govuk-link">Save and return</a></p>
   </div>
 </div>
 <script src="/public/javascripts/radio-to-hidden.js"></script>
