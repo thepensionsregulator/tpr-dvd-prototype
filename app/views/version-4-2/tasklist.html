@@ -242,9 +242,15 @@ ABC scheme Valuation
 
 
       <li>
+        {% if data['recovery-plan'] == 'true' %}
         <h2 class="app-task-list__section">
-      5. Submission declaration
+          5. Submission declaration
         </h2>
+        {% else %}
+        <h2 class="app-task-list__section">
+        4. Submission declaration
+        </h2>
+        {% endif %}
                 <ul class="app-task-list__items">
                   {% if data['check-scheme-completed'] == 'true' and data['actuarial-completed'] == 'true' and  data['convenant-completed'] == 'true' and data['supporting-completed'] == 'true' %}
                       <li class="app-task-list__item">
