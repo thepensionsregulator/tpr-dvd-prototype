@@ -23,15 +23,15 @@ ABC scheme Valuation
 {% else %}
 <h2 class="govuk-heading-s govuk-!-margin-bottom-2">ABC Scheme valuation incomplete</h2>
 {% endif %}
-{% if  data['check-scheme-completed'] == 'true' and data['valuations-completed'] == 'true' and data['cashflow-completed'] == 'true' and  data['sign-and-submit'] == 'true'  %}
+{% if  data['check-scheme-completed'] == 'true' and data['actuarial-completed'] == 'true' and data['convenant-completed'] == 'true' and  data['funding-completed'] == 'true'  %}
 <p class="govuk-body govuk-!-margin-bottom-7">You have completed 5 of 5 sections.</p>
-{% elif  data['check-scheme-completed'] == 'true' and data['valuations-completed'] == 'true' and data['cashflow-completed'] == 'true' and  data['demographic-completed'] == 'true'  %}
+{% elif  data['check-scheme-completed'] == 'true' and data['actuarial-completed'] == 'true' and data['convenant-completed'] == 'true' and  data['funding-completed'] == 'true'  %}
 <p class="govuk-body govuk-!-margin-bottom-7">You have completed 4 of 5 sections.</p>
-{% elif  data['check-scheme-completed'] == 'true' and data['valuations-completed'] == 'true' and data['cashflow-completed'] == 'true' %}
+{% elif  data['check-scheme-completed'] == 'true' and data['actuarial-completed'] == 'true' and data['actuarial-completed'] == 'true' %}
 <p class="govuk-body govuk-!-margin-bottom-7">You have completed 3 of 5 sections.</p>
-{% elif  data['check-scheme-completed'] == 'true' and data['valuations-completed'] == 'true' %}
+{% elif  data['check-scheme-completed'] == 'true' and data['actuarial-completed'] == 'true' %}
 <p class="govuk-body govuk-!-margin-bottom-7">You have completed 2 of 5 sections.</p>
-{% elif data['check-scheme-completed'] == 'true' or data['valuations-completed'] == 'true' %}
+{% elif data['check-scheme-completed'] == 'true' or data['actuarial-completed'] == 'true' %}
 <p class="govuk-body govuk-!-margin-bottom-7">You have completed 1 of 5 sections.</p>
 {% else %}
 <p class="govuk-body govuk-!-margin-bottom-7">You have completed 0 of 5 sections.</p>
@@ -252,7 +252,7 @@ ABC scheme Valuation
         </h2>
         {% endif %}
                 <ul class="app-task-list__items">
-                  {% if data['check-scheme-completed'] == 'true' and data['actuarial-completed'] == 'true' and  data['convenant-completed'] == 'true' and data['supporting-completed'] == 'true' %}
+                  {% if data['check-scheme-completed'] == 'true' and data['actuarial-completed'] == 'true' and  data['convenant-completed'] == 'true' and data['funding-completed'] == 'true' and data['act-val-completed'] == 'true' %}
                       <li class="app-task-list__item">
                         <a class="task-name" href="submit/who-submit" aria-describedby="read-declaration-completed">
                               Sign and submit
