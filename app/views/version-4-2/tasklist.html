@@ -176,14 +176,14 @@ ABC scheme Valuation
 
 
 
-                       {% if data['actuarial-completed'] == 'true' %}
+                       {% if data['act-val-completed'] == 'true' %}
                        <li class="app-task-list__item">
                      <a class="task-name" href="actuarial/check-answers" aria-describedby="read-declaration-completed">
                          Upload your actuarial valuation
                      </a>
                      <strong class="govuk-tag app-task-list__tag" id="eligibility-status">Completed</strong>
                      </li>
-                        {% elif data['actuarial-inprogress'] == 'true' %}
+                        {% elif data['act-val-inprogress'] == 'true' %}
                         <li class="app-task-list__item">
                       <a class="task-name" href="actuarial/actuarial-upload" aria-describedby="read-declaration-completed">
                                   Upload your actuarial valuation
