@@ -53,17 +53,17 @@ ABC scheme Valuation
 
 
                             {% if  data['check-scheme-completed'] == 'true' %}
-                            <a class="task-name" href="check-your-scheme/check-your-answers" aria-describedby="read-declaration-completed">
+                            <a class="task-name" href="./check-details" aria-describedby="read-declaration-completed">
                             Check your scheme information
                             </a>
                               <strong class="govuk-tag app-task-list__tag" id="eligibility-status">Completed</strong>
                             {% elif  data['check-scheme-inprogress'] == 'true' %}
-                            <a class="task-name" href="check-your-scheme/scheme-name-correct" aria-describedby="read-declaration-completed">
+                            <a class="task-name" href="./what-you-will-need" aria-describedby="read-declaration-completed">
                             Check your scheme information
                             </a>
                             <strong class="govuk-tag govuk-tag--blue app-task-list__tag" id="contact-details-status">In progress</strong>
                             {% else %}
-                            <a class="task-name" href="check-your-scheme/scheme-name-correct" aria-describedby="read-declaration-completed">
+                            <a class="task-name" href="./what-you-will-need" aria-describedby="read-declaration-completed">
                         Check your scheme information
                             </a>
                               <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="eligibility-status">Not started</strong>
@@ -111,12 +111,12 @@ ABC scheme Valuation
 
     <li class="app-task-list__item">
 
-     {% if data['convenant-completed'] == 'true' %}
+     {% if data['covenant-completed'] == 'true' %}
        <a class="task-name" href="covenant-upload/check-your-answers" aria-describedby="read-declaration-completed">
             Upload your covenant data
        </a>
        <strong class="govuk-tag app-task-list__tag" id="eligibility-status">Completed</strong>
-     {% elif   data['convenant-inprogress'] == 'true' %}
+     {% elif   data['covenant-inprogress'] == 'true' %}
      <a class="task-name" href="covenant-upload/upload-covenant" aria-describedby="read-declaration-completed">
             Upload your covenant data
      </a>
@@ -178,7 +178,7 @@ ABC scheme Valuation
 
                        {% if data['act-val-completed'] == 'true' %}
                        <li class="app-task-list__item">
-                     <a class="task-name" href="actuarial/check-answers" aria-describedby="read-declaration-completed">
+                     <a class="task-name" href="actuarial/check-your-answers" aria-describedby="read-declaration-completed">
                          Upload your actuarial valuation
                      </a>
                      <strong class="govuk-tag app-task-list__tag" id="eligibility-status">Completed</strong>
