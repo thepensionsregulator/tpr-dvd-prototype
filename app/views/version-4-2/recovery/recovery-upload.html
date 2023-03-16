@@ -2,7 +2,7 @@
 
 {% block pageTitle %}
 
-Upload your actuarial template
+Upload your recovery plan
 {% endblock %}
 {% block beforeContent %}
   {% include "includes/backlink.html" %}
@@ -14,25 +14,25 @@ Upload your actuarial template
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
   {% include "includes/psr-number.html" %}
-    <h1 class="govuk-heading-xl">Upload your funding</h1>
+    <h1 class="govuk-heading-xl">Upload your recovery plan</h1>
 
+    <p class="govuk-body">You need to upload your recovery plan documents.</p>
 
-
-
-
-
-    <details class="govuk-details" data-module="govuk-details">
-      <summary class="govuk-details__summary">
-        <span class="govuk-details__summary-text">
-          Check you have the right template
-        </span>
-      </summary>
-      <div class="govuk-details__text">
-        <p class ="govuk-body">Templates can change depending on the effective date of the last scheme funding (Part 3) valuation.</p>
-
-    <p class="govuk-body">Make sure that you have <a href="" class="govuk-link">downloaded the correct template and instructions.</a></p>
-      </div>
-    </details>
+    <p class="govuk-body">Each document must be less than 6MB.</p>
+    
+    
+        <details class="govuk-details" data-module="govuk-details">
+          <summary class="govuk-details__summary">
+            <span class="govuk-details__summary-text">
+           Types of file you can upload
+            </span>
+          </summary>
+          <div class="govuk-details__text">
+            <p class ="govuk-body">You can upload files in DOCX, ODT and PDF formats.</p>
+    
+        <p class="govuk-body">Files uploaded in other formats will not be accepted.</p>
+          </div>
+        </details>
 
 
     <form action="upload-recovery-confirm" method="post">
