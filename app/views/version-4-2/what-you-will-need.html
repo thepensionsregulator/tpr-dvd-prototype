@@ -20,10 +20,10 @@
                 <p class="govuk-body">Based on your last scheme funding (Part 3) valuation date of 01 October 2023, you need to use our new service to submit your valuation.
                 </p>
 
-                <p class="govuk-body">You’ll need to upload your actuarial data and covenant data using specific templates.</p> 
-                
+                <p class="govuk-body">You’ll need to upload your actuarial data and covenant data using specific templates.</p>
+
                 <p class="govuk-body">The templates are in <a href="https://www.gov.uk/guidance/using-open-document-formats-odf-in-your-organisation">OpenDocument format</a>, which can be opened with a wide range of spreadsheet programs.</p>
-                
+
 
                 <h2 class="govuk-heading-m">Before you start</h2>
                 <p class="govuk-body">You’ll need to:
@@ -38,14 +38,17 @@
                 <ul class="govuk-list govuk-list--bullet">
                 <li>funding and investment strategy.</li>
                 <li>actuarial valuation.</li>
-                <li>recovery plan, if your scheme is in deficit.</li>
+                {% if data['recovery-plan'] == 'true' %}
+                <li>recovery plan</li>
+                {% else %}
+                {% endif %}
                 </ul>
 
 
                 <p class="govuk-body">You will not be able to upload any documents that do not match the templates.
                 </p>
 
-                <form action="check-details" method="POST">
+                <form action="tasklist" method="POST">
 
     <input type="hidden" name="check-scheme-completed" value="true">
                     <div class="form-group">
