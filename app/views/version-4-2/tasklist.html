@@ -53,17 +53,17 @@ ABC scheme Valuation
 
 
                             {% if  data['check-scheme-completed'] == 'true' %}
-                            <a class="task-name" href="check-your-answers" aria-describedby="read-declaration-completed">
+                            <a class="task-name" href="check-your-answers" >
                             Check your scheme information
                             </a>
                               <strong class="govuk-tag app-task-list__tag" id="eligibility-status">Completed</strong>
                             {% elif  data['check-scheme-inprogress'] == 'true' %}
-                            <a class="task-name" href="what-you-will-need" aria-describedby="read-declaration-completed">
+                            <a class="task-name" href="what-you-will-need" >
                             Check your scheme information
                             </a>
                             <strong class="govuk-tag govuk-tag--blue app-task-list__tag" id="contact-details-status">In progress</strong>
                             {% else %}
-                            <a class="task-name" href="what-you-will-need" aria-describedby="read-declaration-completed">
+                            <a class="task-name" href="what-you-will-need" >
                         Check your scheme information
                             </a>
                               <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="eligibility-status">Not started</strong>
@@ -89,18 +89,18 @@ ABC scheme Valuation
        <li class="app-task-list__item">
 
           {% if  data['actuarial-completed'] == 'true' %}
-          <a class="task-name" href="actuarial-upload/check-your-answers" aria-describedby="read-declaration-completed">
+          <a class="task-name" href="actuarial-upload/check-your-answers">
            Upload your actuarial data
           </a>
           <strong class="govuk-tag app-task-list__tag" id="eligibility-status">Completed</strong>
           {% elif  data['actuarial-inprogress'] == 'true' %}
-          <a class="task-name" href="actuarial-upload/upload-actuarial" aria-describedby="read-declaration-completed">
+          <a class="task-name" href="actuarial-upload/upload-actuarial">
            Upload your actuarial data
           </a>
           <strong class="govuk-tag govuk-tag--blue app-task-list__tag" id="contact-details-status">In progress</strong>
 
           {% else %}
-          <a class="task-name" href="actuarial-upload/upload-actuarial" aria-describedby="read-declaration-completed">
+          <a class="task-name" href="actuarial-upload/upload-actuarial" >
          Upload your actuarial data
           </a>
           <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="eligibility-status">Not started</strong>
@@ -112,17 +112,17 @@ ABC scheme Valuation
     <li class="app-task-list__item">
 
      {% if data['covenant-completed'] == 'true' %}
-       <a class="task-name" href="covenant-upload/check-your-answers" aria-describedby="read-declaration-completed">
+       <a class="task-name" href="covenant-upload/check-your-answers" >
             Upload your covenant data
        </a>
        <strong class="govuk-tag app-task-list__tag" id="eligibility-status">Completed</strong>
      {% elif   data['covenant-inprogress'] == 'true' %}
-     <a class="task-name" href="covenant-upload/upload-covenant" aria-describedby="read-declaration-completed">
+     <a class="task-name" href="covenant-upload/upload-covenant" >
             Upload your covenant data
      </a>
      <strong class="govuk-tag govuk-tag--blue app-task-list__tag" id="contact-details-status">In progress</strong>
        {% else %}
-       <a class="task-name" href="covenant-upload/upload-covenant" aria-describedby="read-declaration-completed">
+       <a class="task-name" href="covenant-upload/upload-covenant" >
                     Upload your covenant data
        </a>
        <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="eligibility-status">Not started</strong>
@@ -149,7 +149,7 @@ ABC scheme Valuation
 
                       {% if data['funding-completed'] == 'true' %}
                       <li class="app-task-list__item">
-                         <a class="task-name" href="funding/check-your-answers" aria-describedby="read-declaration-completed">
+                         <a class="task-name" href="funding/check-your-answers" >
                               Upload your funding and investment strategy
                          </a>
                          <strong class="govuk-tag app-task-list__tag" id="eligibility-status">Completed</strong>
@@ -157,7 +157,7 @@ ABC scheme Valuation
 
                       {% elif data['funding-inprogress'] == 'true' %}
                       <li class="app-task-list__item">
-                    <a class="task-name" href="funding/funding-upload" aria-describedby="read-declaration-completed">
+                    <a class="task-name" href="funding/funding-upload" >
                                    Upload your funding and investment strategy
                     </a>
                    <strong class="govuk-tag govuk-tag--blue app-task-list__tag" id="contact-details-status">In progress</strong>
@@ -165,7 +165,7 @@ ABC scheme Valuation
 
                         {% else %}
                         <li class="app-task-list__item">
-                      <a class="task-name" href="funding/funding-upload" aria-describedby="read-declaration-completed">
+                      <a class="task-name" href="funding/funding-upload" >
                                      Upload your funding and investment strategy
                       </a>
                       <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="eligibility-status">Not started</strong>
@@ -178,14 +178,14 @@ ABC scheme Valuation
 
                        {% if data['act-val-completed'] == 'true' %}
                        <li class="app-task-list__item">
-                     <a class="task-name" href="actuarial/check-your-answers" aria-describedby="read-declaration-completed">
+                     <a class="task-name" href="actuarial/check-your-answers">
                          Upload your actuarial valuation
                      </a>
                      <strong class="govuk-tag app-task-list__tag" id="eligibility-status">Completed</strong>
                      </li>
                         {% elif data['act-val-inprogress'] == 'true' %}
                         <li class="app-task-list__item">
-                      <a class="task-name" href="actuarial/actuarial-upload" aria-describedby="read-declaration-completed">
+                      <a class="task-name" href="actuarial/actuarial-upload">
                                   Upload your actuarial valuation
 
                       </a>
@@ -194,7 +194,7 @@ ABC scheme Valuation
 
                          {% else %}
                          <li class="app-task-list__item">
-                       <a class="task-name" href="actuarial/actuarial-upload" aria-describedby="read-declaration-completed">
+                       <a class="task-name" href="actuarial/actuarial-upload" >
                                     Upload your actuarial valuation
                        </a>
                        <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="eligibility-status">Not started</strong>
@@ -213,7 +213,7 @@ ABC scheme Valuation
 
                         {% if data['recovery-completed'] == 'true' %}
                         <li class="app-task-list__item">
-                           <a class="task-name" href="recovery/check-your-answers" aria-describedby="read-declaration-completed">
+                           <a class="task-name" href="recovery/check-your-answers">
                          Upload your recovery plan
                            </a>
                            <strong class="govuk-tag app-task-list__tag" id="eligibility-status">Completed</strong>
@@ -221,7 +221,7 @@ ABC scheme Valuation
 
                         {% elif data['recovery-inprogress'] == 'true' %}
                         <li class="app-task-list__item">
-                      <a class="task-name" href="recovery/recovery-upload" aria-describedby="read-declaration-completed">
+                      <a class="task-name" href="recovery/recovery-upload">
                                  Upload your recovery plan
                       </a>
                      <strong class="govuk-tag govuk-tag--blue app-task-list__tag" id="contact-details-status">In progress</strong>
@@ -229,7 +229,7 @@ ABC scheme Valuation
 
                           {% else %}
                           <li class="app-task-list__item">
-                        <a class="task-name" href="recovery/recovery-upload" aria-describedby="read-declaration-completed">
+                        <a class="task-name" href="recovery/recovery-upload" >
                                        Upload your recovery plan
                         </a>
                         <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="eligibility-status">Not started</strong>
@@ -249,7 +249,7 @@ ABC scheme Valuation
         <ul class="app-task-list__items">
             {% if  data['check-scheme-completed'] == 'true' and data['actuarial-completed'] == 'true' and data['covenant-completed'] == 'true' and  data['funding-completed'] == 'true' and  data['act-val-completed'] == 'true' and data['recovery-completed'] == 'true'  %}
               <li class="app-task-list__item">
-                <a class="task-name" href="submit/who-submit" aria-describedby="read-declaration-completed">
+                <a class="task-name" href="submit/who-submit" >
                       Sign and submit
                 </a>
                 <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="eligibility-status">Not started</strong>
@@ -276,7 +276,7 @@ ABC scheme Valuation
         <ul class="app-task-list__items">
             {% if  data['check-scheme-completed'] == 'true' and data['actuarial-completed'] == 'true' and data['covenant-completed'] == 'true' and  data['funding-completed'] == 'true' and  data['act-val-completed'] == 'true'  %}
               <li class="app-task-list__item">
-                <a class="task-name" href="submit/who-submit" aria-describedby="read-declaration-completed">
+                <a class="task-name" href="submit/who-submit" >
                       Sign and submit
                 </a>
                 <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="eligibility-status">Not started</strong>
