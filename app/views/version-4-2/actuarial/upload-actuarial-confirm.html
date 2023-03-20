@@ -23,7 +23,11 @@
 
 
     <div class="govuk-inset-text">
-      <a href=""><strong>{{data['file-upload-valuation']}}</strong></a>, (5MB)
+      {% if data['file-upload-valuation'] %}
+      <a href="/public/downloads/cashflow-template-v2.ods" download><strong>{{data['file-upload-valuation']}}</strong></a>, (5MB)
+      {% else %}
+        <a href="/public/downloads/cashflow-template-v2.ods" download><strong>filename.ODS</strong></a>, (5MB)
+      {% endif %}
     </div>
 
 

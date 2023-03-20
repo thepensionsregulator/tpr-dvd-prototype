@@ -20,10 +20,14 @@
       </h1>
 
 
+      <div class="govuk-inset-text">
+        {% if data['file-upload-valuation'] %}
+        <a href="/public/downloads/cashflow-template-v2.ods" download><strong>{{data['file-upload-valuation']}}</strong></a>, (5MB)
+        {% else %}
+          <a href="/public/downloads/cashflow-template-v2.ods" download><strong>filename.ODS</strong></a>, (5MB)
+        {% endif %}
+      </div>
 
-    <div class="govuk-inset-text">
-      <a href=""><strong>{{data['file-upload-valuation']}}</strong></a>, (5MB)
-    </div>
 
 
     <form class="form" action="" method="post">
