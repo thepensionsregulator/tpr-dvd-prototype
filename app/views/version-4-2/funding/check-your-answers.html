@@ -15,7 +15,7 @@ You have uploaded a funding and investment strategy
   {% include "includes/psr-number.html" %}
     <h1 class="govuk-heading-l">You have uploaded a funding and investment strategy</h1>
 
-   
+
 
 <dl class="govuk-summary-list govuk-!-margin-bottom-9">
       <div class="govuk-summary-list__row">
@@ -24,7 +24,11 @@ You have uploaded a funding and investment strategy
         </dt>
 
         <dd class="govuk-summary-list__value">
-          <a href="" download>funding-and-investment-strategy.PDF </a>
+          {% if data['file-upload-valuation'] %}
+          <a href="/public/downloads/cashflow-template-v2.ods" download><strong>{{data['file-upload-valuation']}}</strong></a>, (5MB)
+          {% else %}
+            <a href="/public/downloads/cashflow-template-v2.ods" download><strong>filename.ODS</strong></a>, (5MB)
+          {% endif %}
         </dd>
 
 
@@ -35,7 +39,7 @@ You have uploaded a funding and investment strategy
         </dd>
       </div>
 
-     
+
 
 
 

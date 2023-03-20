@@ -28,7 +28,11 @@ You have uploaded a covenant data template
         </dt>
 
         <dd class="govuk-summary-list__value">
-          <a href="" download>covenant-template-2.ODS </a>
+          {% if data['file-upload-valuation'] %}
+          <a href="/public/downloads/cashflow-template-v2.ods" download><strong>{{data['file-upload-valuation']}}</strong></a>, (5MB)
+          {% else %}
+            <a href="/public/downloads/cashflow-template-v2.ods" download><strong>filename.ODS</strong></a>, (5MB)
+          {% endif %}
         </dd>
 
 
@@ -61,7 +65,7 @@ You have uploaded a covenant data template
       </button>
 
     </form>
-<p><a href="../tasklist.html" class="govuk-link">Save and return</a></p> 
+<p><a href="../tasklist.html" class="govuk-link">Save and return</a></p>
   </div>
 </div>
 <script src="/public/javascripts/radio-to-hidden.js"></script>

@@ -24,7 +24,11 @@ You have uploaded a recovery plan
         </dt>
 
         <dd class="govuk-summary-list__value">
-          <a href="" download>recovery-plan.PDF</a>
+          {% if data['file-upload-valuation'] %}
+          <a href="/public/downloads/cashflow-template-v2.ods" download><strong>{{data['file-upload-valuation']}}</strong></a>, (5MB)
+          {% else %}
+            <a href="/public/downloads/cashflow-template-v2.ods" download><strong>filename.ODS</strong></a>, (5MB)
+          {% endif %}
         </dd>
 
 
@@ -35,7 +39,7 @@ You have uploaded a recovery plan
         </dd>
       </div>
 
-      
+
 
 
 
