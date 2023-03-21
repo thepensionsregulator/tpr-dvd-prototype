@@ -15,19 +15,19 @@ There is a problem with your file
     {% include "includes/psr-number.html" %}
     <h1 class="govuk-heading-l">There is a problem with your file</h1>
 
-    <p class="govuk-body">Before you can send us the valuation results summary you must:</p>
+    <p class="govuk-body">Before you can send us the actuarial data template you must:</p>
 
     <ul class="govuk-list govuk-list--bullet">
       <li>correct all the errors in your file</li>
       <li>review all the entries to be checked</li>
-      <li><a href="../valuation-results-summary/upload-valuations-2" class="govuk-link">upload and check the report again</a></li>
+      <li><a href="../actuarial-upload/upload-actuarial-2" class="govuk-link">upload and check the report again</a></li>
       </ul>
 
-    <h2 class="govuk-heading-m">Your file contains 8 errors</h2>
+    <h2 class="govuk-heading-m">Your file contains 6 errors</h2>
 
     <p class="govuk-body">Errors must be corrected before you can submit your valuation. They are labelled with the word 'Error' in the list, which you can download below.</p>
 
-    <h2 class="govuk-heading-m">Your file contains 4 entries to be checked</h2>
+    <h2 class="govuk-heading-m">Your file contains 5 entries to be checked</h2>
 
     <p class="govuk-body">We need you to check some entries are correct before you submit your valuation. They are labelled with the word 'Check' in the list, which you can download below.</p>
 
@@ -53,7 +53,62 @@ There is a problem with your file
 
       </p>
 
-      <p>Alternative version: <a href="./there-is-a-problem.html" class="govuk-link">Problem page prototype 1</a></p>
+      <h2 class="govuk-heading-m" id="problems">Problems found</h2>
+
+      <div class="govuk-grid-column-full">
+        <table class="govuk-table">
+
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th scope="col" class="govuk-table__header">Cell</th>
+          <th scope="col" class="govuk-table__header">Details</th>
+            <th scope="col" class="govuk-table__header">Error or check?</th>
+            
+        </tr>
+      </thead>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+
+          <th scope="row" class="govuk-table__header">M1</th>
+            <td class="govuk-table__cell">Date of submission must be in format DD/MM/YYYY. For example 31/12/2022</td>
+          <td class="govuk-table__cell">Error</td>
+           
+
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">O2 to O5</th>
+          <td class="govuk-table__cell">Total must add up to 100%</td>
+        <td class="govuk-table__cell">Error</td>
+          
+        </tr>
+      
+          
+    
+      </tbody>
+    </table>
+    <nav class="govuk-pagination" role="navigation" aria-label="results">
+      <div class="govuk-pagination__prev">
+        <a class="govuk-link govuk-pagination__link" href="there-is-a-problem.html#problems" rel="prev">
+          <svg class="govuk-pagination__icon govuk-pagination__icon--prev" xmlns="http://www.w3.org/2000/svg" height="13" width="15" aria-hidden="true" focusable="false" viewBox="0 0 15 13">
+            <path d="m6.5938-0.0078125-6.7266 6.7266 6.7441 6.4062 1.377-1.449-4.1856-3.9768h12.896v-2h-12.984l4.2931-4.293-1.414-1.414z"></path>
+          </svg>
+          <span class="govuk-pagination__link-title">Previous</span></a>
+      </div>
+    <ul class="govuk-pagination__list">
+      <li class="govuk-pagination__item govuk-pagination__item--current">
+        <a class="govuk-link govuk-pagination__link" href="there-is-a-problem.html#problems" aria-label="Page 1" aria-current="page">
+          1
+        </a>
+      </li>
+      <li class="govuk-pagination__item">
+        <a class="govuk-link govuk-pagination__link" href="there-is-a-problem-2.html#problems" aria-label="Page 2">
+          2
+        </a>
+      </li>
+     
+    </ul>
+    
+  </nav>
 
   <p><a href="../tasklist.html" class="govuk-link">Save and return</a></p>
   </div>
