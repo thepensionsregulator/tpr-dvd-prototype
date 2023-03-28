@@ -1,0 +1,59 @@
+{% extends "includes/layout.html" %}
+
+{% block pageTitle %}
+
+Upload your recovery plan
+{% endblock %}
+{% block beforeContent %}
+  {% include "includes/backlink.html" %}
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+  {% include "includes/psr-number.html" %}
+    <h1 class="govuk-heading-l">Upload your recovery plan</h1>
+
+    <p class="govuk-body">You need to upload your recovery plan documents.</p>
+
+    <p class="govuk-body">Each document must be less than 6MB.</p>
+
+
+        <details class="govuk-details" data-module="govuk-details">
+          <summary class="govuk-details__summary">
+            <span class="govuk-details__summary-text">
+           Types of file you can upload
+            </span>
+          </summary>
+          <div class="govuk-details__text">
+            <p class ="govuk-body">You can upload files in DOCX, ODT and PDF formats.</p>
+
+        <p class="govuk-body">Files uploaded in other formats will not be accepted.</p>
+          </div>
+        </details>
+
+
+    <form action="upload-recovery-confirm" method="post">
+
+      <div class="govuk-form-group">
+    <label class="govuk-label" for="file-upload-1">
+      Upload a file
+    </label>
+    <input class="govuk-file-upload" id="file-upload-1"  type="file" name="file-upload-valuation">
+  </div>
+
+      <button class="govuk-button" data-module="govuk-button">
+      Continue
+      </button>
+    </form>
+     <p><a href="../tasklist.html" class="govuk-link">Save and return</a></p>
+  </div>
+</div>
+
+<script src="/public/javascripts/radio-to-hidden.js"></script>
+
+
+
+{% endblock %}

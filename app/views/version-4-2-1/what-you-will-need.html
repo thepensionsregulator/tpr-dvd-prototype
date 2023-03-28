@@ -1,0 +1,68 @@
+{% extends "includes/layout.html" %}
+
+{% block page_title %}You need to use the new template{% endblock %}
+
+{% block backHidden %}{% endblock %}
+
+
+{% block beforeContent %}
+  {% include "includes/backlink.html" %}
+{% endblock %}
+{% block content %}
+
+    <main id="content" role="main">
+
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+              {% include "includes/psr-number.html" %}
+                <h1 class="govuk-heading-l">You need to use the new service</h1>
+
+                <p class="govuk-body">Based on your last scheme funding (Part 3) valuation date of 01 October 2023, you need to use our new service to submit your valuation.
+                </p>
+
+                <p class="govuk-body">We'll automatically check your actuarial data and covenant data. You'll need to upload your data using specific templates.</p>
+
+                <p class="govuk-body">The templates are in <a href="https://www.gov.uk/guidance/using-open-document-formats-odf-in-your-organisation">OpenDocument format</a>, which can be opened with a wide range of spreadsheet programs.</p>
+
+
+                <h2 class="govuk-heading-m">Before you start</h2>
+                <p class="govuk-body">You’ll need to download:
+                </p>
+                <ul class="govuk-list govuk-list--bullet">
+                <!-- <li><a href="/public/downloads/blank-template.xlsx" download class="govuk-link">the scheme valuation template (xlsx, 139KB).</a></li> -->
+                <li><a href="/public/downloads/cashflow-template-v2.ods" download  class="govuk-link">the actuarial data template (ODS, 41KB).</a></li>
+                <li><a href="/public/downloads/cashflow-template-v2.ods" download  class="govuk-link">the covenant data template (ODS, 32KB).</a></li>
+                </ul>
+
+                <p class="govuk-body">We cannot automatically check any documents that do not match the templates, and you will not be able to upload them.
+                </p>
+
+                <p class="govuk-body">You’ll also need your:
+                <ul class="govuk-list govuk-list--bullet">
+                <li>funding and investment strategy</li>
+                <li>actuarial valuation</li>
+                {% if data['recovery-plan'] == 'Yes' %}
+                <li>recovery plan</li>
+                {% else %}
+                {% endif %}
+                </ul>
+
+
+               
+
+                <form action="tasklist" method="POST">
+
+    <input type="hidden" name="check-scheme-completed" value="true">
+                    <div class="form-group">
+
+                            <input class="govuk-button" type="submit" value="Continue"  />
+                    </div>
+                </form>
+
+                <p class="govuk-body"><a href="return-to-exchange.html">Prototype option 2</a></p>
+
+            </div>
+        </div>
+    </main>
+</body>
+{% endblock %}

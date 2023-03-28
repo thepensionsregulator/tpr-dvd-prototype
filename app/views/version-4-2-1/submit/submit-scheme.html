@@ -1,0 +1,54 @@
+{% extends "includes/layout.html" %}
+
+{% block pageTitle %}
+
+Declaration
+{% endblock %}
+{% block beforeContent %}
+  {% include "includes/backlink.html" %}
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+  {% include "includes/psr-number.html" %}
+    <h1 class="govuk-heading-l">Declaration</h1>
+
+
+
+
+    <ul class="govuk-list govuk-list--bullet">
+
+      <p class="govuk-body">
+        By submitting the valuation you declare the following:
+        </p>
+
+      <li>You are authorised to submit the valuation on behalf of the scheme trustees/scheme manager (non-trust based schemes)</li>
+
+      <li>The scheme trustees/manager are aware of the information supplied in this submission</li>
+
+      <li>The information supplied in this submission is true and correct to the best of your knowledge</li>
+
+      <li>The scheme trustees/manager are aware that the levy-specific data will be used to calculate certain levies for this scheme, where appropriate. If any of this information ceases to be correct prior to 31 March 2024, you certify that you will provide the Pensions Regulator with an update no later than 31 March 2024.</li>
+
+      </ul>
+
+      
+      <p class="govuk-body">Please be aware that it is a criminal offence under section 195 of the Pensions Act 2004 to knowingly or recklessly supply false or misleading information on this electronic form.</p>
+
+
+    <form class="form" action="submit-confirmed" method="post">
+      <input type="hidden" name="sign-and-submit" value="true">
+
+
+    <button type="submit" class="govuk-button" data-module="govuk-button">Confirm and submit</button>
+    </form>
+  </div>
+
+</div>
+
+<p><a href="../tasklist.html" class="govuk-link">Save and return</a></p>
+
+<script src="/public/javascripts/radio-to-hidden.js"></script>
+{% endblock %}

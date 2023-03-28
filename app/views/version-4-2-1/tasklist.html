@@ -1,0 +1,316 @@
+{% extends "includes/layout.html" %}
+
+{% block pageTitle %}
+ABC scheme Valuation
+{% endblock %}
+
+{% block beforeContent %}
+<a class="govuk-back-link" onclick="history.go(-1);return false;">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+
+  <div class="govuk-grid-column-two-thirds">
+  {% include "includes/psr-number.html" %}
+    <h1 class="govuk-heading-l">
+      Submit your scheme valuation data
+    </h1>
+
+{% if  data['sign-and-submit'] == 'true' %}
+<h2 class="govuk-heading-s govuk-!-margin-bottom-2">ABC Scheme valuation complete</h2>
+{% else %}
+<h2 class="govuk-heading-s govuk-!-margin-bottom-2">ABC Scheme valuation incomplete</h2>
+{% endif %}
+{% if  data['check-scheme-completed'] == 'true' and data['actuarial-completed'] == 'true' and data['convenant-completed'] == 'true' and  data['funding-completed'] == 'true'  %}
+<p class="govuk-body govuk-!-margin-bottom-7">You have completed 5 of 5 sections.</p>
+{% elif  data['check-scheme-completed'] == 'true' and data['actuarial-completed'] == 'true' and data['convenant-completed'] == 'true' and  data['funding-completed'] == 'true'  %}
+<p class="govuk-body govuk-!-margin-bottom-7">You have completed 4 of 5 sections.</p>
+{% elif  data['check-scheme-completed'] == 'true' and data['actuarial-completed'] == 'true' and data['actuarial-completed'] == 'true' %}
+<p class="govuk-body govuk-!-margin-bottom-7">You have completed 3 of 5 sections.</p>
+{% elif  data['check-scheme-completed'] == 'true' and data['actuarial-completed'] == 'true' %}
+<p class="govuk-body govuk-!-margin-bottom-7">You have completed 2 of 5 sections.</p>
+{% elif data['check-scheme-completed'] == 'true' or data['actuarial-completed'] == 'true' %}
+<p class="govuk-body govuk-!-margin-bottom-7">You have completed 1 of 5 sections.</p>
+{% else %}
+<p class="govuk-body govuk-!-margin-bottom-7">You have completed 0 of 5 sections.</p>
+{% endif %}
+
+
+<ol class="app-task-list">
+
+
+
+      <li>
+        <h2 class="app-task-list__section">
+     1. Check before you start
+        </h2>
+        <ul class="app-task-list__items">
+
+
+          <li class="app-task-list__item"">
+
+
+                            {% if  data['check-scheme-completed'] == 'true' %}
+                            <a class="task-name" href="check-your-answers" >
+                            Check your scheme information
+                            </a>
+                              <strong class="govuk-tag app-task-list__tag" id="eligibility-status">Completed</strong>
+                            {% elif  data['check-scheme-inprogress'] == 'true' %}
+                            <a class="task-name" href="what-you-will-need" >
+                            Check your scheme information
+                            </a>
+                            <strong class="govuk-tag govuk-tag--blue app-task-list__tag" id="contact-details-status">In progress</strong>
+                            {% else %}
+                            <a class="task-name" href="what-you-will-need" >
+                        Check your scheme information
+                            </a>
+                              <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="eligibility-status">Not started</strong>
+                            {% endif %}
+          </li>
+
+
+
+
+  </ul>
+</li>
+
+
+
+
+      <li>
+        <h2 class="app-task-list__section">
+        2. Scheme data
+        </h2>
+    <ul class="app-task-list__items">
+
+
+       <li class="app-task-list__item">
+
+          {% if  data['actuarial-completed'] == 'true' %}
+          <a class="task-name" href="actuarial-upload/check-your-answers">
+           Upload your actuarial data
+          </a>
+          <strong class="govuk-tag app-task-list__tag" id="eligibility-status">Completed</strong>
+          {% elif  data['actuarial-inprogress'] == 'true' %}
+          <a class="task-name" href="actuarial-upload/upload-actuarial">
+           Upload your actuarial data
+          </a>
+          <strong class="govuk-tag govuk-tag--blue app-task-list__tag" id="contact-details-status">In progress</strong>
+
+          {% else %}
+          <a class="task-name" href="actuarial-upload/upload-actuarial" >
+         Upload your actuarial data
+          </a>
+          <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="eligibility-status">Not started</strong>
+
+
+            {% endif %}
+    </li>
+
+    <li class="app-task-list__item">
+
+     {% if data['covenant-completed'] == 'true' %}
+       <a class="task-name" href="covenant-upload/check-your-answers" >
+            Upload your covenant data
+       </a>
+       <strong class="govuk-tag app-task-list__tag" id="eligibility-status">Completed</strong>
+     {% elif   data['covenant-inprogress'] == 'true' %}
+     <a class="task-name" href="covenant-upload/upload-covenant" >
+            Upload your covenant data
+     </a>
+     <strong class="govuk-tag govuk-tag--blue app-task-list__tag" id="contact-details-status">In progress</strong>
+       {% else %}
+       <a class="task-name" href="covenant-upload/upload-covenant" >
+                    Upload your covenant data
+       </a>
+       <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="eligibility-status">Not started</strong>
+
+      {% endif %}
+    </li>
+
+
+      </ul>
+    </li>
+
+
+
+
+
+
+              <li>
+                  <h2 class="app-task-list__section">
+                  3. Supporting evidence
+                  </h2>
+
+                  <ul class="app-task-list__items">
+
+
+                      {% if data['funding-completed'] == 'true' %}
+                      <li class="app-task-list__item">
+                         <a class="task-name" href="funding/check-your-answers" >
+                              Upload your funding and investment strategy
+                         </a>
+                         <strong class="govuk-tag app-task-list__tag" id="eligibility-status">Completed</strong>
+                      </li>
+
+                      {% elif data['funding-inprogress'] == 'true' %}
+                      <li class="app-task-list__item">
+                    <a class="task-name" href="funding/funding-upload" >
+                                   Upload your funding and investment strategy
+                    </a>
+                   <strong class="govuk-tag govuk-tag--blue app-task-list__tag" id="contact-details-status">In progress</strong>
+                    </li>
+
+                        {% else %}
+                        <li class="app-task-list__item">
+                      <a class="task-name" href="funding/funding-upload" >
+                                     Upload your funding and investment strategy
+                      </a>
+                      <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="eligibility-status">Not started</strong>
+                      </li>
+                       {% endif %}
+
+
+
+
+
+                       {% if data['act-val-completed'] == 'true' %}
+                       <li class="app-task-list__item">
+                     <a class="task-name" href="actuarial/check-your-answers">
+                         Upload your actuarial valuation
+                     </a>
+                     <strong class="govuk-tag app-task-list__tag" id="eligibility-status">Completed</strong>
+                     </li>
+                        {% elif data['act-val-inprogress'] == 'true' %}
+                        <li class="app-task-list__item">
+                      <a class="task-name" href="actuarial/actuarial-upload">
+                                  Upload your actuarial valuation
+
+                      </a>
+                     <strong class="govuk-tag govuk-tag--blue app-task-list__tag" id="contact-details-status">In progress</strong>
+                      </li>
+
+                         {% else %}
+                         <li class="app-task-list__item">
+                       <a class="task-name" href="actuarial/actuarial-upload" >
+                                    Upload your actuarial valuation
+                       </a>
+                       <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="eligibility-status">Not started</strong>
+                       </li>
+                        {% endif %}
+
+
+                    </ul>
+                    {% if data['recovery-plan'] == 'Yes' %}
+                    <h2 class="app-task-list__section">
+                    4. Recovery plan
+                    </h2>
+
+                    <ul class="app-task-list__items">
+
+
+                        {% if data['recovery-completed'] == 'true' %}
+                        <li class="app-task-list__item">
+                           <a class="task-name" href="recovery/check-your-answers">
+                         Upload your recovery plan
+                           </a>
+                           <strong class="govuk-tag app-task-list__tag" id="eligibility-status">Completed</strong>
+                        </li>
+
+                        {% elif data['recovery-inprogress'] == 'true' %}
+                        <li class="app-task-list__item">
+                      <a class="task-name" href="recovery/recovery-upload">
+                                 Upload your recovery plan
+                      </a>
+                     <strong class="govuk-tag govuk-tag--blue app-task-list__tag" id="contact-details-status">In progress</strong>
+                      </li>
+
+                          {% else %}
+                          <li class="app-task-list__item">
+                        <a class="task-name" href="recovery/recovery-upload" >
+                                       Upload your recovery plan
+                        </a>
+                        <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="eligibility-status">Not started</strong>
+                        </li>
+                         {% endif %}
+                                </ul>
+                          {% else %}
+
+                             {% endif %}
+
+
+      <li>
+        {% if data['recovery-plan'] == 'Yes' %}
+        <h2 class="app-task-list__section">
+          5. Submission declaration
+        </h2>
+        <ul class="app-task-list__items">
+            {% if  data['check-scheme-completed'] == 'true' and data['actuarial-completed'] == 'true' and data['covenant-completed'] == 'true' and  data['funding-completed'] == 'true' and  data['act-val-completed'] == 'true' and data['recovery-completed'] == 'true'  %}
+              <li class="app-task-list__item">
+                <a class="task-name" href="submit/who-submit" >
+                      Sign and submit
+                </a>
+                <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="eligibility-status">Not started</strong>
+              </li>
+
+              {% else %}
+
+              <li class="app-task-list__item">
+                <span class="app-task-list__task-name">
+                        Sign and submit
+                </span>
+                <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="eligibility-status">Cannot start yet</strong>
+              </li>
+
+            {% endif %}
+
+
+
+        </ul>
+        {% else %}
+        <h2 class="app-task-list__section">
+        4. Submission declaration
+        </h2>
+        <ul class="app-task-list__items">
+            {% if  data['check-scheme-completed'] == 'true' and data['actuarial-completed'] == 'true' and data['covenant-completed'] == 'true' and  data['funding-completed'] == 'true' and  data['act-val-completed'] == 'true'  %}
+              <li class="app-task-list__item">
+                <a class="task-name" href="submit/who-submit" >
+                      Sign and submit
+                </a>
+                <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="eligibility-status">Not started</strong>
+              </li>
+
+              {% else %}
+
+              <li class="app-task-list__item">
+                <span class="app-task-list__task-name">
+                        Sign and submit
+                </span>
+                <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="eligibility-status">Cannot start yet</strong>
+              </li>
+
+            {% endif %}
+
+
+
+        </ul>
+        {% endif %}
+
+      </li>
+
+
+
+
+
+    </ol>
+  </div>
+
+
+
+  </div>
+
+
+
+{% endblock %}
