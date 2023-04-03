@@ -81,7 +81,7 @@ ABC scheme Valuation
 
       <li>
         <h2 class="app-task-list__section">
-        2. Scheme data
+        2. Statement of strategy
         </h2>
     <ul class="app-task-list__items">
 
@@ -109,7 +109,7 @@ ABC scheme Valuation
             {% endif %}
     </li>
 
-    <li class="app-task-list__item">
+     <li class="app-task-list__item">
 
      {% if data['covenant-completed'] == 'true' %}
        <a class="task-name" href="covenant-upload/check-your-answers" >
@@ -200,6 +200,31 @@ ABC scheme Valuation
                        <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="eligibility-status">Not started</strong>
                        </li>
                         {% endif %}
+
+                        {% if data['act-val-completed'] == 'true' %}
+                        <li class="app-task-list__item">
+                      <a class="task-name" href="actuarial/check-your-answers">
+                    Upload your schedule of contribution
+                      </a>
+                      <strong class="govuk-tag app-task-list__tag" id="eligibility-status">Completed</strong>
+                      </li>
+                         {% elif data['act-val-inprogress'] == 'true' %}
+                         <li class="app-task-list__item">
+                       <a class="task-name" href="actuarial/actuarial-upload">
+                              Upload your schedule of contribution
+
+                       </a>
+                      <strong class="govuk-tag govuk-tag--blue app-task-list__tag" id="contact-details-status">In progress</strong>
+                       </li>
+
+                          {% else %}
+                          <li class="app-task-list__item">
+                        <a class="task-name" href="actuarial/actuarial-upload" >
+                                  Upload your schedule of contribution
+                        </a>
+                        <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="eligibility-status">Not started</strong>
+                        </li>
+                         {% endif %}
 
 
                     </ul>
