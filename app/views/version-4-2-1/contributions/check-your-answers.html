@@ -1,0 +1,68 @@
+{% extends "includes/layout.html" %}
+
+{% block pageTitle %}
+You have uploaded a funding and investment strategy
+{% endblock %}
+
+{% block beforeContent %}
+  {% include "includes/backlink.html" %}
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds-from-desktop">
+  {% include "includes/psr-number.html" %}
+    <h1 class="govuk-heading-l">You have uploaded a schedule of contributions</h1>
+
+
+
+<dl class="govuk-summary-list govuk-!-margin-bottom-9">
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+  schedule of contributions
+        </dt>
+
+        <dd class="govuk-summary-list__value">
+          {% if data['file-upload-valuation'] %}
+          <a href="/public/downloads/cashflow-template-v2.ods" download><strong>{{data['file-upload-valuation']}}</strong></a>, (5MB)
+          {% else %}
+            <a href="/public/downloads/cashflow-template-v2.ods" download><strong>filename.ODS</strong></a>, (5MB)
+          {% endif %}
+        </dd>
+
+
+        <dd class="govuk-summary-list__actions">
+          <a class="govuk-link" href="funding-upload">
+               Change<span class="govuk-visually-hidden"> Scheme company name</span>
+             </a>
+        </dd>
+      </div>
+
+
+
+
+
+
+
+
+
+
+    </dl>
+
+
+
+    <form action="../tasklist" method="post" novalidate>
+
+      <input type="hidden" name="contributions-completed" value="true">
+
+      <button class="govuk-button" data-module="govuk-button">
+        Save and continue
+      </button>
+
+    </form>
+<p><a href="../tasklist.html" class="govuk-link">Save and return</a></p>
+  </div>
+</div>
+<script src="/public/javascripts/radio-to-hidden.js"></script>
+{% endblock %}
