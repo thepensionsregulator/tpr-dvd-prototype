@@ -20,7 +20,7 @@ There is a problem with your file
     <ul class="govuk-list govuk-list--bullet">
       <li>correct all the errors in your file</li>
       <li>review all the entries to be checked</li>
-      <!-- <li><a href="../actuarial-upload/upload-actuarial-2" class="govuk-link">upload and check the report again</a></li> -->
+      <li><a href="../actuarial-upload/upload-actuarial-2" class="govuk-link">upload and check the report again</a></li>
       </ul>
 
       <h2 class="govuk-heading-m">Download a list of errors in ODS format</h2>
@@ -68,7 +68,7 @@ There is a problem with your file
       </tr>
       <tr class="govuk-table__row">
         <th scope="row" class="govuk-table__header">I3</th>
-        <td class="govuk-table__cell">The proportions of service for active members do not add to 100%          </td>
+        <td class="govuk-table__cell">The proportions of service for active members do not add to 100%  </td>
 
 
       </tr>
@@ -86,103 +86,52 @@ There is a problem with your file
 
     <h2 class="govuk-heading-m">Your file contains 4 entries to be checked</h2>
 
-    <p class="govuk-body">We need you to check some entries are correct before you submit your valuation.</p>
+    <p class="govuk-body">We'll ask you to confirm these entries after you have corrected the errors above.</p>
 
-<dl class="govuk-summary-list govuk-!-margin-bottom-9">
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">
-     Cell
-    </dt>
-    <dd class="govuk-summary-list__key">
-  Details
-    </dd>
-    <dd class="govuk-summary-list__key">
-        Checked?
-    </dd>
-  </div>
-         <div class="govuk-summary-list__row">
-           <dt class="govuk-summary-list__key">
-            C2 to C5
-           </dt>
-           <dd class="govuk-summary-list__value">
-          Total for Part 3 Valuation' must add up to 100%
-           </dd>
-           <dd class="govuk-summary-list__actions">
-               <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
-             <div class="govuk-checkboxes__item">
-               <input class="govuk-checkboxes__input" id="organisation" name="organisation" type="checkbox" value="hmrc">
-               <label class="govuk-label govuk-checkboxes__label" for="organisation">
+    <table class="govuk-table">
 
-               </label>
-             </div>
-             </div>
-           </dd>
-         </div>
-         <div class="govuk-summary-list__row">
-           <dt class="govuk-summary-list__key">
-          G10
-           </dt>
-           <dd class="govuk-summary-list__value">
-             Date of submission must be in format DD/MM/YYYY. For example 31/12/2022
-           </dd>
-           <dd class="govuk-summary-list__actions">
-             <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
-           <div class="govuk-checkboxes__item">
-             <input class="govuk-checkboxes__input" id="organisation" name="organisation" type="checkbox" value="hmrc">
-             <label class="govuk-label govuk-checkboxes__label" for="organisation">
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th scope="col" class="govuk-table__header">Cell</th>
+      <th scope="col" class="govuk-table__header">Details</th>
 
-             </label>
-           </div>
-           </div>
-           </dd>
-         </div>
-         <div class="govuk-summary-list__row">
-           <dt class="govuk-summary-list__key">
-            I3
-           </dt>
-           <dd class="govuk-summary-list__value">
-          	The proportions of service for active members do not add to 100%
-           </dd>
-           <dd class="govuk-summary-list__actions">
-             <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
-           <div class="govuk-checkboxes__item">
-             <input class="govuk-checkboxes__input" id="organisation" name="organisation" type="checkbox" value="hmrc">
-             <label class="govuk-label govuk-checkboxes__label" for="organisation">
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">C2 to C5</th>
+      <td class="govuk-table__cell">'Total for Part 3 Valuation' must add up to 100%</td>
 
-             </label>
-           </div>
-           </div>
-           </dd>
-         </div>
-         <div class="govuk-summary-list__row">
-           <dt class="govuk-summary-list__key">
-             I11
-           </dt>
-           <dd class="govuk-summary-list__value">
-          	The proportions of service for pensioner members do not add to 100%
-           </dd>
-           <dd class="govuk-summary-list__actions">
-             <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
-           <div class="govuk-checkboxes__item">
-             <input class="govuk-checkboxes__input" id="organisation" name="organisation" type="checkbox" value="hmrc">
-             <label class="govuk-label govuk-checkboxes__label" for="organisation">
+    </tr>
 
-             </label>
-           </div>
-           </div>
-           </dd>
-         </div>
-       </dl>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">G10</th>
+      <td class="govuk-table__cell">Date of submission must be in format DD/MM/YYYY. For example 31/12/2022</td>
 
 
-<form action="upload-actuarial-2" method="post">
-<button class="govuk-button" data-module="govuk-button">
-  Save and  continue 
-</button>
-</form>
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">I3</th>
+      <td class="govuk-table__cell">The proportions of service for active members do not add to 100%  </td>
+
+
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">I11</th>
+      <td class="govuk-table__cell">The proportions of service for pensioner members do not add to 100%</td>
+
+    </tr>
+
+
+
+  </tbody>
+</table>
+
+
 
   <p><a href="../tasklist.html" class="govuk-link">Save and return</a></p>
   </div>
 </div>
 <script src="/public/javascripts/radio-to-hidden.js"></script>
+
 {% endblock %}
