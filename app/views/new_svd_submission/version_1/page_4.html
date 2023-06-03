@@ -1,0 +1,42 @@
+{% extends "includes/layout2.html" %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+        <span class="govuk-caption-m">Acme Limited (PSR 12010256)</span>
+
+        <h1 class="govuk-heading-l" style="margin-bottom: 20px;">Confirm you are the person nominated to setting the submission framework</h1>
+
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+            <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                <label class="govuk-label govuk-checkboxes__label" for="waste">
+                  I confirm it is me: John Smith
+                </label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+
+        <a href="page_3.html">
+            <button class="govuk-button" data-module="govuk-button">Save and continue</button>
+        </a>
+
+        
+
+        <br>
+        <br>
+        <br>
+
+    </div>
+</div>
+
+
+
+
+{% endblock %}
