@@ -1,27 +1,20 @@
-{% extends "includes/layout.html" %}
-
-{% block page_title %}Before you start{% endblock %}
-
-{% block backHidden %}{% endblock %}
+{% extends "includes/layout2.html" %}
 
 {% block content %}
-
 
 
 <div class="govuk-grid-row">
     <div class="govuk-grid-column-full">
                 
-        <span class="govuk-caption-m">PSR 12010256</span>
+        <span class="govuk-caption-m">Acme Limited (PSR 12010256)</span>
 
-        <h1 class="govuk-heading-xl" style="margin-bottom: 20px;">Submission overview</h1>
+        <h1 class="govuk-heading-xl" style="margin-bottom: 20px;">New submission overview</h1>
 
         <h2 class="govuk-heading-s govuk-!-margin-bottom-2">Submission incomplete: <span class="govuk-body">You have completed 4 of 6 sections.</span></h2>
 
-        <!--<p class="govuk-body" style="margin-bottom: 10px;">You have completed 4 of 6 sections.</p>-->
-
         <br>
 
-        <h2 class="govuk-heading-m" style="margin-bottom: 0px;">1. Check  xxxx elegibility</h2>
+        <h2 class="govuk-heading-m" style="margin-bottom: 0px;">1. Submission method</h2>
 
         <table class="govuk-table">
             <tbody class="govuk-table__body">
@@ -31,14 +24,14 @@
                 </tr>
                 <tr class="govuk-table__row">
                     <td class="govuk-table__cell" width="400"><a href="#0" aria-describedby="a" style="text-decoration: none;color:#1d70b8;font-weight: 400;">Effective date </a></td>
-                    <td class="govuk-table__cell">19/03/2021</td>
+                    <td class="govuk-table__cell">19/11/2023 (elegible for SYSVD)</td>
                     <td class="govuk-table__cell"><strong class="govuk-tag app-task-list__tag">COMPLETED</strong></td>
                 </tr>
 
             </tbody>
         </table>
 
-        <h2 class="govuk-heading-m" style="margin-bottom: 0px;">2. Set submission framework</h2>
+        <h2 class="govuk-heading-m" style="margin-bottom: 0px;">2. Submission framework</h2>
 
         <table class="govuk-table">
             <tbody class="govuk-table__body">
@@ -57,18 +50,17 @@
                     <td class="govuk-table__cell"><strong class="govuk-tag app-task-list__tag">COMPLETED</strong></td>
                 </tr>
                 <tr class="govuk-table__row">
-                    <td class="govuk-table__cell"><a href="#0" aria-describedby="a" style="text-decoration: none;color:#1d70b8;font-weight: 400;">Type of valuation Surplus or deficit?</a></td>
-                    <td class="govuk-table__cell">Deficit</td>
+                    <td class="govuk-table__cell"><a href="#0" aria-describedby="a" style="text-decoration: none;color:#1d70b8;font-weight: 400;">Quality ansurance process after upload data</a></td>
+                    <td class="govuk-table__cell">3 reviewers<br>2 approvers</td>
                     <td class="govuk-table__cell"><strong class="govuk-tag app-task-list__tag">COMPLETED</strong></td>
                 </tr>
                 <tr class="govuk-table__row">
-                    <td class="govuk-table__cell"><a href="#0" aria-describedby="a" style="text-decoration: none;color:#1d70b8;font-weight: 400;">Define submission process </a></td>
-                    <td class="govuk-table__cell"><strong>Upload cycles:</strong> 1 (default) <br><strong>Review cycles:</strong> 3<br><strong>Approval clycles:</strong> 2</td>
-                    <td class="govuk-table__cell"><strong class="govuk-tag app-task-list__tag">COMPLETED</strong></td>
-                </tr>
-                <tr class="govuk-table__row">
-                    <td class="govuk-table__cell"><a href="#0" aria-describedby="a" style="text-decoration: none;color:#1d70b8;font-weight: 400;">Define collavorative working </a></td>
-                    <td class="govuk-table__cell"><strong>Uploaders:</strong> P Coward & S Kowasky <br><strong>Reviewers:</strong> A Douglas, M Green & S Tower <br><strong>Approvers:</strong> J Sinclair & M Sutherland <br><strong>Trustee:</strong> M Sumerfield</td>
+                    <td class="govuk-table__cell"><a href="#0" aria-describedby="a" style="text-decoration: none;color:#1d70b8;font-weight: 400;">Collaborative working </a></td>
+                    <td class="govuk-table__cell">
+                        <strong>Uploaders:</strong> Peter Coward & Sonia Kowasky <br>
+                        <strong>Reviewers:</strong> Anne Douglas, Mark Green & Sebastian Tower <br>
+                        <strong>Approvers:</strong> Jonathan Sinclair & Maria Sutherland <br>
+                        <strong>Trustee:</strong> Michael Sumerfield</td>
                     <td class="govuk-table__cell"><strong class="govuk-tag app-task-list__tag">COMPLETED</strong></td>
                 </tr>
                 <tr class="govuk-table__row">
@@ -85,7 +77,7 @@
             </tbody>
         </table>
 
-        <h2 class="govuk-heading-m" style="margin-bottom: 0px;">3. Manage collaborative working</h2>
+        <h2 class="govuk-heading-m" style="margin-bottom: 0px;">3. Upload data</h2>
 
         <table class="govuk-table">
             <tbody class="govuk-table__body">
@@ -94,61 +86,40 @@
                     <td class="govuk-table__cell" colspan="3"></td>
                 </tr>
                 <tr class="govuk-table__row">
-                    <td class="govuk-table__cell" width="400"><a href="#0" aria-describedby="a" style="text-decoration: none;color:#1d70b8;font-weight: 400;">Role asignations</a></td>
-                    <td class="govuk-table__cell"><strong>Uploaders:</strong> P Coward & S Kowasky <br><strong>Reviewers:</strong> A Douglas, M Green & S Tower <br><strong>Approvers:</strong> J Sinclair & M Sutherland <br><strong>Trustee:</strong> M Sumerfield</td>
-                    <!--
-                    <td class="govuk-table__cell"><strong>Uploaders:</strong> Peter Coward & Sonia Kowasky <br><strong>Reviewers:</strong> Anne Douglas, Mark Green & Sebastian Tower <br><strong>Approvers:</strong> Jonathan Sinclair & Maria Sutherland <br><strong>Trustee:</strong> Michael Sumerfield</td>
-                    -->
-                    <td class="govuk-table__cell"><strong class="govuk-tag app-task-list__tag">COMPLETED</strong></td>
-                </tr>
-
-            </tbody>
-        </table>
-
-        <h2 class="govuk-heading-m" style="margin-bottom: 0px;">4. Upload files</h2>
-
-        <table class="govuk-table">
-            <tbody class="govuk-table__body">
-
-                <tr class="govuk-table__row">
-                    <td class="govuk-table__cell" colspan="3"></td>
-                </tr>
-                <tr class="govuk-table__row">
-                    <td class="govuk-table__cell" width="400"><a href="#0" aria-describedby="a" style="text-decoration: none;color:#1d70b8;font-weight: 400;">Upload your actuarial data</a></td>
+                    <td class="govuk-table__cell" width="400"><a href="#0" aria-describedby="a" style="text-decoration: none;color:#1d70b8;font-weight: 400;">Upload actuarial data (AC)</a></td>
                     <td class="govuk-table__cell">Peter Coward</td>
                     <td class="govuk-table__cell"><strong class="govuk-tag app-task-list__tag">COMPLETED</strong></td>
                 </tr>
                 <tr class="govuk-table__row">
-                    <td class="govuk-table__cell"><a href="#0" aria-describedby="a" style="text-decoration: none;color:#1d70b8;font-weight: 400;">Upload your covenant data</a></td>
+                    <td class="govuk-table__cell"><a href="#0" aria-describedby="a" style="text-decoration: none;color:#1d70b8;font-weight: 400;">Upload covenant data (CD)</a></td>
                     <td class="govuk-table__cell">Peter Coward</td>
                     <td class="govuk-table__cell"><strong class="govuk-tag app-task-list__tag">COMPLETED</strong></td>
                 </tr>
                 <tr class="govuk-table__row">
-                    <td class="govuk-table__cell"><a href="#0" aria-describedby="a" style="text-decoration: none;color:#1d70b8;font-weight: 400;">Upload your recovery plan</a></td>
+                    <td class="govuk-table__cell"><a href="#0" aria-describedby="a" style="text-decoration: none;color:#1d70b8;font-weight: 400;">Upload recovery plan (RP)</a></td>
                     <td class="govuk-table__cell">Sonia Kowasky</td>
                     <td class="govuk-table__cell"><strong class="govuk-tag app-task-list__tag">COMPLETED</strong></td>
                 </tr>
                 <tr class="govuk-table__row">
-                    <td class="govuk-table__cell"><a href="#0" aria-describedby="a" style="text-decoration: none;color:#1d70b8;font-weight: 400;">Upload your funding and investment strategy</a></td>
+                    <td class="govuk-table__cell"><a href="#0" aria-describedby="a" style="text-decoration: none;color:#1d70b8;font-weight: 400;">Upload funding and investment strategy (FIS)</a></td>
                     <td class="govuk-table__cell">Peter Coward</td>
                     <td class="govuk-table__cell"><strong class="govuk-tag app-task-list__tag">COMPLETED</strong></td>
                 </tr>
                 <tr class="govuk-table__row">
-                    <td class="govuk-table__cell"><a href="#0" aria-describedby="a" style="text-decoration: none;color:#1d70b8;font-weight: 400;">Upload your actuarial valuation</a></td>
+                    <td class="govuk-table__cell"><a href="#0" aria-describedby="a" style="text-decoration: none;color:#1d70b8;font-weight: 400;">Upload actuarial valuation (AV)</a></td>
                     <td class="govuk-table__cell">Peter Coward</td>
                     <td class="govuk-table__cell"><strong class="govuk-tag app-task-list__tag">COMPLETED</strong></td>
                 </tr>
                 <tr class="govuk-table__row">
-                    <td class="govuk-table__cell"><a href="#0" aria-describedby="a" style="text-decoration: none;color:#1d70b8;font-weight: 400;">Upload your schedule of contribution</a></td>
+                    <td class="govuk-table__cell"><a href="#0" aria-describedby="a" style="text-decoration: none;color:#1d70b8;font-weight: 400;">Upload schedule of contribution (SC)</a></td>
                     <td class="govuk-table__cell">Peter Coward</td>
                     <td class="govuk-table__cell"><strong class="govuk-tag app-task-list__tag">COMPLETED</strong></td>
                 </tr>
-
 
             </tbody>
         </table>
 
-        <h2 class="govuk-heading-m" style="margin-bottom: 0px;">5. Review </h2>
+        <h2 class="govuk-heading-m" style="margin-bottom: 0px;">4. Review </h2>
 
         <table class="govuk-table">
             <tbody class="govuk-table__body">
@@ -157,17 +128,17 @@
                     <td class="govuk-table__cell" colspan="3"></td>
                 </tr>
                 <tr class="govuk-table__row">
-                    <td class="govuk-table__cell" width="400"><a href="#0" aria-describedby="a" style="text-decoration: none;color:#1d70b8;font-weight: 400;">Peer review </a></td>
+                    <td class="govuk-table__cell" width="400"><a href="#0" aria-describedby="a" style="text-decoration: none;color:#1d70b8;font-weight: 400;">Review AD, CD, RP, FIS, AV, SC </a></td>
                     <td class="govuk-table__cell">Anne Douglas</td>
                     <td class="govuk-table__cell"><strong class="govuk-tag app-task-list__tag">COMPLETED</strong></td>
                 </tr>
                 <tr class="govuk-table__row">
-                    <td class="govuk-table__cell"><a href="#0" aria-describedby="a" style="text-decoration: none;color:#1d70b8;font-weight: 400;">Senior review</a></td>
+                    <td class="govuk-table__cell"><a href="#0" aria-describedby="a" style="text-decoration: none;color:#1d70b8;font-weight: 400;">Review RP</a></td>
                     <td class="govuk-table__cell">Mark Green</td>
                     <td class="govuk-table__cell"><strong class="govuk-tag app-task-list__tag">COMPLETED</strong></td>
                 </tr>
                 <tr class="govuk-table__row">
-                    <td class="govuk-table__cell"><a href="#0" aria-describedby="a" style="text-decoration: none;color:#1d70b8;font-weight: 400;">Senior review</a></td>
+                    <td class="govuk-table__cell"><a href="#0" aria-describedby="a" style="text-decoration: none;color:#1d70b8;font-weight: 400;">Review FIS, AV, SC</a></td>
                     <td class="govuk-table__cell">Sebastian Tower</td>
                     <td class="govuk-table__cell"><strong class="govuk-tag app-task-list__tag">COMPLETED</strong></td>
                 </tr>
@@ -175,7 +146,7 @@
             </tbody>
         </table>
 
-        <h2 class="govuk-heading-m" style="margin-bottom: 0px;">6. Approve </h2>
+        <h2 class="govuk-heading-m" style="margin-bottom: 0px;">5. Approve </h2>
 
         <table class="govuk-table">
             <tbody class="govuk-table__body">
@@ -184,12 +155,12 @@
                     <td class="govuk-table__cell" colspan="3"></td>
                 </tr>
                 <tr class="govuk-table__row">
-                    <td class="govuk-table__cell" width="400"><a href="#0" aria-describedby="a" style="text-decoration: none;color:#1d70b8;font-weight: 400;">Approval 1</a></td>
+                    <td class="govuk-table__cell" width="400"><a href="#0" aria-describedby="a" style="text-decoration: none;color:#1d70b8;font-weight: 400;">Approve submission</a></td>
                     <td class="govuk-table__cell">Jonathan Sinclair</td>
                     <td class="govuk-table__cell"><strong class="govuk-tag app-task-list__tag">COMPLETED</strong></td>
                 </tr>
                 <tr class="govuk-table__row">
-                    <td class="govuk-table__cell"><a href="#0" aria-describedby="a" style="text-decoration: none;color:#1d70b8;font-weight: 400;">Approval 2</a></td>
+                    <td class="govuk-table__cell"><a href="#0" aria-describedby="a" style="text-decoration: none;color:#1d70b8;font-weight: 400;">Approve submission</a></td>
                     <td class="govuk-table__cell">Maria Sutherland</td>
                     <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey app-task-list__tag">NOT STARTED</strong></td>
                 </tr>
@@ -197,7 +168,7 @@
             </tbody>
         </table>
 
-        <h2 class="govuk-heading-m" style="margin-bottom: 0px;">7. Submission declaration </h2>
+        <h2 class="govuk-heading-m" style="margin-bottom: 0px;">6. Sign & submit</h2>
 
         <table class="govuk-table">
             <tbody class="govuk-table__body">
@@ -210,52 +181,17 @@
                     <td class="govuk-table__cell">Michael Sumerfield</td>
                     <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="a">CAN’T START YET</strong></td>
                 </tr>
-                <tr class="govuk-table__row">
-                    <td class="govuk-table__cell">Submit valuation</td>
-                    <td class="govuk-table__cell">Michael Sumerfield</td>
-                    <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="a">CAN’T START YET</strong></td>
-                </tr>
 
             </tbody>
         </table>
 
         <br>
 
-        <h2 class="govuk-heading-m">Submit your scheme valuation data</h2>
-
-        <p class="govuk-body">By submitting this scheme valuation data you are confirming that, to the best of your knowledge, the details you are providing are correct.</p>
-
-        <p class="govuk-body">You also agree with lorum ipsum colabra tentare sempre.</p>
-
-        <!--
-        <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes" style="padding-bottom: 50px;">
-          <div class="govuk-checkboxes__item">
-            <input class="govuk-checkboxes__input" id="organisation" name="organisation" type="checkbox" value="hmrc">
-            <label class="govuk-label govuk-checkboxes__label" for="organisation">
-              I confirm that I will administer the estate of the person who died according to law, and that my application is truthful.
-            </label>
-          </div>
-        </div>
-        -->
+        <p><a href="#0" style="color:#1d70b8;">Return to SVD Dasboard</a></p>
 
         <br>
-
-        <div class="govuk-button-group" style="align-items: flex-start;">
-          <a class="button button-start" href="#0" role="button">
-            <button class="govuk-button" data-module="govuk-button" disabled="disabled">
-              Submit scheme
-            </button>
-          </a>
-
-          <!--
-          <a class="button button-start" href="#0" role="button">
-            <button class="govuk-button govuk-button--warning" data-module="govuk-button">
-              Delete application
-            </button>
-          </a>
-          -->
-
-        </div>
+        <br>
+        <br>
 
     </div>
 </div>

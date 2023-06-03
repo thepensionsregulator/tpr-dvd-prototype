@@ -118,3 +118,18 @@ $govuk-assets-path: '/govuk/assets/';
     line-height: 1.1111111111;
     margin: 0 0 15px;
 }
+
+@media (min-width: 40.0625em) {
+  .govuk-main-wrapper {
+    padding-top: 10px;
+    padding-bottom: 40px;
+  }
+}
+
+@media (min-width: 40.0625em) {
+  .govuk-main-wrapper--auto-spacing:first-child,
+.govuk-main-wrapper--l {
+    padding-top: 30px;
+  }
+}
+
