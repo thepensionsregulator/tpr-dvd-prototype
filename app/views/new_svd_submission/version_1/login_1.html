@@ -1,0 +1,53 @@
+{% extends "includes/layout_login_1.html" %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+                
+        <!--
+        <span class="govuk-caption-m">Acme Limited (PSR 12010256)</span>
+        -->
+
+        <h1 class="govuk-heading-xl" style="margin-bottom: 20px;">Sign in </h1>
+
+        <div class="govuk-form-group">
+          <h1 class="govuk-label-wrapper">
+            <label class="govuk-label govuk-label--l" for="account-number">
+              TPR user ID
+            </label>
+          </h1>
+          <div id="account-number-hint" class="govuk-hint">
+            This should be the email used when regiuster the account
+          </div>
+          <input class="govuk-input govuk-input--width-10" id="account-number" name="account-number" type="text" spellcheck="false" aria-describedby="account-number-hint" inputmode="numeric">
+        </div>
+
+
+
+
+        <a href="page_1.html"><button class="govuk-button" data-module="govuk-button" style="margin-top: 10px;">Create new submission</button></a>
+
+        <!--
+
+        <hr style="margin-bottom: 30px;">
+
+        <h2 class="govuk-heading-m" style="margin-bottom: 0px;">Get support</h2>
+
+        <p>Lorum ipsum est... <a href="#0" target="blank">support team</a>.</p>
+        
+        -->
+
+        <br>
+        <br>
+        <br>
+
+    </div>
+
+</div>
+
+
+
+
+{% endblock %}

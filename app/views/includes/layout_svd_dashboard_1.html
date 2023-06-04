@@ -31,7 +31,7 @@
 {% from "govuk/components/warning-text/macro.njk"        import govukWarningText %}
 
 {% block head %}
-  {% include "includes/head3.html" %}
+  {% include "includes/head_svd_dashboard_1.html" %}
 {% endblock %}
 
 {% block pageTitle %}
@@ -40,14 +40,14 @@
 
 {% block header %}
   {% include "includes/cookie-banner2.html" %}
-  {% include "includes/header3.html" %}
+  {% include "includes/header_svd_dashboard_1.html" %}
 {% endblock %}
 
 {% set mainClasses = mainClasses | default("govuk-main-wrapper--auto-spacing") %}
 
 {% if useAutoStoreData %}
   {% block footer %}
-    {% include "includes/footer3.html" %}
+    {% include "includes/footer2.html" %}
   {% endblock %}
 {% endif %}
 
