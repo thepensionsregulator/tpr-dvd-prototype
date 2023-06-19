@@ -1,0 +1,59 @@
+{% extends "includes/layout_new_submission_2.html" %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+                
+        <h1 class="govuk-heading-xl" style="margin-bottom: 20px;margin-top: 10px;">Select type of submission</h1>
+
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset" aria-describedby="sign-in-hint">
+            <div class="govuk-radios" data-module="govuk-radios">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="sign-in" name="sign-in" type="radio" value="government-gateway" aria-describedby="sign-in-item-hint">
+                <label class="govuk-label govuk-radios__label" for="sign-in">
+                  Scheme return
+                </label>
+                <div id="sign-in-item-hint" class="govuk-hint govuk-radios__hint">
+                  A scheme return is how we capture information about pension schemes that we use to help maintain our register of pension schemes. We share this information with the Pension Protection Fund and the Pension Tracing Service.
+                </div>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="sign-in-2" name="sign-in" type="radio" value="govuk-verify" aria-describedby="sign-in-2-item-hint">
+                <label class="govuk-label govuk-radios__label" for="sign-in-2">
+                  Scheme Valuation Data
+                </label>
+                <div id="sign-in-2-item-hint" class="govuk-hint govuk-radios__hint">
+                  You must regularly commission valuations by an actuary to check your scheme is appropriately funded. If your scheme doesn’t meet the statutory funding objective, you must put a recovery plan in place.
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+
+        <form action="page_1.html" style="margin-top: 40px;">
+          <div class="govuk-button-group">
+            <button class="govuk-button" data-module="govuk-button">Save and continue</button>
+            <a class="govuk-link" href="#0" style="color: #1d70b8">Cancel and return </a>
+          </div>
+        </form>
+
+        <br>
+        <br>
+        <br>
+
+    </div>
+
+    <div class="govuk-grid-column-one-third-from-desktop">
+
+
+    </div>
+
+</div>
+
+
+
+
+{% endblock %}

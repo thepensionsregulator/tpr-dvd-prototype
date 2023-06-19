@@ -1,0 +1,91 @@
+{% extends "includes/layout_login_2.html" %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+                
+        <!--
+        <span class="govuk-caption-m">Acme Limited (PSR 12010256)</span>
+        -->
+
+        <h1 class="govuk-heading-xl" style="margin-bottom: 40px;">Sign in </h1>
+
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="event-name">
+            <strong>Email </strong>
+          </label>
+          <div id="account-number-hint" class="govuk-hint">
+            This is the email used to create your TPR account
+          </div>
+          <input class="govuk-input govuk-!-width-three-quarters" id="two-thirds" name="two-thirds" type="text">
+          <br>
+          <br>
+          <label class="govuk-label" for="event-name" style="margin-bottom: 10px;">
+            <strong>Password </strong>
+          </label>
+          <input class="govuk-input govuk-!-width-one-half" id="two-thirds" name="two-thirds" type="password">
+        </div>
+
+        <a href="schemes_1.html"><button class="govuk-button" data-module="govuk-button" style="margin-top: 0px;">Sign in</button></a>
+
+        <!--<hr style="margin-bottom: 30px;">-->
+
+        <br>
+        <br>
+
+        <h2 class="govuk-heading-m" style="margin-bottom: 10px;">Problems signing in?</h2>
+
+        <p>
+            <a href="#0" style="color:#1d70b8;">I have forgotten my password</a> <br>
+            <a href="#0" style="color:#1d70b8;">I have forgotten my email</a> <br>
+            <a href="#0" style="color:#1d70b8;">I have forgotten my email and password</a>
+        </p>
+
+        <br>
+        <br>
+        <br>
+
+    </div>
+
+    <div class="govuk-grid-column-one-third-from-desktop">
+
+        <!--<div style="border-top: 4px solid #1d70b8;margin-top: 10px;"></div>-->
+
+        <div style="border-top: 4px solid #483b8b;margin-top: 10px;"></div>
+
+        <h2 class="govuk-heading-m" style="margin-top: 20px;">Need an account?</h2>
+
+        <p>If you're a pension scheme administrator, pension provider or a member of a pension scheme, and you registered a pension scheme with HMRC, then you can create an account with The Pension Regulator to manage your pension schemes with us.</p>
+
+        <!--
+        <p style="margin-bottom: 10px;"><a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">Create a TPR account</a></p>
+        -->
+
+        <a href="#0"><button class="govuk-button govuk-button--secondary" data-module="govuk-button" style="margin-top: 0px;margin-bottom: 20px;">Create a TPR account</button></a>
+
+        <p style="margin-bottom: 0px;"><a href="#0" target="blank" style="color:#1d70b8;">Find out more </a></p>
+
+        <br>
+        <br>
+        <br>
+
+        <!--
+        <div class="govuk-panel govuk-panel--confirmation" style="background-color: #f3f2f1;text-align: left;padding: 20px;margin-top: 70px;">
+          <h2 class="govuk-heading-m" style="margin-bottom: 10px;">Need an account?</h2>
+          <div class="govuk-panel__body">
+            <p style="margin-bottom: 0px;"><a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">Register TPR account</a></p>
+            <p style="margin-bottom: 0px;"><a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">Registration support</a></p>
+          </div>
+        </div>
+        -->
+
+    </div>
+
+</div>
+
+
+
+
+{% endblock %}
