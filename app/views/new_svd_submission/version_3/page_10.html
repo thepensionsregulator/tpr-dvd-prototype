@@ -1,0 +1,53 @@
+{% extends "includes/layout_new_submission_2.html" %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+        <!--<span class="govuk-caption-m">Acme Limited (PSR 12010256)</span>-->
+
+        <h1 class="govuk-heading-l" style="margin-bottom: 20px;margin-top: 10px;">Select the data ingestions format</h1>
+
+        <div class="govuk-inset-text" style="margin-bottom: 30px;">
+          This new service allow you to choose two options at the moment. In the future the only available ingestion format will be  via web forms.
+        </div>
+
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset" aria-describedby="sign-in-hint">
+            <div class="govuk-radios" data-module="govuk-radios">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="sign-in" name="sign-in" type="radio" value="government-gateway" aria-describedby="sign-in-item-hint">
+                <label class="govuk-label govuk-radios__label" for="sign-in">
+                  Upload data using spreadsheets
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="sign-in-2" name="sign-in" type="radio" value="govuk-verify" aria-describedby="sign-in-2-item-hint">
+                <label class="govuk-label govuk-radios__label" for="sign-in-2">
+                  Upload data using web forms
+                </label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+
+        <form action="page_11.html" style="margin-top: 40px;">
+          <div class="govuk-button-group">
+            <button class="govuk-button" data-module="govuk-button">Save and continue</button>
+            <a class="govuk-link" href="#0" style="color: #1d70b8">Cancel and return </a>
+          </div>
+        </form>
+
+        <br>
+        <br>
+        <br>
+
+    </div>
+</div>
+
+
+
+
+{% endblock %}
