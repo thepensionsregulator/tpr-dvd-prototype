@@ -1,0 +1,48 @@
+{% extends "includes/layout_uploader_new_submission_1.html" %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+        <!--<span class="govuk-caption-m">Acme Limited (PSR 12010256)</span>-->
+
+        <h1 class="govuk-heading-l" style="margin-bottom: 20px;margin-top: 10px;">Upload your actuarial data</h1>
+
+        <div class="govuk-inset-text" style="margin-bottom: 30px;">
+          Your spreadsheets must to use our templates. The template can change depending on the effective date of the last scheme funding (Part 3) valuation. Make sure that you have downloaded the <a href="#0" target="blank">correct template</a>.
+        </div>
+
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="file-upload-1">
+            <strong>Upload a file</strong>
+          </label>
+          <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+        </div>
+
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="file-upload-1" style="margin-bottom: 10px;">
+            <strong>Enter any comments about this file (optional)</strong>
+          </label>
+          <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+        </div>
+
+        <form action="uploader_new_submission_page_3.html" style="margin-top: 40px;">
+          <div class="govuk-button-group">
+            <button class="govuk-button" data-module="govuk-button">Save and continue</button>
+            <a class="govuk-link" href="#0" style="color: #1d70b8">Cancel and return </a>
+          </div>
+        </form>
+
+        <br>
+        <br>
+        <br>
+
+    </div>
+</div>
+
+
+
+
+{% endblock %}

@@ -1,0 +1,75 @@
+{% extends "includes/layout_signator_new_submission_1.html" %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+        <!--<span class="govuk-caption-m">Acme Limited (PSR 12010256)</span>-->
+
+        <h1 class="govuk-heading-l" style="margin-bottom: 20px;margin-top: 10px;">Sign the declaration and submit</h1>
+
+        <!--
+        <div class="govuk-inset-text" style="margin-bottom: 30px;">
+          [legal warning goes here]
+        </div>
+        -->
+
+        <div class="govuk-warning-text" style="margin-bottom: 10px;">
+          <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+          <strong class="govuk-warning-text__text">
+            <span class="govuk-warning-text__assistive">Warning</span>
+            This submission will be regarded by us as fully complying with the requirements referred to in Appendix 1, page 44 of the funding code of practice and the statutory requirement under regulation 8(7)(a) of the Scheme Funding Regulations (SI 2005/3377) and Occupational Pensions Schemes (Funding and investment Strategy and Amendment) Regulations 2023.
+          </strong>
+        </div>
+
+        <!--
+        <p class="govuk-body">This submission will be regarded by us as fully complying with the requirements referred to in Appendix 1, page 44 of the funding code of practice and the statutory requirement under regulation 8(7)(a) of the Scheme Funding Regulations (SI 2005/3377) and Occupational Pensions Schemes (Funding and investment Strategy and Amendment) Regulations 2023.</p>
+        -->
+
+        <div class="govuk-form-group" style="margin-bottom: 20px;">
+            <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="organisation" name="organisation" type="checkbox" value="hmrc">
+                <label class="govuk-label govuk-checkboxes__label" for="waste">
+                  I, Michael Sumerfield, confirm that I understand it is a criminal offence under section 80 of the Pensions Act 2004 to knowingly or recklessly supply false or misleading information to The Pensions Regulator. By submitting this scheme valuation data I'm confirming that, to the best of my knowledge, the details I'm providing are correct.
+                </label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+
+        <!--
+        <p class="govuk-body">By submitting this scheme valuation data you are confirming that, to the best of your knowledge, the details you are providing are correct. </p>
+        -->
+
+        <!--
+        <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes" style="padding-bottom: 50px;">
+          <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="organisation" name="organisation" type="checkbox" value="hmrc">
+            <label class="govuk-label govuk-checkboxes__label" for="organisation">
+              I confirm that all details ptovided are correct.
+            </label>
+          </div>
+        </div>
+        -->
+
+        <form action="signator_new_submission_page_3.html" style="margin-top: 40px;">
+          <div class="govuk-button-group">
+            <button class="govuk-button" data-module="govuk-button">Save and submit</button>
+            <a class="govuk-link" href="#0" style="color: #1d70b8">Cancel and return </a>
+          </div>
+        </form>
+
+        <br>
+        <br>
+        <br>
+
+    </div>
+</div>
+
+
+
+
+{% endblock %}
