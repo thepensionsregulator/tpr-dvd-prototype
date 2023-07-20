@@ -1,0 +1,367 @@
+{% extends "includes/layout_admin_schemes_1.html" %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+      <div style="background-color: #FFEFCB;border-left: 8px solid #F3AB34;padding: 1rem;margin-top: 0px;margin-bottom: 10px;">
+        <div style="background: none;padding: 0;margin-bottom: 0;">
+            <p style="margin-bottom: 0px;"><strong>System announcement</strong><br>The system will be unavailable on the weekend of 3-4 July, between 11pm and 7am, due maintenance.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="govuk-grid-column-two-thirds">
+
+        <h1 class="govuk-heading-xl" style="margin-bottom: 20px;margin-top: 10px;">My schemes </h1>
+
+        <form action="#0" style="margin-top: 0px;margin-bottom: 10px;">
+          <div class="govuk-button-group" style="margin-top: 0px;margin-bottom: 0px;">
+            <button class="govuk-button" data-module="govuk-button">Register new scheme</button> &nbsp;
+            <a class="govuk-link" href="#0" style="color: #1d70b8">Track a regitration application</a>
+          </div>
+        </form>
+
+        <div class="govuk-panel govuk-panel--confirmation" style="background-color: #f3f2f1;text-align: left;padding: 10px 20px 8px 20px;">
+
+          <div class="govuk-form-group stack" style="margin-bottom: 0px;">
+
+            <input class="govuk-input search_icon" id="width-20" name="width-20" type="text" value="Enter scheme PSR reference" style="width: 380px;position: relative;padding-left: 35px;border: 2px solid #0b0c0c;height: 40px;font-size: 1.1875rem;color: #505a5f;margin-right: 50px;">
+
+            <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes" style="width: 350px;text-align: right;">
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="organisation-2" name="organisation" type="checkbox" value="lorum" checked>
+                <label class="govuk-label govuk-checkboxes__label" for="organisation-2">
+                  Filter by organisation 
+                </label>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <style type="text/css">
+          .search_icon {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36' width='40' height='40'%3E%3Cpath d='M25.7 24.8L21.9 21c.7-1 1.1-2.2 1.1-3.5 0-3.6-2.9-6.5-6.5-6.5S10 13.9 10 17.5s2.9 6.5 6.5 6.5c1.6 0 3-.6 4.1-1.5l3.7 3.7 1.4-1.4zM12 17.5c0-2.5 2-4.5 4.5-4.5s4.5 2 4.5 4.5-2 4.5-4.5 4.5-4.5-2-4.5-4.5z' fill='%23505a5f'%3E%3C/path%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: center left -2px;
+            background-size: 40px 40px;
+            margin-right: 50px;
+          }
+          .stack {
+            display: flex;
+            flex-direction: row;
+          }
+        </style>
+
+        <table class="govuk-table" style="margin-bottom: 20px;margin-top: 10px;">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header" width="140">Schemes (54)</th>
+              <th scope="col" class="govuk-table__header" width="270">Organisation </th>
+              <th scope="col" class="govuk-table__header" width="100">Type</th>
+              <th scope="col" class="govuk-table__header" width="100">Submissions</th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell"><a href="admin_pension_landingpage_1.html" style="text-decoration: none;color:#1d70b8;">PSR 10965738</a></td>
+              <td class="govuk-table__cell">North Start Limited</td>
+              <td class="govuk-table__cell">Main</td>
+              <td class="govuk-table__cell" style="text-align:center;">13</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell"><a href="#0" style="text-decoration: none;color:#1d70b8;">PSR 19965739</a></td>
+              <td class="govuk-table__cell">North Start Limited</td>
+              <td class="govuk-table__cell">DB section</td>
+              <td class="govuk-table__cell" style="text-align:center;">2</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell"><a href="#0" style="text-decoration: none;color:#1d70b8;">PSR 19965740</a></td>
+              <td class="govuk-table__cell">North Start Limited</td>
+              <td class="govuk-table__cell">DC section</td>
+              <td class="govuk-table__cell" style="text-align:center;">1</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell"><a href="#0" style="text-decoration: none;color:#1d70b8;">PSR 19965741</a></td>
+              <td class="govuk-table__cell">North Start Limited</td>
+              <td class="govuk-table__cell">DC section</td>
+              <td class="govuk-table__cell" style="text-align:center;">2</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell"><a href="#0" style="text-decoration: none;color:#1d70b8;">PSR 20543623</a></td>
+              <td class="govuk-table__cell">ACME Inc Corporation</td>
+              <td class="govuk-table__cell">Main</td>
+              <td class="govuk-table__cell" style="text-align:center;">2</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell"><a href="#0" style="text-decoration: none;color:#1d70b8;">PSR 30265906</a></td>
+              <td class="govuk-table__cell">Magnolia Associates Limited</td>
+              <td class="govuk-table__cell">Main</td>
+              <td class="govuk-table__cell" style="text-align:center;">3</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell"><a href="#0" style="text-decoration: none;color:#1d70b8;">PSR 39265907</a></td>
+              <td class="govuk-table__cell">Magnolia Associates Limited</td>
+              <td class="govuk-table__cell">DC section</td>
+              <td class="govuk-table__cell" style="text-align:center;">1</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell"><a href="#0" style="text-decoration: none;color:#1d70b8;">PSR 40673452</a></td>
+              <td class="govuk-table__cell">ABC Pensions</td>
+              <td class="govuk-table__cell">Main</td>
+              <td class="govuk-table__cell" style="text-align:center;">1</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell"><a href="#0" style="text-decoration: none;color:#1d70b8;">PSR 50785936</a></td>
+              <td class="govuk-table__cell">Lorenzo & Silvertain Partners</td>
+              <td class="govuk-table__cell">Main</td>
+              <td class="govuk-table__cell" style="text-align:center;">2</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell"><a href="#0" style="text-decoration: none;color:#1d70b8;">PSR 59785937</a></td>
+              <td class="govuk-table__cell">Lorenzo & Silvertain Partners</td>
+              <td class="govuk-table__cell">DB section</td>
+              <td class="govuk-table__cell" style="text-align:center;">1</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell"><a href="#0" style="text-decoration: none;color:#1d70b8;">PSR 60784543</a></td>
+              <td class="govuk-table__cell">Patagonia Limited</td>
+              <td class="govuk-table__cell">Main</td>
+              <td class="govuk-table__cell" style="text-align:center;">2</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell"><a href="#0" style="text-decoration: none;color:#1d70b8;">PSR 69784544</a></td>
+              <td class="govuk-table__cell">Patagonia Limited</td>
+              <td class="govuk-table__cell">DB section</td>
+              <td class="govuk-table__cell" style="text-align:center;">0</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell"><a href="#0" style="text-decoration: none;color:#1d70b8;">PSR 69784545</a></td>
+              <td class="govuk-table__cell">Patagonia Limited</td>
+              <td class="govuk-table__cell">DC section</td>
+              <td class="govuk-table__cell" style="text-align:center;">1</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell"><a href="#0" style="text-decoration: none;color:#1d70b8;">PSR 69784546</a></td>
+              <td class="govuk-table__cell">Patagonia Limited</td>
+              <td class="govuk-table__cell">DC section</td>
+              <td class="govuk-table__cell" style="text-align:center;">0</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell"><a href="#0" style="text-decoration: none;color:#1d70b8;">PSR 69784547</a></td>
+              <td class="govuk-table__cell">Patagonia Limited</td>
+              <td class="govuk-table__cell">DC section</td>
+              <td class="govuk-table__cell" style="text-align:center;">0</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell"><a href="#0" style="text-decoration: none;color:#1d70b8;">PSR 69784548</a></td>
+              <td class="govuk-table__cell">Patagonia Limited</td>
+              <td class="govuk-table__cell">DC section</td>
+              <td class="govuk-table__cell" style="text-align:center;">0</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell"><a href="#0" style="text-decoration: none;color:#1d70b8;">PSR 70634526</a></td>
+              <td class="govuk-table__cell">Alpha Pension for Everyone Ltd</td>
+              <td class="govuk-table__cell">Main</td>
+              <td class="govuk-table__cell" style="text-align:center;">1</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell"><a href="#0" style="text-decoration: none;color:#1d70b8;">PSR 79634527</a></td>
+              <td class="govuk-table__cell">Alpha Pension for Everyone Ltd</td>
+              <td class="govuk-table__cell">DB section</td>
+              <td class="govuk-table__cell" style="text-align:center;">1</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell"><a href="#0" style="text-decoration: none;color:#1d70b8;">PSR 79634528</a></td>
+              <td class="govuk-table__cell">Alpha Pension for Everyone Ltd</td>
+              <td class="govuk-table__cell">Main</td>
+              <td class="govuk-table__cell" style="text-align:center;">0</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell"><a href="#0" style="text-decoration: none;color:#1d70b8;">PSR 79634529</a></td>
+              <td class="govuk-table__cell">Alpha Pension for Everyone Ltd</td>
+              <td class="govuk-table__cell">DB section</td>
+              <td class="govuk-table__cell" style="text-align:center;">1</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <nav class="govuk-pagination" role="navigation" aria-label="results">
+          <ul class="govuk-pagination__list">
+            <li class="govuk-pagination__item govuk-pagination__item--current">
+              <a class="govuk-link govuk-pagination__link" href="#" aria-label="Page 1" aria-current="page">
+                1
+              </a>
+            </li>
+            <li class="govuk-pagination__item">
+              <a class="govuk-link govuk-pagination__link" href="#" aria-label="Page 2" style="color:#1d70b8;">
+                2
+              </a>
+            </li>
+            <li class="govuk-pagination__item">
+              <a class="govuk-link govuk-pagination__link" href="#" aria-label="Page 3" style="color:#1d70b8;">
+                3
+              </a>
+            </li>
+          </ul>
+          <div class="govuk-pagination__next">
+            <a class="govuk-link govuk-pagination__link" href="#" rel="next" style="color:#1d70b8;"> <span class="govuk-pagination__link-title">Next</span> <svg class="govuk-pagination__icon govuk-pagination__icon--next" xmlns="http://www.w3.org/2000/svg" height="13" width="15" aria-hidden="true" focusable="false" viewBox="0 0 15 13">
+                <path d="m8.107-0.0078125-1.4136 1.414 4.2926 4.293h-12.986v2h12.896l-4.1855 3.9766 1.377 1.4492 6.7441-6.4062-6.7246-6.7266z"></path>
+              </svg></a>
+          </div>
+        </nav>
+
+
+        <!--
+
+        <div class="govuk-panel govuk-panel--confirmation" style="background-color: #f3f2f1;text-align: left;padding: 10px 20px 8px 20px;">
+          <span class="govuk-caption-m">PSR 10005486</span>
+          <h2 class="govuk-heading-m" style="margin-bottom: 2px;">Scheme Validation Data </h2>
+          <span class="govuk-caption-m">Registered by Anne Summerville on 25/02/2020</span>
+          <strong class="govuk-tag govuk-tag" style="margin-top: 10px;margin-bottom: 10px;margin-right: 10px;">3 SUBMISSIONS</strong>
+          <a href="svd_dashboard_1.html" target="blank" style="text-decoration: none;color:#1d70b8;">Manage scheme</a>
+        </div>
+
+        <div class="govuk-panel govuk-panel--confirmation" style="background-color: #f3f2f1;text-align: left;padding: 10px 20px 8px 20px;">
+          <span class="govuk-caption-m">PSR 10008349</span>
+          <h2 class="govuk-heading-m" style="margin-bottom: 2px;">Scheme Return </h2>
+          <span class="govuk-caption-m">Registered by Stuart Corvett on 13/11/2021</span>
+          <strong class="govuk-tag govuk-tag" style="margin-top: 10px;margin-bottom: 10px;margin-right: 10px;">2 SUBMISSION</strong>
+          <a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">Manage scheme</a>
+        </div>
+
+        <div class="govuk-panel govuk-panel--confirmation" style="background-color: #ffffff;text-align: left;padding: 3px 0px 0px 20px;border: 3px dashed #f3f2f1;">
+            <a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;font-size: 1.5rem;margin-bottom: 20px;"><span style="color:#1d70b8; font-size: 50px;vertical-align: middle;">+ </span> Add new scheme</a>
+        </div>
+
+        <a href="page_1.html"><button class="govuk-button" data-module="govuk-button" style="margin-top: 10px;">Register a new product</button></a>
+        -->
+
+        <br>
+        <br>
+        <br>
+
+    </div>
+
+    <div class="govuk-grid-column-one-third-from-desktop">
+
+        <!--<div style="border-top: 4px solid #1d70b8;margin-top: 10px;"></div>-->
+
+        <!--
+
+        <div class="govuk-panel govuk-panel--confirmation" style="background-color: #E9F8FF;text-align: left;padding: 10px 20px 5px 20px;margin-top: 19px;">
+          <h2 class="govuk-heading-m" style="margin-bottom: 15px;">Scheme registration</h2>
+          <div class="govuk-panel__body">
+            <button class="govuk-button" data-module="govuk-button" style="margin-bottom: 20px;">
+              Register a new scheme
+            </button>
+            <p style="margin-bottom: 10px;"><a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">Track a registration application</a></p>
+            <p style="margin-bottom: 10px;"><a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">All about register schemes</a></p>
+          </div>
+        </div>
+
+        -->
+
+        <!--
+        <div class="govuk-panel govuk-panel--confirmation" style="background-color: #E9F8FF;text-align: left;padding: 10px 20px 5px 20px;margin-top: 144px;">
+          <h2 class="govuk-heading-m" style="margin-bottom: 10px;">Manage payments</h2>
+          <div class="govuk-panel__body">
+            <p style="margin-bottom: 10px;"><a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">Pay the levy</a></p>
+            <p style="margin-bottom: 10px;"><a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">Setting up a Direct Debit</a></p>
+            <p style="margin-bottom: 10px;"><a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">Submit late payment of contributions</a></p>
+            <p style="margin-bottom: 10px;"><a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">Report material payment failures</a></p>
+            <p style="margin-bottom: 10px;"><a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">Print levy invoices</a></p>
+
+          </div>
+        </div>
+
+        <div class="govuk-panel govuk-panel--confirmation" style="background-color: #FFF6FE;text-align: left;padding: 10px 20px 5px 20px;margin-top: 15px;">
+          <h2 class="govuk-heading-m" style="margin-bottom: 10px;">Manage collaborators</h2>
+          <div class="govuk-panel__body">
+            <p style="margin-bottom: 10px;"><a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">View collaborators</a></p>
+            <p style="margin-bottom: 10px;"><a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">Add new collaborator</a></p>
+            <p style="margin-bottom: 10px;"><a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">Find out about collaborators</a></p>
+          </div>
+        </div>
+
+        <div class="govuk-panel govuk-panel--confirmation" style="background-color: #f9f9f9;text-align: left;padding: 10px 20px 5px 20px;margin-top: 15px;">
+          <h2 class="govuk-heading-m" style="margin-bottom: 10px;">Other actions</h2>
+          <div class="govuk-panel__body">
+            <p style="margin-bottom: 10px;"><a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">Manage contingency asset certificates</a></p>
+            <p style="margin-bottom: 10px;"><a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">Manage deficit reduction contributions</a></p>
+            <p style="margin-bottom: 10px;"><a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">Manage transfer information segmentation</a></p>
+            <p style="margin-bottom: 10px;"><a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">Report notifiable events</a></p>
+            <p style="margin-bottom: 10px;"><a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">Report breaches of law</a></p>
+            <p style="margin-bottom: 10px;"><a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">Make a transfer request</a>
+            <p style="margin-bottom: 10px;"><a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">Request an appointment</a>
+            <p style="margin-bottom: 10px;"><a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">Merge requests</a></p>
+            <p style="margin-bottom: 10px;"><a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">Report a concern</a></p>
+            <p style="margin-bottom: 10px;"><a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">Share information about your clients schemes</a></p>
+          </div>
+        </div>
+        -->
+
+        <div class="govuk-panel govuk-panel--confirmation" style="background-color: #E9F8FF;text-align: left;padding: 10px 20px 5px 20px;margin-top: 144px;">
+          <h2 class="govuk-heading-m" style="margin-bottom: 10px;">Quick actions</h2>
+          <div class="govuk-panel__body">
+            <p style="margin-bottom: 10px;"><a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">Manage contingency asset certificates</a></p>
+            <p style="margin-bottom: 10px;"><a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">Manage deficit reduction contributions</a></p>
+            <p style="margin-bottom: 10px;"><a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">Manage transfer information segmentation</a></p>
+            <p style="margin-bottom: 10px;"><a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">Report notifiable events</a></p>
+            <p style="margin-bottom: 10px;"><a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">Report breaches of law</a></p>
+            <p style="margin-bottom: 10px;"><a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">Make a transfer request</a>
+            <p style="margin-bottom: 10px;"><a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">Request an appointment</a>
+            <p style="margin-bottom: 10px;"><a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">Merge requests</a></p>
+            <p style="margin-bottom: 10px;"><a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">Report a concern</a></p>
+            <p style="margin-bottom: 10px;"><a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">Share information about your clients schemes</a></p>
+          </div>
+        </div>
+
+        
+
+        <!--
+        <div style="border-top: 4px solid #483b8b;margin-top: 30px;"></div>
+
+        <h2 class="govuk-heading-m" style="margin-top: 20px;">Help and support</h2>
+
+        <p style="margin-bottom: 0px;"><a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">View tutorials</a></p>
+        
+        <p style="margin-bottom: 0px;"><a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">View FAQs</a></p>
+        
+        <p style="margin-bottom: 0px;"><a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">Make an enquiry</a></p>
+        -->
+
+        <!--
+        <div class="govuk-panel govuk-panel--confirmation" style="background-color: #E9F8FF;text-align: left;padding: 20px;margin-top: 70px;">
+          <h2 class="govuk-heading-m" style="margin-bottom: 10px;">Acme Limited</h2>
+          <div class="govuk-panel__body">
+            <p style="margin-bottom: 5px;">PSR 12010256 </p>
+            <p style="margin-bottom: 0px;"><a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">Manage account</a></p>
+          </div>
+        </div>
+        -->
+
+        <!--
+        <div class="govuk-panel govuk-panel--confirmation" style="background-color: #FFF6FE;text-align: left;padding: 20px;margin-top: 15px;">
+          <h2 class="govuk-heading-m" style="margin-bottom: 10px;">Help and support</h2>
+          <div class="govuk-panel__body">
+            <p style="margin-bottom: 0px;"><a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">View tutorials</a></p>
+            <p style="margin-bottom: 0px;"><a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">View FAQs</a></p>
+            <p style="margin-bottom: 0px;"><a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">Make an enquiry</a></p>
+          </div>
+        </div>
+        -->
+
+    </div>
+
+</div>
+
+
+
+
+{% endblock %}

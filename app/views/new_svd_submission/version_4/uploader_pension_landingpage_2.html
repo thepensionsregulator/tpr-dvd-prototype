@@ -1,0 +1,414 @@
+{% extends "includes/layout_uploader_pension_landingpage_1.html" %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+                
+        <!--
+        <span class="govuk-caption-m">Acme Limited (PSR 12010256)</span>
+        -->
+
+        <h1 class="govuk-heading-xl" style="margin-bottom: 20px;margin-top: 10px;">Pension Scheme overview</h1>
+
+        <h2 class="govuk-heading-m" style="margin-bottom: 0px;margin-top: 20px;">Pension scheme details</h2>
+
+        <table class="govuk-table" style="margin-bottom: 40px;margin-top: 0px;">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header" width="200"> </th>
+              <th scope="col" class="govuk-table__header"> </th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Scheme reference</th>
+              <td class="govuk-table__cell">PSR 10965738</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Scheme type</th>
+              <td class="govuk-table__cell">Defined Benefit</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Total value of assets</th>
+              <td class="govuk-table__cell">£4,350,947.78</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Trustees</th>
+              <td class="govuk-table__cell">Michael Sumerfield <br>Jeremy Handle</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Employees</th>
+              <td class="govuk-table__cell">2,224</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Contact details</th>
+              <td class="govuk-table__cell">John Smith <br>
+                john.smith@pensionconsultantslimited.com <br>
+              01654345698</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2 class="govuk-heading-m" style="margin-bottom: 10px;margin-top: 20px;">Manage submissions</h2>
+
+        <div class="govuk-tabs" data-module="govuk-tabs" style="margin-top: 30px;">
+          <h2 class="govuk-tabs__title">
+            Contents
+          </h2>
+          <ul class="govuk-tabs__list">
+            <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+              <a class="govuk-tabs__tab" href="#tab1">
+                Scheme Returns
+              </a>
+            </li>
+            <li class="govuk-tabs__list-item">
+              <a class="govuk-tabs__tab" href="#tab2">
+                Scheme Valuation Data
+              </a>
+            </li>
+            <li class="govuk-tabs__list-item">
+              <a class="govuk-tabs__tab" href="#tab3">
+                Recovery Plans
+              </a>
+            </li>
+          </ul>
+
+          <div class="govuk-tabs__panel" id="tab1" style="border: none; padding: 0px;">
+
+            <!--<h2 class="govuk-heading-m" style="margin-bottom: 10px;margin-top: 20px;">Scheme Returns</h2>-->
+            
+            <table class="govuk-table" style="margin-bottom: 20px;margin-top: 20px;">
+              <thead class="govuk-table__head">
+                <tr class="govuk-table__row">
+                  <th scope="col" class="govuk-table__header" width="120">Submission</th>
+                  <th scope="col" class="govuk-table__header" width="150">Effective date </th>
+                  <th scope="col" class="govuk-table__header" width="200">Creator</th>
+                  <th scope="col" class="govuk-table__header" width="100">Status</th>
+                </tr>
+              </thead>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell"><a href="#0" style="text-decoration: none;color:#1d70b8;">74563709</a></td>
+                  <td class="govuk-table__cell">14 August 22</td>
+                  <td class="govuk-table__cell">Chris Hill</td>
+                  <td class="govuk-table__cell" style="text-align:left;"><strong class="govuk-tag">UPDATING</strong></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell"><a href="#0" style="text-decoration: none;color:#1d70b8;">63462867</a></td>
+                  <td class="govuk-table__cell">25 July 21</td>
+                  <td class="govuk-table__cell">Susan Peterson</td>
+                  <td class="govuk-table__cell" style="text-align:Lleft;"><strong class="govuk-tag govuk-tag--green">COMPLETED</strong></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell"><a href="#0" style="text-decoration: none;color:#1d70b8;">24805376</a></td>
+                  <td class="govuk-table__cell">06 September 20</td>
+                  <td class="govuk-table__cell">Chris Hill</td>
+                  <td class="govuk-table__cell" style="text-align:Lleft;"><strong class="govuk-tag govuk-tag--green">COMPLETED</strong></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell"><a href="#0" style="text-decoration: none;color:#1d70b8;">903658152</a></td>
+                  <td class="govuk-table__cell">27 August 19</td>
+                  <td class="govuk-table__cell">Jonathan Cugart-Smith</td>
+                  <td class="govuk-table__cell" style="text-align:Lleft;"><strong class="govuk-tag govuk-tag--green">COMPLETED</strong></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell"><a href="#0" style="text-decoration: none;color:#1d70b8;">27649273</a></td>
+                  <td class="govuk-table__cell">18 July 18</td>
+                  <td class="govuk-table__cell">Chris Hill</td>
+                  <td class="govuk-table__cell" style="text-align:Lleft;"><strong class="govuk-tag govuk-tag--green">COMPLETED</strong></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell"><a href="#0" style="text-decoration: none;color:#1d70b8;">56849627</a></td>
+                  <td class="govuk-table__cell">09 September 17</td>
+                  <td class="govuk-table__cell">Alicia Coward</td>
+                  <td class="govuk-table__cell" style="text-align:Lleft;"><strong class="govuk-tag govuk-tag--green">COMPLETED</strong></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell"><a href="#0" style="text-decoration: none;color:#1d70b8;">76215606</a></td>
+                  <td class="govuk-table__cell">13 August 16</td>
+                  <td class="govuk-table__cell">Amanda Eriksen</td>
+                  <td class="govuk-table__cell" style="text-align:Lleft;"><strong class="govuk-tag govuk-tag--green">COMPLETED</strong></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell"><a href="#0" style="text-decoration: none;color:#1d70b8;">34067244</a></td>
+                  <td class="govuk-table__cell">25 September 15</td>
+                  <td class="govuk-table__cell">Edgar Wicking</td>
+                  <td class="govuk-table__cell" style="text-align:Lleft;"><strong class="govuk-tag govuk-tag--green">COMPLETED</strong></td>
+                </tr>
+              </tbody>
+            </table>
+
+            <!--
+            <nav class="govuk-pagination" role="navigation" aria-label="results">
+              <ul class="govuk-pagination__list">
+                <li class="govuk-pagination__item govuk-pagination__item--current">
+                  <a class="govuk-link govuk-pagination__link" href="#" aria-label="Page 1" aria-current="page">
+                    1
+                  </a>
+                </li>
+                <li class="govuk-pagination__item">
+                  <a class="govuk-link govuk-pagination__link" href="#" aria-label="Page 2" style="color:#1d70b8;">
+                    2
+                  </a>
+                </li>
+              </ul>
+              <div class="govuk-pagination__next">
+                <a class="govuk-link govuk-pagination__link" href="#" rel="next" style="color:#1d70b8;"> <span class="govuk-pagination__link-title">Next</span> <svg class="govuk-pagination__icon govuk-pagination__icon--next" xmlns="http://www.w3.org/2000/svg" height="13" width="15" aria-hidden="true" focusable="false" viewBox="0 0 15 13">
+                    <path d="m8.107-0.0078125-1.4136 1.414 4.2926 4.293h-12.986v2h12.896l-4.1855 3.9766 1.377 1.4492 6.7441-6.4062-6.7246-6.7266z"></path>
+                  </svg></a>
+              </div>
+            </nav>
+            -->
+
+            <!--<a href="#"><button class="govuk-button" data-module="govuk-button" style="margin-top: 10px;">Add new scheme returns submission</button></a>-->
+
+            <br>
+
+            <!--<hr style="margin-bottom: 30px;">-->
+
+            <h2 class="govuk-heading-m" style="margin-bottom: 0px;margin-top: 10px;">Documents templates</h2>
+
+            <p style="margin-bottom: 10px;">Your spreadsheets must to use our latest templates depending on the effective date of the last scheme. Make sure that you have downloaded the <a href="#0" target="blank" style="color:#1d70b8;">correct template</a>.</p>
+
+            <table class="govuk-table">
+              <thead class="govuk-table__head">
+                <tr class="govuk-table__row">
+                  <th scope="col" class="govuk-table__header" width="556">Return templates</th>
+                  <th scope="col" class="govuk-table__header">Updated on</th>
+                </tr>
+              </thead>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell"><a href="#0" aria-describedby="a" style="text-decoration: none;color:#1d70b8;font-weight: 400;">Download Section 1 (schemes), 2 (memberships), and 3 (finances)</a></td>
+                  <td class="govuk-table__cell">14/03/2020</td>
+                </tr>
+                <tr class="govuk-table__row">
+                 <td class="govuk-table__cell"><a href="#0" aria-describedby="a" style="text-decoration: none;color:#1d70b8;font-weight: 400;">Download Section 4 (AE schemes)</a></td>
+                  <td class="govuk-table__cell">17/03/2020</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell"><a href="#0" aria-describedby="a" style="text-decoration: none;color:#1d70b8;font-weight: 400;">Download Section 5 (micro schemes) </a></td>
+                  <td class="govuk-table__cell">21/02/2020</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell"><a href="#0" aria-describedby="a" style="text-decoration: none;color:#1d70b8;font-weight: 400;">Download Section 6 (effective date information)</a></td>
+                  <td class="govuk-table__cell">24/08/2019</td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+
+          <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="tab2" style="border: none; padding: 0px;">
+
+            <!--<h2 class="govuk-heading-m" style="margin-bottom: 10px;margin-top: 20px;">Scheme Valuation Data</h2>-->
+
+            <!--
+            <a href="page_0.html"><button class="govuk-button" data-module="govuk-button" style="margin-top: 10px;margin-bottom: 20px;">Add new submission</button></a>
+            -->
+    
+            <table class="govuk-table" style="margin-bottom: 20px;margin-top: 20px;">
+              <thead class="govuk-table__head">
+                <tr class="govuk-table__row">
+                  <th scope="col" class="govuk-table__header" width="120">Submission</th>
+                  <th scope="col" class="govuk-table__header" width="150">Effective date </th>
+                  <th scope="col" class="govuk-table__header" width="200">Creator</th>
+                  <th scope="col" class="govuk-table__header" width="100">Status</th>
+                </tr>
+              </thead>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell"><a href="#0" style="text-decoration: none;color:#1d70b8;">75634528</a></td>
+                  <td class="govuk-table__cell">15 March 23</td>
+                  <td class="govuk-table__cell">John Smith</td>
+                  <td class="govuk-table__cell" style="text-align:left;"><strong class="govuk-tag">IN PROGRESS</strong></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell"><a href="#0" style="text-decoration: none;color:#1d70b8;">87454207</a></td>
+                  <td class="govuk-table__cell">27 February 22</td>
+                  <td class="govuk-table__cell">Peter McQueen</td>
+                  <td class="govuk-table__cell" style="text-align:left;"><strong class="govuk-tag">UPDATING</strong></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell"><a href="#0" style="text-decoration: none;color:#1d70b8;">24863614</a></td>
+                  <td class="govuk-table__cell">04 Marc 21</td>
+                  <td class="govuk-table__cell">Barbara Sunderland</td>
+                  <td class="govuk-table__cell" style="text-align:Lleft;"><strong class="govuk-tag govuk-tag--green">COMPLETED</strong></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell"><a href="#0" style="text-decoration: none;color:#1d70b8;">56936523</a></td>
+                  <td class="govuk-table__cell">16 February 20</td>
+                  <td class="govuk-table__cell">Mike Sugar-Love </td>
+                  <td class="govuk-table__cell" style="text-align:Lleft;"><strong class="govuk-tag govuk-tag--green">COMPLETED</strong></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell"><a href="#0" style="text-decoration: none;color:#1d70b8;">89046234</a></td>
+                  <td class="govuk-table__cell">08 January 19</td>
+                  <td class="govuk-table__cell">Edmund Collins</td>
+                  <td class="govuk-table__cell" style="text-align:Lleft;"><strong class="govuk-tag govuk-tag--green">COMPLETED</strong></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell"><a href="#0" style="text-decoration: none;color:#1d70b8;">90365487</a></td>
+                  <td class="govuk-table__cell">21 March 18</td>
+                  <td class="govuk-table__cell">Jane Johnson-Bestford</td>
+                  <td class="govuk-table__cell" style="text-align:Lleft;"><strong class="govuk-tag govuk-tag--green">COMPLETED</strong></td>
+                </tr>
+              </tbody>
+            </table>
+
+            <!--<a href="#0"><button class="govuk-button" data-module="govuk-button" style="margin-top: 10px;">Add new scheme valuation data submission</button></a>-->
+
+            <br>
+
+            <!--<hr style="margin-bottom: 30px;">-->
+
+            <h2 class="govuk-heading-m" style="margin-bottom: 0px;margin-top: 10px;">Documents templates</h2>
+
+            <p style="margin-bottom: 10px;">Your spreadsheets must to use our latest templates depending on the effective date of the last scheme. Make sure that you have downloaded the <a href="#0" target="blank" style="color:#1d70b8;">correct template</a>.</p>
+
+            <table class="govuk-table">
+              <thead class="govuk-table__head">
+                <tr class="govuk-table__row">
+                  <th scope="col" class="govuk-table__header">Data valuation templates</th>
+                  <th scope="col" class="govuk-table__header">Updated on</th>
+                </tr>
+              </thead>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell"><a href="#0" aria-describedby="a" style="text-decoration: none;color:#1d70b8;font-weight: 400;">Download Actuarial Data (AC)</a></td>
+                  <td class="govuk-table__cell">27/02/2020</td>
+                </tr>
+                <tr class="govuk-table__row">
+                 <td class="govuk-table__cell"><a href="#0" aria-describedby="a" style="text-decoration: none;color:#1d70b8;font-weight: 400;">Download Covenant Data (CD)</a></td>
+                  <td class="govuk-table__cell">27/02/2020</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell"><a href="#0" aria-describedby="a" style="text-decoration: none;color:#1d70b8;font-weight: 400;">Download Recovery Plan (RP)</a></td>
+                  <td class="govuk-table__cell">13/11/2019</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell"><a href="#0" aria-describedby="a" style="text-decoration: none;color:#1d70b8;font-weight: 400;">Download Funding and Investment Strategy (FIS)</a></td>
+                  <td class="govuk-table__cell">27/02/2020</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell"><a href="#0" aria-describedby="a" style="text-decoration: none;color:#1d70b8;font-weight: 400;">Download Actuarial Valuation (AV)</a></td>
+                  <td class="govuk-table__cell">06/04/2020</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell"><a href="#0" aria-describedby="a" style="text-decoration: none;color:#1d70b8;font-weight: 400;">Download Schedule of Contribution (SC)</a></td>
+                  <td class="govuk-table__cell">06/04/2020</td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+
+          <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="tab3" style="border: none; padding: 0px;">
+            
+            
+          </div>
+    
+        </div>
+
+
+        <br>
+        <br>
+        <br>
+
+    </div>
+
+    <div class="govuk-grid-column-one-third-from-desktop">
+
+        <!--
+
+        <div class="govuk-panel govuk-panel--confirmation" style="background-color: #E9F8FF;text-align: left;padding: 10px 20px 5px 20px;margin-top: 85px;">
+          <h2 class="govuk-heading-m" style="margin-bottom: 10px;">Manage payments</h2>
+          <div class="govuk-panel__body">
+            <p style="margin-bottom: 10px;"><a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">Pay the levy</a></p>
+            <p style="margin-bottom: 10px;"><a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">Setting up a Direct Debit</a></p>
+            <p style="margin-bottom: 10px;"><a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">Submit late payment of contributions</a></p>
+            <p style="margin-bottom: 10px;"><a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">Report material payment failures</a></p>
+            <p style="margin-bottom: 10px;"><a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">Print levy invoices</a></p>
+
+          </div>
+        </div>
+
+        -->
+
+        <div class="govuk-panel govuk-panel--confirmation" style="background-color: #FFF6FE;text-align: left;padding: 10px 20px 5px 20px;margin-top: 85px;">
+          <h2 class="govuk-heading-m" style="margin-bottom: 10px;">Collaborators</h2>
+          <div class="govuk-panel__body">
+            <p style="margin-bottom: 20px;">
+               &#8226; Peter Coward (Jr Actuary)<br>
+               &#8226; Anne Douglas (Sr Actuary)<br>
+               &#8226; John Smith (Pension Admin)<br>
+               &#8226; Jonathan Sinclair (Trustee)<br>
+               &#8226; Michael Sumerfield (C Trustee)<br>
+               &#8226; Tara Columbus (Business Analyst)
+            </p>
+            <!--
+            <a href="#0"><button class="govuk-button" data-module="govuk-button" style="margin-top: 10px;margin-bottom: 20px;">Invite new collaborator</button></a>
+            <p style="margin-bottom: 10px;"><a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">Manage collaborators</a></p>
+            -->
+          </div>
+        </div>
+
+        <div class="dwp-timeline" style="margin-top: 30px;">
+          <h1 class="govuk-heading-m" style="margin-bottom: -10px;">Pension scheme activity log</h1>
+          <ol class="dwp-timeline__events" style="margin-top: 0px;">
+            <li class="dwp-timeline__events--entry" style="margin-bottom: 20px;">
+                <h2 class="govuk-heading-s govuk-!-margin-bottom-1" style="margin-bottom: 5px;">Submission</h2>
+                <p class="govuk-caption-m govuk-!-margin-bottom-1" style="font-size: 16px;">15 March 2023</p>
+                <p class="govuk-caption-m" style="color: #000000;">Peter Coward uploaded data in submission 75634528.</p>
+                
+            </li>
+            <li class="dwp-timeline__events--entry" style="margin-top: 20px; margin-bottom: 20px;">
+                <h2 class="govuk-heading-s govuk-!-margin-bottom-1" style="margin-bottom: 5px;">Submission</h2>
+                <p class="govuk-caption-m govuk-!-margin-bottom-1" style="font-size: 16px;">15 March 2023</p>
+                <p class="govuk-caption-m" style="color: #000000;">John Smith added new submission 75634528.</p>
+            </li>
+            <li class="dwp-timeline__events--entry" style="margin-top: 20px; margin-bottom: 20px;">
+                <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Collaborators</h2>
+                <p class="govuk-caption-m govuk-!-margin-bottom-1" style="font-size: 16px;">11 May 2023</p>
+                <p class="govuk-caption-m" style="color: #000000;">Tara Columbus was added to the team.</p>
+                <p style="margin-bottom: 0px;"><a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">View scheme all activity </a></p>
+            </li>
+          </ol>
+        </div> 
+
+        <style>
+          .dwp-timeline {
+              font-family: Arial, sans-serif;
+          }
+          .dwp-timeline__events {
+              border-left: 3px solid #483b8b;
+              list-style-type: none;
+              padding: 0;
+          }
+          .dwp-timeline__events--entry {
+              margin: 32px 0;
+              padding-left: 18px;
+              position: relative;
+              top: -10px;
+          }
+          .dwp-timeline__events--entry::before {
+              background-color: #483b8b;
+              content: '';
+              height: 3px;
+              left: -1px;
+              position: absolute;
+              top: 10px;
+              width: 11px;
+          } 
+        </style>
+
+    </div>
+
+</div>
+
+
+
+
+{% endblock %}

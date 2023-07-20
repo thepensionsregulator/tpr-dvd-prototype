@@ -1,0 +1,124 @@
+{% extends "includes/layout_uploader_schemes_1.html" %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+      <div style="background-color: #FFEFCB;border-left: 8px solid #F3AB34;padding: 1rem;margin-top: 0px;margin-bottom: 10px;">
+        <div style="background: none;padding: 0;margin-bottom: 0;">
+            <p style="margin-bottom: 0px;"><strong>System announcement</strong><br>The system will be unavailable on the weekend of 3-4 July, between 11pm and 7am, due maintenance.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="govuk-grid-column-two-thirds">
+
+        <h1 class="govuk-heading-xl" style="margin-bottom: 30px;margin-top: 10px;">My schemes </h1>
+
+        <!--
+        <form action="#0" style="margin-top: 0px;margin-bottom: 10px;">
+          <div class="govuk-button-group" style="margin-top: 0px;margin-bottom: 0px;">
+            <button class="govuk-button" data-module="govuk-button">Register new scheme</button> &nbsp;
+            <a class="govuk-link" href="#0" style="color: #1d70b8">Track a regitration application</a>
+          </div>
+        </form>
+        -->
+
+        <div class="govuk-panel govuk-panel--confirmation" style="background-color: #f3f2f1;text-align: left;padding: 10px 20px 8px 20px;">
+
+          <div class="govuk-form-group stack" style="margin-bottom: 0px;">
+
+            <input class="govuk-input search_icon" id="width-20" name="width-20" type="text" value="Enter scheme PSR reference" style="width: 380px;position: relative;padding-left: 35px;border: 2px solid #0b0c0c;height: 40px;font-size: 1.1875rem;color: #505a5f;margin-right: 50px;">
+
+            <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes" style="width: 350px;text-align: right;">
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="organisation-2" name="organisation" type="checkbox" value="lorum" checked>
+                <label class="govuk-label govuk-checkboxes__label" for="organisation-2">
+                  Filter by organisation 
+                </label>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <style type="text/css">
+          .search_icon {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36' width='40' height='40'%3E%3Cpath d='M25.7 24.8L21.9 21c.7-1 1.1-2.2 1.1-3.5 0-3.6-2.9-6.5-6.5-6.5S10 13.9 10 17.5s2.9 6.5 6.5 6.5c1.6 0 3-.6 4.1-1.5l3.7 3.7 1.4-1.4zM12 17.5c0-2.5 2-4.5 4.5-4.5s4.5 2 4.5 4.5-2 4.5-4.5 4.5-4.5-2-4.5-4.5z' fill='%23505a5f'%3E%3C/path%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: center left -2px;
+            background-size: 40px 40px;
+            margin-right: 50px;
+          }
+          .stack {
+            display: flex;
+            flex-direction: row;
+          }
+        </style>
+
+        <table class="govuk-table" style="margin-bottom: 20px;margin-top: 10px;">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header" width="140">Schemes (4)</th>
+              <th scope="col" class="govuk-table__header" width="270">Name </th>
+              <th scope="col" class="govuk-table__header" width="100">Type</th>
+              <th scope="col" class="govuk-table__header" width="100">Submissions</th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell"><a href="uploader_pension_landingpage_1.html" style="text-decoration: none;color:#1d70b8;">PSR 10965738</a></td>
+              <td class="govuk-table__cell">North Start Limited</td>
+              <td class="govuk-table__cell">Main</td>
+              <td class="govuk-table__cell" style="text-align:center;">13</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell"><a href="#0" style="text-decoration: none;color:#1d70b8;">PSR 19965739</a></td>
+              <td class="govuk-table__cell">North Start Limited</td>
+              <td class="govuk-table__cell">DB section</td>
+              <td class="govuk-table__cell" style="text-align:center;">2</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell"><a href="#0" style="text-decoration: none;color:#1d70b8;">PSR 19965740</a></td>
+              <td class="govuk-table__cell">North Start Limited</td>
+              <td class="govuk-table__cell">DC section</td>
+              <td class="govuk-table__cell" style="text-align:center;">1</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell"><a href="#0" style="text-decoration: none;color:#1d70b8;">PSR 19965741</a></td>
+              <td class="govuk-table__cell">North Start Limited</td>
+              <td class="govuk-table__cell">DC section</td>
+              <td class="govuk-table__cell" style="text-align:center;">2</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <br>
+        <br>
+        <br>
+
+    </div>
+
+    <div class="govuk-grid-column-one-third-from-desktop">
+
+        <div class="govuk-panel govuk-panel--confirmation" style="background-color: #E9F8FF;text-align: left;padding: 10px 20px 5px 20px;margin-top: 90px;">
+          <h2 class="govuk-heading-m" style="margin-bottom: 10px;">Quick actions</h2>
+          <div class="govuk-panel__body">
+            <p style="margin-bottom: 10px;"><a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">Report notifiable events</a></p>
+            <p style="margin-bottom: 10px;"><a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">Report breaches of law</a></p>
+            <p style="margin-bottom: 10px;"><a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">Report a concern</a></p>
+          </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+{% endblock %}

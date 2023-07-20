@@ -1,0 +1,258 @@
+{% extends "includes/layout_signator_submission_landingpage_1.html" %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+
+  <div class="govuk-grid-column-full">
+
+    <div style="background-color: #FFEFCB;border-left: 8px solid #F3AB34;padding: 1rem;margin-top: 0px;margin-bottom: 30px;">
+      <div style="background: none;padding: 0;margin-bottom: 0;">
+          <p style="margin-bottom: 0px;"><strong>Important</strong><br>Your submission has been stopped. We need more information from you. Check your emails to find out what you need to do.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="govuk-grid-column-two-thirds">
+
+        <h1 class="govuk-heading-xl govuk-!-margin-bottom-4" style="margin-bottom: 10px!important;">Submission overview </h1>
+      
+        <!--<div style="border-top: 4px solid #483b8b;margin-top: 20px;margin-bottom: 20px;"></div>-->
+
+        <br>
+
+        <div class="hmcts-progress-bar-vertical" role="progressbar" style="margin-left: 0px;margin-right: 20px;">
+          <ol class="hmcts-progress-bar__list">
+            <li class="hmcts-progress-bar__list-item">
+              <span class="hmcts-progress-bar__icon hmcts-progress-bar__icon--complete"></span>
+              <span class="hmcts-progress-bar__label"><span class="govuk-visually-hidden">Step 1: </span>Submission <br>received</span>
+            </li>
+            <li class="hmcts-progress-bar__list-item">
+              <span class="hmcts-progress-bar__icon"></span>
+              <span class="hmcts-progress-bar__label"><span class="govuk-visually-hidden">Step 2: </span>Submission <br>in review</span>
+            </li>
+            <li class="hmcts-progress-bar__list-item" style="width:120px">
+              <span class="hmcts-progress-bar__icon"></span>
+              <span class="hmcts-progress-bar__label"><span class="govuk-visually-hidden">Step 3: </span>Updates <br>requested</span>
+            </li>
+            <li class="hmcts-progress-bar__list-item" style="width:120px">
+              <span class="hmcts-progress-bar__icon"></span>
+              <span class="hmcts-progress-bar__label"><span class="govuk-visually-hidden">Current Step 4: </span>Updates <br>completed</span>
+            </li>
+            <li class="hmcts-progress-bar__list-item">
+              <span class="hmcts-progress-bar__icon"></span>
+              <span class="hmcts-progress-bar__label"><span class="govuk-visually-hidden">Step 5: </span>Submission <br>completed</span>
+            </li>
+          </ol>
+        </div>
+        
+        <br><br>
+
+        <!--
+        <div style="background-color: #FFEFCB;border-left: 8px solid #F3AB34;padding: 1rem;margin-top: 0px;margin-bottom: 10px;">
+          <div style="background: none;padding: 0;margin-bottom: 0;">
+              <p style="margin-bottom: 0px;"><strong>Important</strong><br>Your application has been stopped. We need more information from you. Check your emails to find out what you need to do.</p>
+          </div>
+        </div>
+        -->
+
+        <h2 class="govuk-heading-m" style="padding-top: 0px;margin-bottom: 0px;">My submission</h2>
+
+        <table class="govuk-table">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header" colspan="2"> </th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header"><a href="#0" aria-describedby="company-information-status" style="text-decoration: none;color:#1d70b8;font-weight: 400;">View and download my submission</a></th>
+              <td class="govuk-table__cell"></td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header"><a href="#0" aria-describedby="company-information-status" style="text-decoration: none;color:#1d70b8;font-weight: 400;">Share my submission</a></th>
+              <td class="govuk-table__cell"></td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header"><a href="#0" aria-describedby="company-information-status" style="text-decoration: none;color:#1d70b8;font-weight: 400;">Cancel my submission</a></th>
+              <td class="govuk-table__cell"></td>
+            </tr>
+          </tbody>
+        </table>
+
+    </div>
+
+    
+
+
+    <div class="govuk-grid-column-one-third-from-desktop">
+
+      <!--<div style="border-top: 4px solid #1d70b8;margin-top: 10px;"></div>-->
+
+      <!--<div style="border-top: 4px solid #483b8b;margin-top: 70px;"></div>-->
+
+      <div style="border-top: 4px solid #483b8b;margin-top: 10px;"></div>
+
+      <h2 class="govuk-heading-m" style="margin-top: 20px;">Manage submission</h2>
+
+      <!--<p>Lorum ipsumj est colabra tentare sempre et colum,pias dolori causare romanus colabra perpetua sempre.</p>-->
+
+      <p style="margin-bottom: 10px;"><a href="#0" style="color:#1d70b8;">Send a message to TPR about my submission</a></p>
+      <p style="margin-bottom: 10px;"><a href="#0" style="color:#1d70b8;">Update my submission</a></p>
+      <p style="margin-bottom: 10px;"><a href="#0" style="color:#1d70b8;">Add additional details to my submission</a></p>
+      <p style="margin-bottom: 10px;"><a href="#0" style="color:#1d70b8;">Attached supporting documents to my submission</a></p>
+      <p style="margin-bottom: 10px;"><a href="#0" style="color:#1d70b8;">Read Scheme Data Valuation submissions guidance (opens in a new tab)</a></p>
+
+      <br>
+      <br>
+      <br>
+
+    </div>
+
+</div>
+
+
+<style>
+
+/* ==========================================================================
+   #PROGRESS BAR
+   ========================================================================== */
+.hmcts-progress-bar {
+  margin-bottom: 40px;
+}
+
+.hmcts-progress-bar__list {
+  font-size: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  text-align: justify;
+  vertical-align: top;
+}
+.hmcts-progress-bar__list::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+}
+.hmcts-progress-bar__list::before {
+  border-top: 6px solid #00703c;
+  content: "";
+  left: 0;
+  position: absolute;
+  top: 13px;
+  width: 100%;
+}
+
+.hmcts-progress-bar__list-item {
+  font-family: "GDS Transport", arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.25;
+  display: inline-block;
+  max-width: 20%;
+  position: relative;
+  text-align: center;
+  vertical-align: top;
+}
+@media print {
+  .hmcts-progress-bar__list-item {
+    font-family: sans-serif;
+  }
+}
+@media (min-width: 40.0625em) {
+  .hmcts-progress-bar__list-item {
+    font-size: 19px;
+    font-size: 1.1875rem;
+    line-height: 1.3157894737;
+  }
+}
+@media print {
+  .hmcts-progress-bar__list-item {
+    font-size: 14pt;
+    line-height: 1.15;
+  }
+}
+.hmcts-progress-bar__list-item:first-child::before, .hmcts-progress-bar__list-item:last-child::before {
+  border-top: 6px solid #ffffff;
+  content: "";
+  position: absolute;
+  top: 13px;
+  left: 0;
+  width: 50%;
+}
+.hmcts-progress-bar__list-item:first-child::before {
+  left: 0;
+}
+.hmcts-progress-bar__list-item:last-child::before {
+  left: auto;
+  right: 0;
+}
+.hmcts-progress-bar__list-item[aria-current=step] {
+  font-weight: 700;
+}
+
+.hmcts-progress-bar__icon {
+  position: relative;
+  background-color: #ffffff;
+  border: 6px solid #00703c;
+  border-radius: 50%;
+  box-sizing: border-box;
+  display: block;
+  height: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 32px;
+}
+
+.hmcts-progress-bar__icon--complete {
+  background-color: #00703c;
+  background-image: url(/hmcts-assets/images/icon-progress-tick.svg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.hmcts-progress-bar__label {
+  font-family: "GDS Transport", arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.1428571429;
+  display: block;
+  font-weight: inherit;
+  margin-top: 10px;
+  position: relative;
+  word-wrap: break-word;
+}
+@media print {
+  .hmcts-progress-bar__label {
+    font-family: sans-serif;
+  }
+}
+@media (min-width: 40.0625em) {
+  .hmcts-progress-bar__label {
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.25;
+  }
+}
+@media print {
+  .hmcts-progress-bar__label {
+    font-size: 14pt;
+    line-height: 1.2;
+  }
+}
+
+</style>
+
+
+
+
+{% endblock %}
