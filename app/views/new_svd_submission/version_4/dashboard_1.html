@@ -1,53 +1,30 @@
-{% extends "includes/layout_admin_schemes_1.html" %}
+{% extends "includes/layout_admin_dashboard_1.html" %}
 
 {% block content %}
 
 
 <div class="govuk-grid-row">
-
     <div class="govuk-grid-column-full">
 
-        <h1 class="govuk-heading-xl" style="margin-bottom: 20px;margin-top: 20px;">My schemes </h1>
-
-        <form action="#0" style="margin-top: 0px;margin-bottom: 10px;">
-          <div class="govuk-button-group" style="margin-top: 0px;margin-bottom: 0px;">
-            <button class="govuk-button" data-module="govuk-button">Register new scheme</button> &nbsp;
-            <a class="govuk-link" href="#0" style="color: #1d70b8">Track a regitration application</a>
-          </div>
-        </form>
-
-        <div class="govuk-panel govuk-panel--confirmation" style="background-color: #f3f2f1;text-align: left;padding: 10px 20px 8px 20px;">
-
-          <div class="govuk-form-group stack" style="margin-bottom: 0px;">
-
-            <input class="govuk-input search_icon" id="width-20" name="width-20" type="text" value="Enter scheme PSR reference" style="width: 380px;position: relative;padding-left: 35px;border: 2px solid #0b0c0c;height: 40px;font-size: 1.1875rem;color: #505a5f;margin-right: 50px;">
-
-            <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes" style="width: 350px;text-align: right;">
-              <div class="govuk-checkboxes__item">
-                <input class="govuk-checkboxes__input" id="organisation-2" name="organisation" type="checkbox" value="lorum" checked>
-                <label class="govuk-label govuk-checkboxes__label" for="organisation-2">
-                  Filter by organisation 
-                </label>
-              </div>
-            </div>
-
-          </div>
-
+      <div style="background-color: #FFEFCB;border-left: 8px solid #F3AB34;padding: 1rem;margin-top: 0px;margin-bottom: 10px;">
+        <div style="background: none;padding: 0;margin-bottom: 0;">
+            <p style="margin-bottom: 0px;"><strong>System announcement</strong><br>The system will be unavailable on the weekend of 3-4 July, between 11pm and 7am, due maintenance.</p>
         </div>
+      </div>
 
-        <style type="text/css">
-          .search_icon {
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36' width='40' height='40'%3E%3Cpath d='M25.7 24.8L21.9 21c.7-1 1.1-2.2 1.1-3.5 0-3.6-2.9-6.5-6.5-6.5S10 13.9 10 17.5s2.9 6.5 6.5 6.5c1.6 0 3-.6 4.1-1.5l3.7 3.7 1.4-1.4zM12 17.5c0-2.5 2-4.5 4.5-4.5s4.5 2 4.5 4.5-2 4.5-4.5 4.5-4.5-2-4.5-4.5z' fill='%23505a5f'%3E%3C/path%3E%3C/svg%3E");
-            background-repeat: no-repeat;
-            background-position: center left -2px;
-            background-size: 40px 40px;
-            margin-right: 50px;
-          }
-          .stack {
-            display: flex;
-            flex-direction: row;
-          }
-        </style>
+      <div style="background-color: #f0edff;border-left: 8px solid #483b8b;padding: 1rem;margin-top: 20px;margin-bottom: 10px;">
+        <div style="background: none;padding: 0;margin-bottom: 0;">
+            <p style="margin-bottom: 0px;"><strong>System announcement</strong><br>The system will be unavailable on the weekend of 3-4 July, between 11pm and 7am, due maintenance.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="govuk-grid-column-two-thirds">
+
+        <h1 class="govuk-heading-xl" style="margin-bottom: 30px;margin-top: 10px;">My dashboard </h1>
+
+        <h3 class="govuk-heading-m" style="margin-bottom: 20px;margin-top: 10px;">My tasks </h1>
 
         <table class="govuk-table" style="margin-bottom: 20px;margin-top: 10px;">
           <thead class="govuk-table__head">
@@ -239,9 +216,63 @@
 
     </div>
 
-    <!--
-
     <div class="govuk-grid-column-one-third-from-desktop">
+
+        <!--<div style="border-top: 4px solid #1d70b8;margin-top: 10px;"></div>-->
+
+        <!--
+
+        <div class="govuk-panel govuk-panel--confirmation" style="background-color: #E9F8FF;text-align: left;padding: 10px 20px 5px 20px;margin-top: 19px;">
+          <h2 class="govuk-heading-m" style="margin-bottom: 15px;">Scheme registration</h2>
+          <div class="govuk-panel__body">
+            <button class="govuk-button" data-module="govuk-button" style="margin-bottom: 20px;">
+              Register a new scheme
+            </button>
+            <p style="margin-bottom: 10px;"><a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">Track a registration application</a></p>
+            <p style="margin-bottom: 10px;"><a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">All about register schemes</a></p>
+          </div>
+        </div>
+
+        -->
+
+        <!--
+        <div class="govuk-panel govuk-panel--confirmation" style="background-color: #E9F8FF;text-align: left;padding: 10px 20px 5px 20px;margin-top: 144px;">
+          <h2 class="govuk-heading-m" style="margin-bottom: 10px;">Manage payments</h2>
+          <div class="govuk-panel__body">
+            <p style="margin-bottom: 10px;"><a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">Pay the levy</a></p>
+            <p style="margin-bottom: 10px;"><a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">Setting up a Direct Debit</a></p>
+            <p style="margin-bottom: 10px;"><a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">Submit late payment of contributions</a></p>
+            <p style="margin-bottom: 10px;"><a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">Report material payment failures</a></p>
+            <p style="margin-bottom: 10px;"><a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">Print levy invoices</a></p>
+
+          </div>
+        </div>
+
+        <div class="govuk-panel govuk-panel--confirmation" style="background-color: #FFF6FE;text-align: left;padding: 10px 20px 5px 20px;margin-top: 15px;">
+          <h2 class="govuk-heading-m" style="margin-bottom: 10px;">Manage collaborators</h2>
+          <div class="govuk-panel__body">
+            <p style="margin-bottom: 10px;"><a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">View collaborators</a></p>
+            <p style="margin-bottom: 10px;"><a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">Add new collaborator</a></p>
+            <p style="margin-bottom: 10px;"><a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">Find out about collaborators</a></p>
+          </div>
+        </div>
+
+        <div class="govuk-panel govuk-panel--confirmation" style="background-color: #f9f9f9;text-align: left;padding: 10px 20px 5px 20px;margin-top: 15px;">
+          <h2 class="govuk-heading-m" style="margin-bottom: 10px;">Other actions</h2>
+          <div class="govuk-panel__body">
+            <p style="margin-bottom: 10px;"><a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">Manage contingency asset certificates</a></p>
+            <p style="margin-bottom: 10px;"><a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">Manage deficit reduction contributions</a></p>
+            <p style="margin-bottom: 10px;"><a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">Manage transfer information segmentation</a></p>
+            <p style="margin-bottom: 10px;"><a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">Report notifiable events</a></p>
+            <p style="margin-bottom: 10px;"><a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">Report breaches of law</a></p>
+            <p style="margin-bottom: 10px;"><a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">Make a transfer request</a>
+            <p style="margin-bottom: 10px;"><a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">Request an appointment</a>
+            <p style="margin-bottom: 10px;"><a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">Merge requests</a></p>
+            <p style="margin-bottom: 10px;"><a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">Report a concern</a></p>
+            <p style="margin-bottom: 10px;"><a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">Share information about your clients schemes</a></p>
+          </div>
+        </div>
+        -->
 
         <div class="govuk-panel govuk-panel--confirmation" style="background-color: #E9F8FF;text-align: left;padding: 10px 20px 5px 20px;margin-top: 144px;">
           <h2 class="govuk-heading-m" style="margin-bottom: 10px;">Quick actions</h2>
@@ -259,9 +290,42 @@
           </div>
         </div>
 
-    </div>
+        
 
-    -->
+        <!--
+        <div style="border-top: 4px solid #483b8b;margin-top: 30px;"></div>
+
+        <h2 class="govuk-heading-m" style="margin-top: 20px;">Help and support</h2>
+
+        <p style="margin-bottom: 0px;"><a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">View tutorials</a></p>
+        
+        <p style="margin-bottom: 0px;"><a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">View FAQs</a></p>
+        
+        <p style="margin-bottom: 0px;"><a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">Make an enquiry</a></p>
+        -->
+
+        <!--
+        <div class="govuk-panel govuk-panel--confirmation" style="background-color: #E9F8FF;text-align: left;padding: 20px;margin-top: 70px;">
+          <h2 class="govuk-heading-m" style="margin-bottom: 10px;">Acme Limited</h2>
+          <div class="govuk-panel__body">
+            <p style="margin-bottom: 5px;">PSR 12010256 </p>
+            <p style="margin-bottom: 0px;"><a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">Manage account</a></p>
+          </div>
+        </div>
+        -->
+
+        <!--
+        <div class="govuk-panel govuk-panel--confirmation" style="background-color: #FFF6FE;text-align: left;padding: 20px;margin-top: 15px;">
+          <h2 class="govuk-heading-m" style="margin-bottom: 10px;">Help and support</h2>
+          <div class="govuk-panel__body">
+            <p style="margin-bottom: 0px;"><a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">View tutorials</a></p>
+            <p style="margin-bottom: 0px;"><a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">View FAQs</a></p>
+            <p style="margin-bottom: 0px;"><a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">Make an enquiry</a></p>
+          </div>
+        </div>
+        -->
+
+    </div>
 
 </div>
 

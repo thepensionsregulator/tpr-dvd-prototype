@@ -1,0 +1,148 @@
+{% extends "includes/layout_admin_dashboard_1.html" %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+      <div style="background-color: #FFEFCB;border-left: 8px solid #F3AB34;padding: 1rem;margin-top: 10px;margin-bottom: 10px;">
+        <div style="background: none;padding: 0;margin-bottom: 0;">
+            <p style="margin-bottom: 0px;"><strong>System announcement</strong><br>The system will be unavailable on the weekend of 3-4 July, between 11pm and 7am, due maintenance.</p>
+        </div>
+      </div>
+
+      <div style="background-color: #f0edff;border-left: 8px solid #483b8b;padding: 1rem;margin-top: 20px;margin-bottom: 10px;">
+        <div style="background: none;padding: 0;margin-bottom: 0;">
+            <p style="margin-bottom: 0px;"><strong>Task notification</strong><br>Lorum</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="govuk-grid-column-two-thirds">
+
+        <h1 class="govuk-heading-xl" style="margin-bottom: 30px;margin-top: 15px;">My dashboard </h1>
+
+        <h3 class="govuk-heading-m" style="margin-bottom: 10px;margin-top: 10px;">My tasks </h1>
+
+        <table class="govuk-table" style="margin-bottom: 20px;margin-top: 10px;">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header" width="80">Task</th>
+              <th scope="col" class="govuk-table__header" width="270">Description </th>
+              <th scope="col" class="govuk-table__header" width="100" style="text-align: right;">Deadline</th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell"><a href="admin_pension_landingpage_1.html" style="text-decoration: none;color:#1d70b8;">46558927</a></td>
+              <td class="govuk-table__cell">Lorum</td>
+              <td class="govuk-table__cell" style="text-align:right;">17/08/23</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell"><a href="#0" style="text-decoration: none;color:#1d70b8;">75635092</a></td>
+              <td class="govuk-table__cell">Lorum</td>
+              <td class="govuk-table__cell" style="text-align:right;">24/08/23</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell"><a href="#0" style="text-decoration: none;color:#1d70b8;">52437726</a></td>
+              <td class="govuk-table__cell">Lorum</td>
+              <td class="govuk-table__cell" style="text-align:right;">12/09/23</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell"><a href="#0" style="text-decoration: none;color:#1d70b8;">90674683</a></td>
+              <td class="govuk-table__cell">Lorum</td>
+              <td class="govuk-table__cell" style="text-align:right;">14/09/23</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!--
+        <nav class="govuk-pagination" role="navigation" aria-label="results">
+          <ul class="govuk-pagination__list">
+            <li class="govuk-pagination__item govuk-pagination__item--current">
+              <a class="govuk-link govuk-pagination__link" href="#" aria-label="Page 1" aria-current="page">
+                1
+              </a>
+            </li>
+            <li class="govuk-pagination__item">
+              <a class="govuk-link govuk-pagination__link" href="#" aria-label="Page 2" style="color:#1d70b8;">
+                2
+              </a>
+            </li>
+            <li class="govuk-pagination__item">
+              <a class="govuk-link govuk-pagination__link" href="#" aria-label="Page 3" style="color:#1d70b8;">
+                3
+              </a>
+            </li>
+          </ul>
+          <div class="govuk-pagination__next">
+            <a class="govuk-link govuk-pagination__link" href="#" rel="next" style="color:#1d70b8;"> <span class="govuk-pagination__link-title">Next</span> <svg class="govuk-pagination__icon govuk-pagination__icon--next" xmlns="http://www.w3.org/2000/svg" height="13" width="15" aria-hidden="true" focusable="false" viewBox="0 0 15 13">
+                <path d="m8.107-0.0078125-1.4136 1.414 4.2926 4.293h-12.986v2h12.896l-4.1855 3.9766 1.377 1.4492 6.7441-6.4062-6.7246-6.7266z"></path>
+              </svg></a>
+          </div>
+        </nav>
+        -->
+
+        <h3 class="govuk-heading-m" style="margin-bottom: 10px;margin-top: 35px;">My enquiries </h1>
+
+        <table class="govuk-table" style="margin-bottom: 20px;margin-top: 10px;">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header" width="380">Enquiry</th>
+              <th scope="col" class="govuk-table__header" width="80">Date </th>
+              <th scope="col" class="govuk-table__header" width="100" style="text-align: right;">Status</th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell"><a href="admin_pension_landingpage_1.html" style="text-decoration: none;color:#1d70b8;">Lorum</a></td>
+              <td class="govuk-table__cell">25/07/23</td>
+              <td class="govuk-table__cell" style="text-align:right;"><strong class="govuk-tag">IN PROGRESS</strong></td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell"><a href="#0" style="text-decoration: none;color:#1d70b8;">Lorum</a></td>
+              <td class="govuk-table__cell">26/07/23</td>
+              <td class="govuk-table__cell" style="text-align:right;"><strong class="govuk-tag govuk-tag--green">RESPONDED</strong></td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell"><a href="admin_pension_landingpage_1.html" style="text-decoration: none;color:#1d70b8;">Lorum</a></td>
+              <td class="govuk-table__cell">29/07/23</td>
+              <td class="govuk-table__cell" style="text-align:right;"><strong class="govuk-tag govuk-tag--red">REJECTED</strong></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <br>
+        <br>
+        <br>
+
+    </div>
+
+    <div class="govuk-grid-column-one-third-from-desktop">
+
+        <div class="govuk-panel govuk-panel--confirmation" style="background-color: #E9F8FF;text-align: left;padding: 10px 20px 5px 20px;margin-top: 30px;">
+          <h2 class="govuk-heading-m" style="margin-bottom: 10px;">Quick actions</h2>
+          <div class="govuk-panel__body">
+            <p style="margin-bottom: 10px;"><a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">Manage contingency asset certificates</a></p>
+            <p style="margin-bottom: 10px;"><a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">Manage deficit reduction contributions</a></p>
+            <p style="margin-bottom: 10px;"><a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">Manage transfer information segmentation</a></p>
+            <p style="margin-bottom: 10px;"><a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">Report notifiable events</a></p>
+            <p style="margin-bottom: 10px;"><a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">Report breaches of law</a></p>
+            <p style="margin-bottom: 10px;"><a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">Make a transfer request</a>
+            <p style="margin-bottom: 10px;"><a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">Request an appointment</a>
+            <p style="margin-bottom: 10px;"><a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">Merge requests</a></p>
+            <p style="margin-bottom: 10px;"><a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">Report a concern</a></p>
+            <p style="margin-bottom: 10px;"><a href="#0" target="blank" style="text-decoration: none;color:#1d70b8;">Share information about your clients schemes</a></p>
+          </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+{% endblock %}
