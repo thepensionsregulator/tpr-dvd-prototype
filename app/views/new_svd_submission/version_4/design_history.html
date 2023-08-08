@@ -1,0 +1,61 @@
+
+{% extends "includes/layout_index.html" %}
+
+{% block pageTitle %}
+  Home – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  {% include "includes/backlink.html" %}
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+        <h1 class="govuk-heading-xl" style="margin-bottom: 30px;">Design history </h1>
+
+        <p class="govuk-body" style="margin-bottom: 30px;">This page describe all the changes in this version from previous version. <br><br>
+          Contact details about the changes: <br>
+          <strong>&#8226; Service:</strong> Kat  Chartrand, kat.chartrand@tpr.gov.uk  <br>
+          <strong>&#8226; Prototype:</strong> Ramon Delgado, ramon.delgado@tpr.gov.uk
+        </p>
+
+        <table class="govuk-table">
+          <caption class="govuk-table__caption govuk-table__caption--m">What has been changing from previous version?</caption>
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header" width="200">Subject</th>
+              <th scope="col" class="govuk-table__header">Description</th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Service scope</th>
+              <td class="govuk-table__cell">Lorem ipsum dolor sit amet consectetur adipiscing elit. Praesent ut egestas urna ut laoreet leo et quam fermentum finibus neque iaculis.</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Value proposition</th>
+              <td class="govuk-table__cell">Quisque in est nibh interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus libero augue gravida at finibus molestie semper in massa. Duis volutpat sapien at tincidunt congue interdum pulvinar nisi. </td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Design</th>
+              <td class="govuk-table__cell">Curabitur vestibulum felis dolor sit amet sollicitudin nisi fringilla at praesent eu vulputate libero nam sodales ipsum id vehicula tellus venenatis. 
+                <br><br>
+                Cras malesuada sapien bibendum erat aliquam dapibus. Sed sed est erat. Aenean efficitur ligula at pellentesque facilisis arcu leo tristique diam iaculis tempus turpis libero sed metus curabitur blandit consequat dui. 
+                <br><br>
+                Ut nec semper erat proin et arcu venenatis, imperdiet ante eget placerat ipsum quisque felis velit scelerisque vitae massa nec, consectetur lacinia metus vivamus non nisl lorem praesent vel purus erat feugiat leo id congue elit elementum placerat.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p style="margin-bottom: 300px;"></p>
+
+    </div>
+</div>
+
+
+{% endblock %}

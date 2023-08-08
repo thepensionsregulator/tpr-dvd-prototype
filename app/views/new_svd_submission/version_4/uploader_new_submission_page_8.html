@@ -1,0 +1,74 @@
+{% extends "includes/layout_uploader_new_submission_2.html" %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+        <div class="govuk-width-container">
+          <a href="#0" class="govuk-back-link" style="margin-top: 0px;margin-bottom: 20px;">Back</a>
+        </div>
+
+        <h1 class="govuk-heading-l" style="margin-bottom: 20px;margin-top: 10px;">Select the data ingestions format</h1>
+
+        <div class="govuk-inset-text" style="margin-bottom: 30px;">
+          This new service allow you to choose two options at the moment. In the future the only available ingestion format will be  via web forms.
+        </div>
+
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset" aria-describedby="sign-in-hint">
+            <div class="govuk-radios" data-module="govuk-radios">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="option1" name="select" type="radio" value="option1" for="option1">
+                <label class="govuk-label govuk-radios__label" for="sign-in">
+                  Upload data using a ODS file from TPR templates
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="option2" name="select" type="radio" value="option2" for="option2">
+                <label class="govuk-label govuk-radios__label" for="sign-in-2">
+                  Upload data using web forms
+                </label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+
+        <!--
+        <form action="uploader_new_submission_page_4.html" style="margin-top: 40px;">
+          <div class="govuk-button-group">
+            <button class="govuk-button" data-module="govuk-button">Save and continue</button>
+            <a class="govuk-link" href="#0" style="color: #1d70b8">Cancel and return </a>
+          </div>
+        </form>
+        -->
+
+        <div class="govuk-button-group">
+            <a href="" onclick='myFunction()' id="link" style="text-decoration: none;"><button class="govuk-button" data-module="govuk-button" style="display:flex;vertical-align:middle;">Save and continue</button></a>
+            &nbsp;&nbsp;
+            <a class="govuk-link" href="#0" style="color: #1d70b8;display:flex;vertical-align:middle;">Cancel and return</a>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+    </div>
+</div>
+
+
+<script>
+    function myFunction() {
+   
+        if(document.getElementById('option1').checked) {
+            document.getElementById('link').href = "uploader_new_submission_page_9.html";
+        }
+        if(document.getElementById('option2').checked) {
+            document.getElementById('link').href = "#0";
+        }
+    }
+</script>
+
+
+{% endblock %}

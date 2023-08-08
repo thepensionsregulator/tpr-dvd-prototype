@@ -1,0 +1,78 @@
+{% extends "includes/layout_uploader_new_submission_2.html" %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+        <div class="govuk-width-container">
+          <a href="#0" class="govuk-back-link" style="margin-top: 0px;margin-bottom: 20px;">Back</a>
+        </div>
+
+        <h1 class="govuk-heading-l" style="margin-bottom: 20px;margin-top: 10px;">Upload your recovery plan</h1>
+
+        <div class="govuk-inset-text" style="margin-bottom: 30px;">
+          Your spreadsheets must to use our templates. The template can change depending on the effective date of the last scheme funding (Part 3) valuation. Make sure that you have downloaded the <a href="#0" target="blank" style="color:#1d70b8;">correct template</a>.
+        </div>
+
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="file-upload-1">
+            <strong>Upload a file</strong>
+          </label>
+          <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+        </div>
+
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="file-upload-1" style="margin-bottom: 10px;">
+            <strong>Enter any comments about this file (optional)</strong>
+          </label>
+          <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+        </div>
+
+        <form action="uploader_new_submission_page_9_error.html" style="margin-top: 40px;">
+          <div class="govuk-button-group">
+            <button class="govuk-button" data-module="govuk-button">Save and continue</button>
+            <a class="govuk-link" href="#0" style="color: #1d70b8">Cancel and return </a>
+          </div>
+        </form>
+
+        <br>
+        <br>
+        <br>
+
+    </div>
+
+    <div class="govuk-grid-column-one-third-from-desktop">
+
+        <div style="border-top: 4px solid #483b8b;margin-top: 50px;"></div>
+
+        <h2 class="govuk-heading-m" style="margin-top: 20px;">Upload guidance</h2>
+
+        <!--
+        <p>Your defined benefit (DB) scheme is subject to the statutory funding objective, which means it needs to have appropriate assets to cover its accrued liabilities (known as ‘technical provisions’). You must prepare and maintain a statement of funding principles setting out your policy for meeting the statutory funding objective and a schedule of contributions covering payments due to the scheme.</p>
+        -->
+
+        <p>The file must be a ODS using our template. <br><br>Lorum ipsum est colabra tentare sempre et romaanus dolore provocas sempre aliquam asertarum calabrias doloratus populus sequias.</p>
+
+        <details class="govuk-details" data-module="govuk-details">
+          <summary class="govuk-details__summary">
+            <span class="govuk-details__summary-text">
+              Lorum ipsum est
+            </span>
+          </summary>
+          <div class="govuk-details__text">
+            Lorum ipsum est colabra tentare sempre et romaanus dolore provocas sempre aliquam asertarum calabrias doloratus populus sequias sim acuas populare sempre asquates doloris.
+            <br>
+            <br>
+            <p><a href="#0" style="color:#1d70b8;">Lorum ipsum est</a></p>
+          </div>
+        </details>
+
+    </div>
+</div>
+
+
+
+
+{% endblock %}
