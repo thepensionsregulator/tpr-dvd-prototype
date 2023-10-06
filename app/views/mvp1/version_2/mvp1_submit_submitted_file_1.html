@@ -1,0 +1,97 @@
+{% extends "includes/mvp1_submit_layout_2.html" %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+        <h1 class="govuk-heading-xl" style="margin-bottom: 20px;margin-top: 20px;">View uploaded actuarial data</h1>
+
+        <div class="govuk-inset-text" style="margin-bottom: 20px;">
+          This is the actuarial data that you uploaded and is now stored in our records. <br>You can update this data anytime by uploading a different file before submit.
+        </div>
+
+        <table class="govuk-table" style="margin-bottom: 20px;">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header" width="350"></th>
+              <th scope="col" class="govuk-table__header"></th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Label 1 &nbsp;(it could be a long sentence)</th>
+              <td class="govuk-table__cell">Data here &nbsp;(it could be numbers or text)</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Label 2</th>
+              <td class="govuk-table__cell">Data here</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Label 3</th>
+              <td class="govuk-table__cell">Data here</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Label 4</th>
+              <td class="govuk-table__cell">Data here</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Label 5</th>
+              <td class="govuk-table__cell">Data here</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p><a href="mvp1_submit_upload_1.html" style="color:#1d70b8;">Update this data by uploading a new file</a></p>
+
+        <p><a href="#0" style="color:#1d70b8;">Download actuarial data in a PDF</a></p>
+
+        <!--<p><a href="mvp1_submit_submission_details.html" style="color:#1d70b8;">Back to submission details</a></p>-->
+
+        <form action="mvp1_submit_task_list_2.html">
+          <div class="govuk-button-group" style="margin-top: 30px;">
+            <button class="govuk-button govuk-button--secondary" data-module="govuk-button">Back to submission overview</button>
+          </div>
+        </form>
+
+        <br>
+        <br>
+        <br>
+
+    </div>
+
+    <!--
+
+    <div class="govuk-grid-column-one-third-from-desktop">
+
+        <div style="border-top: 4px solid #483b8b;margin-top: 30px;"></div>
+
+        <h2 class="govuk-heading-m" style="margin-top: 20px;">Upload guidance</h2>
+
+        <p>The file must be a ODS using our template. <br><br>Lorum ipsum est colabra tentare sempre et romaanus dolore provocas sempre aliquam asertarum calabrias doloratus populus sequias.</p>
+
+        <details class="govuk-details" data-module="govuk-details">
+          <summary class="govuk-details__summary">
+            <span class="govuk-details__summary-text">
+              Lorum ipsum est
+            </span>
+          </summary>
+          <div class="govuk-details__text">
+            Lorum ipsum est colabra tentare sempre et romaanus dolore provocas sempre aliquam asertarum calabrias doloratus populus sequias sim acuas populare sempre asquates doloris.
+            <br>
+            <br>
+            <p><a href="#0" style="color:#1d70b8;">Lorum ipsum est</a></p>
+          </div>
+        </details>
+
+    </div>
+
+    -->
+
+</div>
+
+
+
+
+{% endblock %}
