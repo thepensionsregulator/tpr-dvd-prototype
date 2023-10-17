@@ -1,0 +1,172 @@
+{% extends "includes/mvp1_submit_layout_2.html" %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+        <h1 class="govuk-heading-xl" style="margin-bottom: 20px;margin-top: 20px;">Is the valuation submission fast track or bespoke? </h1>
+
+        <details class="govuk-details" data-module="govuk-details" style="margin-bottom: 30px;margin-top: 30px;">
+          <summary class="govuk-details__summary">
+            <span class="govuk-details__summary-text">
+              What is fast track?
+            </span>
+          </summary>
+          <div class="govuk-details__text">
+            Fast Track is a possible approach to DB funding to provide trustees with a simpler path to demonstrating compliance.
+            <br>
+            It represents our view of tolerated risk for a scheme and sets out a series of quantitative parameters that need to be met. If a scheme meets all the Fast Track parameters, we are unlikely to scrutinise the valuation submission further.
+            <br>
+            For more information and Fast Track, read the <a href="#0" style="color: #1d70b8">[guidance not yet published]</a>.
+          </div>
+        </details>
+
+        <!--
+        <div class="govuk-inset-text" style="margin-bottom: 30px;">
+          Fast Track is a possible approach to DB funding to provide trustees with a simpler path to demonstrating compliance.
+          <br>
+          It represents our view of tolerated risk for a scheme and sets out a series of quantitative parameters that need to be met. If a scheme meets all the Fast Track parameters, we are unlikely to scrutinise the valuation submission further.
+          <br>
+          For more information and Fast Track, read the <a href="#0" style="color: #1d70b8">[guidance not yet published]</a>.
+        </div>
+        -->
+
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+            <!--
+            <div id="contact-hint" class="govuk-hint">
+              Select one option.
+            </div>
+            -->
+            <div class="govuk-radios" data-module="govuk-radios">
+              <div class="govuk-radios__item" style="margin-bottom: 20px;">
+                <input class="govuk-radios__input" id="contact" name="contact" type="radio" value="email" data-aria-controls="conditional-contact">
+                <label class="govuk-label govuk-radios__label" for="contact">
+                  Fast track
+              </div>
+
+              <!--
+
+              <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-contact">
+                <div class="govuk-form-group">
+
+                  <label class="govuk-label" for="contact-by-email" style="margin-bottom: 15px;">
+                    Have the fast track Technical Provisions (TPs) test and conditions been met?
+                  </label>
+
+                  <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios" style="margin-bottom: 20px;">
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="1" name="a" type="radio" value="yes">
+                      <label class="govuk-label govuk-radios__label" for="changedName">
+                        Yes
+                      </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="2" name="a" type="radio" value="no">
+                      <label class="govuk-label govuk-radios__label" for="changedName-2">
+                        No
+                      </label>
+                    </div>
+                  </div>
+
+                  <label class="govuk-label" for="contact-by-email" style="margin-bottom: 15px;">
+                    Has the scheme actuary confirmed that the valuation meets all Fast Track parameters?
+                  </label>
+
+                  <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios" style="margin-bottom: 20px;">
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="1" name="b" type="radio" value="yes">
+                      <label class="govuk-label govuk-radios__label" for="changedName">
+                        Yes
+                      </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="2" name="b" type="radio" value="no">
+                      <label class="govuk-label govuk-radios__label" for="changedName-2">
+                        No
+                      </label>
+                    </div>
+                  </div>
+
+                  <label class="govuk-label" for="contact-by-email" style="margin-bottom: 15px;">
+                    Has the Funding and investment stress test has been met?
+                  </label>
+
+                  <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios" style="margin-bottom: 20px;">
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="1" name="c" type="radio" value="yes">
+                      <label class="govuk-label govuk-radios__label" for="changedName">
+                        Yes
+                      </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="2" name="c" type="radio" value="no">
+                      <label class="govuk-label govuk-radios__label" for="changedName-2">
+                        No
+                      </label>
+                    </div>
+                  </div>
+                  <label class="govuk-label" for="contact-by-email" style="margin-bottom: 15px;">
+                    Have the recovery plan conditions have been met?
+                  </label>
+
+                  <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios" style="margin-bottom: 20px;">
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="1" name="d" type="radio" value="yes">
+                      <label class="govuk-label govuk-radios__label" for="changedName">
+                        Yes
+                      </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="2" name="d" type="radio" value="no">
+                      <label class="govuk-label govuk-radios__label" for="changedName-2">
+                        No
+                      </label>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              -->
+
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="contact-2" name="contact" type="radio" value="phone" data-aria-controls="conditional-contact-2">
+                <label class="govuk-label govuk-radios__label" for="contact-2">
+                  Bespoke
+                </label>
+              </div>
+              <!--
+              <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-contact-2">
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="contact-by-phone">
+                    More
+                  </label>
+                  <input class="govuk-input govuk-!-width-one-third" id="contact-by-phone" name="contactByPhone" type="tel" autocomplete="tel">
+                </div>
+              </div>
+              -->
+            </div>
+          </fieldset>
+        </div>
+
+        <form action="mvp1_submit_task_list_2.html">
+          <div class="govuk-button-group" style="margin-top: 40px;">
+            <button class="govuk-button" data-module="govuk-button">Save and continue</button>
+            <a class="govuk-link" href="#0" style="color: #1d70b8">Cancel and return </a>
+          </div>
+        </form>
+
+        <br>
+        <br>
+        <br>
+
+    </div>
+
+</div>
+
+
+
+
+{% endblock %}

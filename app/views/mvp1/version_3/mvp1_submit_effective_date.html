@@ -1,0 +1,80 @@
+{% extends "includes/mvp1_submit_layout_2.html" %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+        <h1 class="govuk-heading-xl" style="margin-bottom: 20px;margin-top: 20px;">What was the effective date of the most recent scheme funding (Part 3) valuation?</h1>
+
+        <details class="govuk-details" data-module="govuk-details" style="margin-bottom: 30px;margin-top: 30px;">
+          <summary class="govuk-details__summary">
+            <span class="govuk-details__summary-text">
+              What is the effective date?
+            </span>
+          </summary>
+          <div class="govuk-details__text">
+            The ‘effective date’ is the date at which the scheme’s assets and technical provisions are measured. It will be earlier than the date on which the calculations are carried out. 
+          </div>
+        </details>
+
+        <!--
+        <div class="govuk-inset-text" style="margin-bottom: 30px;">
+          The ‘effective date’ is the date at which the scheme’s assets and technical provisions are measured. It will be earlier than the date on which the calculations are carried out. 
+        </div>
+        -->
+
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
+            <div id="passport-issued-hint" class="govuk-hint">
+              For example, 27 3 2021
+            </div>
+            <div class="govuk-date-input" id="passport-issued">
+              <div class="govuk-date-input__item">
+                <div class="govuk-form-group">
+                  <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                    Day
+                  </label>
+                  <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="passport-issued-day" type="text" inputmode="numeric">
+                </div>
+              </div>
+              <div class="govuk-date-input__item">
+                <div class="govuk-form-group">
+                  <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                    Month
+                  </label>
+                  <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="passport-issued-month" type="text" inputmode="numeric">
+                </div>
+              </div>
+              <div class="govuk-date-input__item">
+                <div class="govuk-form-group">
+                  <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+                    Year
+                  </label>
+                  <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="passport-issued-year" type="text" inputmode="numeric">
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+
+        <form action="mvp1_submit_relevant_date.html">
+          <div class="govuk-button-group" style="margin-top: 40px;">
+            <button class="govuk-button" data-module="govuk-button">Save and continue</button>
+            <a class="govuk-link" href="#0" style="color: #1d70b8">Cancel and return </a>
+          </div>
+        </form>
+
+        <br>
+        <br>
+        <br>
+
+    </div>
+
+</div>
+
+
+
+
+{% endblock %}
