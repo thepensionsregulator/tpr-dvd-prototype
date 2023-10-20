@@ -1,0 +1,65 @@
+{% extends "includes/mvp1_submit_layout_2.html" %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+        <h1 class="govuk-heading-xl" style="margin-bottom: 20px;margin-top: 20px;">View Trustee Assessment provided details</h1>
+
+        <div class="govuk-inset-text" style="margin-bottom: 30px;">
+          This is what you responded to our Trustee Assessment questions. 
+        </div>
+
+        <table class="govuk-table" style="margin-bottom: 0px;">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header" width="400">Question</th>
+              <th scope="col" class="govuk-table__header" width="10"></th>
+              <th scope="col" class="govuk-table__header" width="400">Your respond</th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__cell">To what extent does the Funding and Investment Strategy remain appropriate and why?</td>
+              <td class="govuk-table__cell"> </td>
+              <td class="govuk-table__cell">Your respond goes here...</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__cell">To what extent is the Funding and Investment Strategy being successfully implemented?</td>
+              <td class="govuk-table__cell"> </td>
+              <td class="govuk-table__cell">Your respond goes here...</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__cell">If the Funding and Investment Strategy is not being successfully implemented, what steps do you propose to take to remedy the position, including timing?</td>
+              <td class="govuk-table__cell"> </td>
+              <td class="govuk-table__cell">Your respond goes here...</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <form action="mvp1_submit_questionnaire_1.html">
+          <div class="govuk-button-group" style="margin-top: 20px;">
+            <a class="govuk-link" href="#0" style="color: #1d70b8">Download uploaded actuarial data in a PDF</a>
+          </div>
+        </form>
+
+        <form action="mvp1_submit_submission_details.html">
+          <div class="govuk-button-group" style="margin-top: 20px;">
+            <button class="govuk-button govuk-button--secondary" data-module="govuk-button">Return to submission details</button>
+          </div>
+        </form>
+
+        <br>
+        <br>
+        <br>
+
+    </div>
+
+</div>
+
+
+
+
+{% endblock %}

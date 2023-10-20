@@ -1,0 +1,52 @@
+{% extends "includes/mvp1_submit_layout_2.html" %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+        <h1 class="govuk-heading-xl" style="margin-bottom: 20px;margin-top: 20px;">Upload a copy of the schedule of contributions</h1>
+
+        <div class="govuk-inset-text" style="margin-bottom: 30px;">
+          You must upload your file in PDF format.
+        </div>
+
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="file-upload-1">
+            <strong>Upload a file</strong>
+          </label>
+          <!--
+          <div id="signIn-hint" class="govuk-hint" style="margin-top: 10px">
+            The file must be a ODS using our template.
+          </div>
+          -->
+          <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+        </div>
+
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="file-upload-1" style="margin-bottom: 10px;">
+            <strong>Enter any comments about this file (optional)</strong>
+          </label>
+          <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+        </div>
+
+        <form action="mvp1_submit_task_list_7.html">
+          <div class="govuk-button-group" style="margin-top: 40px;">
+            <button class="govuk-button" data-module="govuk-button">Save and continue</button>
+            <a class="govuk-link" href="#0" style="color: #1d70b8">Cancel and return </a>
+          </div>
+        </form>
+
+        <br>
+        <br>
+        <br>
+
+    </div>
+
+</div>
+
+
+
+
+{% endblock %}
