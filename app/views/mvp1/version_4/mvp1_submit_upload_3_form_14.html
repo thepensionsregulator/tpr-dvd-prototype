@@ -1,0 +1,169 @@
+{% extends "includes/mvp1_submit_layout_2.html" %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+        <h1 class="govuk-heading-xl" style="margin-bottom: 20px;margin-top: 20px;">Contingent assets</h1>
+
+        <!--
+        <div class="govuk-inset-text" style="margin-bottom: 30px;">
+          You must use our template to upload your data in ODS format. <br><a href="#0" style="color:#1d70b8;">Download template </a>.
+        </div>
+        -->
+
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend">
+             <strong>Is the scheme party to a contingent asset which it is placing reliance upon?</strong>
+            </legend>
+            <div class="govuk-radios" data-module="govuk-radios">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="whereDoYouLive" name="whereDoYouLiveOPS" type="radio" value="england">
+                <label class="govuk-label govuk-radios__label" for="whereDoYouLive">
+                  Yes
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="whereDoYouLive-2" name="whereDoYouLiveOPS" type="radio" value="scotland">
+                <label class="govuk-label govuk-radios__label" for="whereDoYouLive-2">
+                  No
+                </label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend">
+             <strong>If contingent asset is relied upon to support additional risk post-significant maturity or avoid a 'trapped surplus' and/or otherwise enable a flexible recovery plan, does it meet the criteria of a 'Qualifying contingent asset' (QCA)?</strong>
+            </legend>
+            <div class="govuk-radios" data-module="govuk-radios">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="whereDoYouLive" name="whereDoYouLiveAUCH" type="radio" value="england">
+                <label class="govuk-label govuk-radios__label" for="whereDoYouLive">
+                  Yes
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="whereDoYouLive-2" name="whereDoYouLiveAUCH" type="radio" value="scotland">
+                <label class="govuk-label govuk-radios__label" for="whereDoYouLive-2">
+                  No
+                </label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend">
+             <strong>Select type of contingent asset</strong>
+            </legend>
+            <div class="govuk-radios" data-module="govuk-radios">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="whereDoYouLive-1" name="whereDoYouLive" type="radio" value="england">
+                <label class="govuk-label govuk-radios__label" for="whereDoYouLive-1">
+                  Security over assets
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="whereDoYouLive-2" name="whereDoYouLive" type="radio" value="scotland">
+                <label class="govuk-label govuk-radios__label" for="whereDoYouLive-2">
+                  Letter of credit / bank guarantee
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="whereDoYouLive-3" name="whereDoYouLive" type="radio" value="scotland">
+                <label class="govuk-label govuk-radios__label" for="whereDoYouLive-3">
+                  Surety bonds
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="whereDoYouLive-4" name="whereDoYouLive" type="radio" value="scotland">
+                <label class="govuk-label govuk-radios__label" for="whereDoYouLive-4">
+                  Cash in escrow account
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="whereDoYouLive-5" name="whereDoYouLive" type="radio" value="4" data-aria-controls="conditional-whereDoYouLive-5">
+                <label class="govuk-label govuk-radios__label" for="whereDoYouLive-5">
+                  Other
+                </label>
+              </div>
+              <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-whereDoYouLive-5">
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="contact-by-email">
+                    Describe the contingent asset 
+                  </label>
+                  <textarea class="govuk-textarea" id="more-detail" name="moreDetail" rows="5" aria-describedby="more-detail-hint"></textarea>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend">
+             <strong>Where 'security', what methodology has been used to ascribe value to this?</strong>
+            </legend>
+            <div class="govuk-radios" data-module="govuk-radios">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="whereDoYouLive-1" name="whereDoYouLiveSir" type="radio" value="england">
+                <label class="govuk-label govuk-radios__label" for="whereDoYouLive-1">
+                  Break-up basis
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="whereDoYouLive-2" name="whereDoYouLiveSir" type="radio" value="scotland">
+                <label class="govuk-label govuk-radios__label" for="whereDoYouLive-2">
+                  Alternate use or vacant possession
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="whereDoYouLive-3" name="whereDoYouLiveSir" type="radio" value="scotland">
+                <label class="govuk-label govuk-radios__label" for="whereDoYouLive-3">
+                  Based on financial accounts
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="whereDoYouLive-4" name="whereDoYouLiveSir" type="radio" value="4" data-aria-controls="conditional-whereDoYouLive-4">
+                <label class="govuk-label govuk-radios__label" for="whereDoYouLive-4">
+                  Other
+                </label>
+              </div>
+              <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-whereDoYouLive-4">
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="contact-by-email">
+                    Describe the security
+                  </label>
+                  <textarea class="govuk-textarea" id="more-detail" name="moreDetail" rows="5" aria-describedby="more-detail-hint"></textarea>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+
+        <form action="mvp1_submit_upload_3_form_15.html">
+          <div class="govuk-button-group" style="margin-top: 40px;">
+            <button class="govuk-button" data-module="govuk-button">Save and continue</button>
+            <a class="govuk-link" href="mvp1_submit_upload_3_form_13.html" style="color: #1d70b8">Return to Covenant information</a>
+          </div>
+        </form>
+
+        <br>
+        <br>
+        <br>
+
+    </div>
+
+</div>
+
+
+
+
+{% endblock %}

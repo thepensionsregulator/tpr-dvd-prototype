@@ -1,0 +1,134 @@
+{% extends "includes/mvp1_submit_layout_2.html" %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+        <h1 class="govuk-heading-xl" style="margin-bottom: 20px;margin-top: 20px;">Risk test</h1>
+
+        <!--
+        <div class="govuk-inset-text" style="margin-bottom: 30px;">
+          You must use our template to upload your data in ODS format. <br><a href="#0" style="color:#1d70b8;">Download template </a>.
+        </div>
+        -->
+
+        <!--
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="file-upload-1" style="margin-bottom: 10px;">
+            <strong>What is the source of the majority of information that has been relied upon for this covenant assessment?</strong>
+          </label>
+          <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+        </div>
+        -->
+
+        <!--
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="file-upload-1" style="margin-bottom: 10px;">
+            <strong>Describe the source of the information</strong>
+          </label>
+          <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+        </div>
+        -->
+
+        <!--
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="event-name">
+            What is the source of the majority of informstion that has been relied upon for this covenant assessment?
+          </label>
+          <input class="govuk-input" id="event-name" name="eventName" type="text">
+        </div>
+        -->
+
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend">
+             <strong>Can your employer covenant support the risk being run by the scheme, with reference to the Maximum Supportable Risk (MSR) formula?</strong>
+            </legend>
+            <div class="govuk-radios" data-module="govuk-radios">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="whereDoYouLive" name="whereDoYouLive" type="radio" value="england">
+                <label class="govuk-label govuk-radios__label" for="whereDoYouLive">
+                  Yes
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="whereDoYouLive-2" name="whereDoYouLive" type="radio" value="scotland">
+                <label class="govuk-label govuk-radios__label" for="whereDoYouLive-2">
+                  No
+                </label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="file-upload-1" style="margin-bottom: 10px;">
+            <strong>What is the value of maximum risk that can be supported based on the trustees assessment of the covenant?</strong>
+          </label>
+          <div class="govuk-input__wrapper">
+            <div class="govuk-input__prefix" aria-hidden="true">£</div>
+            <input class="govuk-input govuk-input--width-5" id="cost" name="cost" type="text" spellcheck="false">
+          </div>
+        </div>
+
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="file-upload-1" style="margin-bottom: 10px;">
+            <strong>What is the value of reliability period for contributions?</strong>
+          </label>
+          <div class="govuk-input__wrapper">
+            <div class="govuk-input__prefix" aria-hidden="true">£</div>
+            <input class="govuk-input govuk-input--width-5" id="cost" name="cost" type="text" spellcheck="false">
+          </div>
+        </div>
+
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="file-upload-1" style="margin-bottom: 10px;">
+            <strong>What is the value of maximum affordable contributions?</strong>
+          </label>
+          <div class="govuk-input__wrapper">
+            <div class="govuk-input__prefix" aria-hidden="true">£</div>
+            <input class="govuk-input govuk-input--width-5" id="cost" name="cost" type="text" spellcheck="false">
+          </div>
+        </div>
+
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="file-upload-1" style="margin-bottom: 10px;">
+            <strong>What is the value ascribed to contingent assets?</strong>
+          </label>
+          <div class="govuk-input__wrapper">
+            <div class="govuk-input__prefix" aria-hidden="true">£</div>
+            <input class="govuk-input govuk-input--width-5" id="cost" name="cost" type="text" spellcheck="false">
+          </div>
+        </div>
+
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="file-upload-1" style="margin-bottom: 10px;">
+            <strong>What is the total level of liquidity? </strong>
+          </label>
+          <div class="govuk-input__wrapper">
+            <div class="govuk-input__prefix" aria-hidden="true">£</div>
+            <input class="govuk-input govuk-input--width-5" id="cost" name="cost" type="text" spellcheck="false">
+          </div>
+        </div>
+
+        <form action="mvp1_submit_upload_3_form_7.html">
+          <div class="govuk-button-group" style="margin-top: 40px;">
+            <button class="govuk-button" data-module="govuk-button">Save and continue</button>
+            <a class="govuk-link" href="mvp1_submit_upload_3_form_5.html" style="color: #1d70b8">Return to Covenant information</a>
+          </div>
+        </form>
+
+        <br>
+        <br>
+        <br>
+
+    </div>
+
+</div>
+
+
+
+
+{% endblock %}
