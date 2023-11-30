@@ -1,0 +1,96 @@
+{% extends "includes/mvp1_submit_layout_3_back.html" %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+        <h1 class="govuk-heading-xl" style="margin-bottom: 30px;margin-top: 20px;">Upload supporting document</h1>
+
+        <!--
+        <div class="govuk-inset-text" style="margin-bottom: 30px;">
+          Your file must be in XLS format.
+        </div>
+        -->
+
+        <div class="govuk-form-group" style="margin-bottom: 20px;">
+          <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+            <label class="govuk-label" for="sort" style="margin-bottom: 5px;">
+            <strong>Confirm what details you included in the supporting document
+          </label>
+            <div id="waste-hint" class="govuk-hint">
+              Select all that apply.
+            </div>
+            <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                <label class="govuk-label govuk-checkboxes__label" for="waste">
+                  Actuarial valuation
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+                <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+                  Schedule of contributions
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+                <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                  Recovery plan
+                </label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+
+        <details class="govuk-details" data-module="govuk-details">
+          <summary class="govuk-details__summary">
+            <span class="govuk-details__summary-text">
+              What you need to include in the supporting document
+            </span>
+          </summary>
+          <div class="govuk-details__text">
+            Lorum ipsum here...
+          </div>
+        </details>
+
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="file-upload-1">
+            <strong>Upload file</strong>
+          </label>
+          <div id="signIn-hint" class="govuk-hint" style="margin-top: 10px">
+            The file must be a PDF.
+          </div>
+          <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+        </div>
+
+        <!--
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="file-upload-1" style="margin-bottom: 10px;">
+            <strong>Enter any comments about this file (optional)</strong>
+          </label>
+          <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+        </div>
+        -->
+
+        <form action="mvp1_submit_review.html">
+          <div class="govuk-button-group" style="margin-top: 40px;">
+            <button class="govuk-button" data-module="govuk-button">Continue</button>
+            <a class="govuk-link" href="#0" style="color: #1d70b8">Cancel </a>
+          </div>
+        </form>
+
+        <br>
+        <br>
+        <br>
+
+    </div>
+
+</div>
+
+
+
+
+{% endblock %}
