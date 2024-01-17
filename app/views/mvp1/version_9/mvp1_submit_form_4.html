@@ -1,0 +1,87 @@
+{% extends "includes/mvp1_submit_layout_3_back.html" %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+        <h1 class="govuk-heading-xl" style="margin-bottom: 30px;margin-top: 20px;">Trustee Assessment information</h1>
+
+        <div class="govuk-inset-text" style="margin-bottom: 30px;">
+          You must respond to these questions as part of the valuation data information.
+        </div>
+
+        <div class="govuk-character-count" data-module="govuk-character-count" data-maxlength="1000">
+          <div class="govuk-form-group">
+            <h3 class="govuk-label-wrapper">
+              <label class="govuk-label govuk-label--s" for="with-hint-1">
+                To what extent does the Funding and Investment Strategy remain appropriate and why?
+              </label>
+            </h3>
+            <!--
+            <div id="with-hint-hint" class="govuk-hint">
+              Do not include personal or financial information like your National Insurance number or credit card details.
+            </div>
+            -->
+            <textarea class="govuk-textarea govuk-js-character-count" id="with-hint-1" name="withHint-1" rows="5" aria-describedby="with-hint-1-info with-hint-1-hint" style="margin-top:15px;width: 800px;"></textarea><div id="with-hint-1-info" class="govuk-hint govuk-character-count__message govuk-visually-hidden">
+            You can enter up to 1000 characters
+          </div><div class="govuk-hint govuk-character-count__message govuk-character-count__status" aria-hidden="true">You have 1,000 characters remaining</div><div class="govuk-character-count__sr-status govuk-visually-hidden" aria-live="polite">You have 1,000 characters remaining</div>
+          </div>
+        </div>
+
+        <div class="govuk-character-count" data-module="govuk-character-count" data-maxlength="1000">
+          <div class="govuk-form-group">
+            <h3 class="govuk-label-wrapper">
+              <label class="govuk-label govuk-label--s" for="with-hint-2">
+                To what extent is the Funding and Investment Strategy being successfully implemented?
+              </label>
+            </h3>
+            <!--
+            <div id="with-hint-hint" class="govuk-hint">
+              Do not include personal or financial information like your National Insurance number or credit card details.
+            </div>
+            -->
+            <textarea class="govuk-textarea govuk-js-character-count" id="with-hint-2" name="withHint-2" rows="5" aria-describedby="with-hint-2-info with-hint-2-hint" style="margin-top:15px;width: 800px;"></textarea><div id="with-hint-2-info" class="govuk-hint-2 govuk-character-count__message govuk-visually-hidden">
+            You can enter up to 1000 characters
+          </div><div class="govuk-hint-2 govuk-character-count__message govuk-character-count__status govuk-hint" aria-hidden="true">You have 1,000 characters remaining</div><div class="govuk-character-count__sr-status govuk-visually-hidden" aria-live="polite">You have 1,000 characters remaining</div>
+          </div>
+        </div>
+
+        <div class="govuk-character-count" data-module="govuk-character-count" data-maxlength="1000">
+          <div class="govuk-form-group">
+            <h3 class="govuk-label-wrapper">
+              <label class="govuk-label govuk-label--s" for="with-hint-2">
+                To what extent is the Funding and Investment Strategy being successfully implemented?
+              </label>
+            </h3>
+            <!--
+            <div id="with-hint-hint" class="govuk-hint">
+              Do not include personal or financial information like your National Insurance number or credit card details.
+            </div>
+            -->
+            <textarea class="govuk-textarea govuk-js-character-count" id="with-hint-2" name="withHint-2" rows="5" aria-describedby="with-hint-2-info with-hint-2-hint" style="margin-top:15px;width: 800px;"></textarea><div id="with-hint-2-info" class="govuk-hint-2 govuk-character-count__message govuk-visually-hidden">
+            You can enter up to 1000 characters
+          </div><div class="govuk-hint-2 govuk-character-count__message govuk-character-count__status govuk-hint" aria-hidden="true">You have 1,000 characters remaining</div><div class="govuk-character-count__sr-status govuk-visually-hidden" aria-live="polite">You have 1,000 characters remaining</div>
+          </div>
+        </div>
+
+        <form action="mvp1_submit_task_page_5.html">
+          <div class="govuk-button-group" style="margin-top: 40px;">
+            <button class="govuk-button" data-module="govuk-button">Continue</button>
+            <a class="govuk-link" href="#0" style="color: #1d70b8">Cancel </a>
+          </div>
+        </form>
+
+        <br>
+        <br>
+        <br>
+
+    </div>
+
+</div>
+
+
+
+
+{% endblock %}
