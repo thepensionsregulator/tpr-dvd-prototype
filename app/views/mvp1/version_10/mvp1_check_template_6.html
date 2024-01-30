@@ -1,0 +1,61 @@
+{% extends "includes/mvp1_submit_layout_4.html" %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+        <h1 class="govuk-heading-xl" style="margin-bottom: 20px;margin-top: 30px;">Is the valuation submission Fast Track or Bespoke?</h1>
+
+        <details class="govuk-details" data-module="govuk-details" style="margin-bottom: 30px;margin-top: 30px;">
+          <summary class="govuk-details__summary">
+            <span class="govuk-details__summary-text">
+              Help with Fast Track and Bespoke submissions
+            </span>
+          </summary>
+          <div class="govuk-details__text">
+            The scheme actuary will need to confirm if the valuation meets the criteria of a Fast Track submission. <br>Further guidance on the criteria is in our <a href="#0" style="color: #1d70b8">guidance [not yet published]</a>.
+          </div>
+        </details>
+
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+            <!--
+            <div id="contact-hint" class="govuk-hint">
+              Select one option.
+            </div>
+            -->
+            <div class="govuk-radios" data-module="govuk-radios">
+              <div class="govuk-radios__item" style="margin-bottom: 20px;">
+                <input class="govuk-radios__input" id="contact" name="contact" type="radio" value="email" data-aria-controls="conditional-contact">
+                <label class="govuk-label govuk-radios__label" for="contact">
+                  Fast Track
+              </div>
+
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="contact-2" name="contact" type="radio" value="phone" data-aria-controls="conditional-contact-2">
+                <label class="govuk-label govuk-radios__label" for="contact-2">
+                  Bespoke
+                </label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+
+        <form action="mvp1_check_template_7.html">
+          <div class="govuk-button-group" style="margin-top: 40px;">
+            <button class="govuk-button" data-module="govuk-button">Continue</button>
+            <a class="govuk-link" href="#0" style="color: #1d70b8">Cancel and return </a>
+          </div>
+        </form>
+
+        <br>
+        <br>
+        <br>
+
+    </div>
+
+</div>
+
+{% endblock %}
