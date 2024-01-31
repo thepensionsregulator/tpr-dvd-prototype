@@ -1,0 +1,55 @@
+{% extends "includes/mvp1_submit_layout_3_back.html" %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+        <h1 class="govuk-heading-xl" style="margin-bottom: 20px;margin-top: 20px;">Covenant outlook</h1>
+
+        <!--
+        <div class="govuk-inset-text" style="margin-bottom: 30px;">
+          You must use our template to upload your data in ODS format. <br><a href="#0" style="color:#1d70b8;">Download template </a>.
+        </div>
+        -->
+
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="file-upload-1" style="margin-bottom: 5px;">
+            <strong>Reliability period</strong>
+          </label>
+          <div id="passport-issued-hint" class="govuk-hint">
+            Enter number of years
+          </div>
+          <input class="govuk-input govuk-date-input__input govuk-input--width-4">
+        </div>
+
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="file-upload-1" style="margin-bottom: 5px;">
+            <strong>Covenant longevity</strong>
+          </label>
+          <div id="passport-issued-hint" class="govuk-hint">
+            Enter number of years
+          </div>
+          <input class="govuk-input govuk-date-input__input govuk-input--width-4">
+        </div>
+
+        <form action="mvp1_submit_upload_3_form_11.html">
+          <div class="govuk-button-group" style="margin-top: 40px;">
+            <button class="govuk-button" data-module="govuk-button">Save and continue</button>
+            <a class="govuk-link" href="mvp1_submit_upload_3_form_9.html" style="color: #1d70b8">Return to Covenant information</a>
+          </div>
+        </form>
+
+        <br>
+        <br>
+        <br>
+
+    </div>
+
+</div>
+
+
+
+
+{% endblock %}
