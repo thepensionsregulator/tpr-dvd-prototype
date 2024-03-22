@@ -2,11 +2,16 @@
   <div class="govuk-header__container govuk-width-container">
     <div class="govuk-header__logo">
       <a href="/" class="govuk-header__link">
-        <img src="/public/images/TPR-Logo-Header.svg" class="govuk-header__logo-image" alt="The Pension Regulator Logo" style="width: 200px; height: 72px;" />
+        <img
+          src="/public/images/TPR-Logo-Header.svg"
+          class="govuk-header__logo-image"
+          alt="The Pension Regulator Logo"
+          style="width: 200px; height: 72px"
+        />
       </a>
     </div>
     <div class="govuk-header__content govuk-header__navigation">
-      <nav style="padding-top:2em;">
+      <nav style="padding-top: 2em">
         <a href="/" class="govuk-header__link govuk-header__link--service-name">
           {{ serviceName }}
         </a>
@@ -16,20 +21,13 @@
         <a href="/dashboard" class="govuk-header__link">
           {{ userFullName }} |
         </a>
-        <a href="/account/sign-out" class="govuk-header__link">
-          Sign out
-        </a>
+        <a href="/account/sign-out" class="govuk-header__link"> Sign out </a>
       </nav>
-      {% endif %}
-
-      {% if isUserAuthenticated == false %}
+      {% endif %} {% if isUserAuthenticated == false %}
       <nav>
-        <a href="/account/sign-in" class="govuk-header__link">
-          Sign in
-        </a>
+        <a href="/account/sign-in" class="govuk-header__link"> Sign in </a>
       </nav>
       {% endif %}
-
     </div>
   </div>
 </header>
@@ -38,12 +36,11 @@
   <div class="govuk-phase-banner">
     <p class="govuk-phase-banner__content">
       <strong class="govuk-tag govuk-phase-banner__content__tag">
-        <span id="phase-banner-word">
-          alpha
-        </span>
+        <span id="phase-banner-word"> alpha </span>
       </strong>
       <span class="govuk-phase-banner__text">
-        This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+        This is a new service – your
+        <a class="govuk-link" href="#">feedback</a> will help us to improve it.
       </span>
     </p>
   </div>
