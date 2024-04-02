@@ -1,12 +1,14 @@
 <!-- Javascript -->
 <script src="/public/javascripts/jquery-1.11.3.js"></script>
 
-{% for scriptUrl in extensionConfig.scripts %}
-  <script src="{{scriptUrl}}"></script>
-{% endfor %}
+{% for script in extensionConfig.scripts %} {% if script.type %}
+<script src="{{script.src}}" type="{{script.type}}"></script>
+{% else %}
+<script src="{{script.src}}"></script>
+{% endif %} {% endfor %}
 
 <script src="/public/javascripts/application.js"></script>
 
 {% if useAutoStoreData %}
-  <script src="/public/javascripts/auto-store-data.js"></script>
+<script src="/public/javascripts/auto-store-data.js"></script>
 {% endif %}
