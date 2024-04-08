@@ -8126,4 +8126,30 @@ p.tpr-add-link a {
   height: 100%;
 }
 
+
+.govuk-file-upload::file-selector-button {
+  /*color: #ffffff;*/
+  color:#3D3D3D !important;
+  border-width: 2px;
+  border-color: #0381A2;
+  line-height: 1.5rem;
+  border-radius: 8px;
+  box-shadow: none;
+  background: #ffffff !important;
+  /*background: #0381a2 url(/_content/ThePensionsRegulator.Frontend/tpr/chevron_right_white_24dp.svg) right center no-repeat;*/
+  padding-left: 20px;
+  padding-right: 40px;
+}
+
+.govuk-button-submit {
+  color: #ffffff;
+  border-width: 1px;
+  border-color: transparent;
+  line-height: 1.5rem;
+  border-radius: 8px;
+  box-shadow: none;
+  background: #0381a2;
+  padding-left: 20px;
+  padding-right: 20px;  
+}
 /*# sourceMappingURL=tpr.css.map */
