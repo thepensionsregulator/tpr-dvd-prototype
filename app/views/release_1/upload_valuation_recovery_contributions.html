@@ -13,8 +13,18 @@
 
             <form action="check_answers" method="post"> 
 
-            <p class="govuk-heading-xl" style="margin-bottom: 20px;margin-top: 30px;">Upload a copy of the statment of strategy</p>
+            <p class="govuk-heading-xl" style="margin-bottom: 20px;margin-top: 30px;">Upload a copy of the actuarial valuation, recovery plan and schedule of contibutions</p>
  
+            <div id="file-upload-1-hint" class="govuk-hint">
+                This must be a document that includes the following:
+                   <ul class="govuk-list govuk-list--bullet govuk-hint">
+                       <li>a copy of the actuarial valuation, which has been signed off by the scheme actuary</li>
+                       <li>a copy of the recovery plan</li>
+                       <li>a copy of the schedule of contributions
+                       </li>
+                   </ul>
+               </div>
+
             <div class="govuk-form-group">
                 <div class="govuk-form-group">
                   <h3 class="govuk-label-wrapper">
@@ -23,17 +33,9 @@
                     </label>
                   </h3>
 
-                <div id="file-upload-1-hint" class="govuk-hint">
-                 This must be a document that includes the following:
-                    <ul class="govuk-list govuk-list--bullet govuk-hint">
-                        <li>a copy of the actuarial valuation, which has been signed off by the scheme actuary</li>
-                        <li>a copy of the recovery plan</li>
-                        <li>a copy of the schedule of contributions
-                        </li>
-                    </ul>
-                </div>
+                
                   <div id="file-upload-1-hint" class="govuk-hint">
-                    You can find more help  and guidance on wht must be included in our Funding and investment: Detailed guidance.
+                  This must be a PDF file.
                   </div>
                   <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file" aria-describedby="file-upload-1-hint">
                 </div>
