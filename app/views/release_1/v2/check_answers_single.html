@@ -1,0 +1,135 @@
+{% extends "includes/layout_index.html" %}
+
+{% block pageTitle %}
+  Home – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+    <main class="tpr-main-wrapper">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+            
+            <a href="upload_actuarial_valuation.html" class="govuk-back-link govuk-!-margin-bottom-3">Back</a>
+    
+            <form action="submission_complete" method="post">
+
+                <div class="govuk-notification-banner govuk-notification-banner--success" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+                    <div class="govuk-notification-banner__header">
+                    </div>
+                    <div class="govuk-notification-banner__content">
+                      <h3 class="govuk-notification-banner__heading">
+                        Success ABCSchemeSection1_31_03_2022 Actuarial Valuation_RP_SchConts V02.pdf has been uploaded
+                      </h3>
+                    </div>
+                  </div> 
+
+            <p class="govuk-heading-xl" style="margin-bottom: 20px;margin-top: 30px;">Check your answers before submitting:</p>
+                <div class="govuk-summary-card">
+                    <div class="govuk-summary-card__title-wrapper">
+                      <h2 class="govuk-summary-card__title">
+                        Copy of the statement of strategy
+                      </h2>
+                      <dd class="govuk-summary-list__actions">
+                        <a class="govuk-link" href="upload_statement_strategy.html">Change<span class="govuk-visually-hidden"> age (Lead tenant)</span></a>
+                      </dd>
+                    </div>
+                    <div class="govuk-summary-card__content">
+                      <dl class="govuk-summary-list">
+                        <div class="govuk-summary-list__row">
+                          <dt class="govuk-summary-list__key">
+                            File name 
+                          </dt>
+                          <dd class="govuk-summary-list__value">
+                            ABCSchemeSection1_31_03_2022 Statement of Strategy V05.pdf
+                          </dd>
+                          
+                        </div>
+                    </div>
+                </div>
+
+                <div class="govuk-summary-card">
+                    <div class="govuk-summary-card__title-wrapper">
+                      <h2 class="govuk-summary-card__title">
+                        At the effective date was the scheme in deficit on a technical provision basis?
+                      </h2>
+                      <dd class="govuk-summary-list__actions">
+                        <a class="govuk-link" href="deficit.html">Change<span class="govuk-visually-hidden"> age (Lead tenant)</span></a>
+                      </dd>
+                    </div>
+                    <div class="govuk-summary-card__content">
+                      <dl class="govuk-summary-list">
+                        <div class="govuk-summary-list__row">
+                          <dt class="govuk-summary-list__key">
+                            Yes or no 
+                          </dt>
+                          <dd class="govuk-summary-list__value">
+                            Yes, the scheme was in deficit 
+                          </dd>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="govuk-summary-card">
+                    <div class="govuk-summary-card__title-wrapper">
+                      <h2 class="govuk-summary-card__title">
+                       Multiple documents
+                      </h2>
+                    </div>
+                    <div class="govuk-summary-card__content">
+                      <dl class="govuk-summary-list">
+                        <div class="govuk-summary-list__row">
+                          <dt class="govuk-summary-list__key">
+                            File name 
+                          </dt>
+                          <dd class="govuk-summary-list__value">
+                            ABCSchemeSection1_31_03_2022 Actuarial Valuation_RP_SchConts V02.pdf
+                          </dd>
+                          <dd class="govuk-summary-list__actions">
+                            <a class="govuk-link" href="upload_actuarial_valuation.html">Change<span class="govuk-visually-hidden"> age (Lead tenant)</span></a>
+                          </dd>
+                        </div>
+                    </div>
+                    <div class="govuk-summary-card__content">
+                      <dl class="govuk-summary-list">
+                        <div class="govuk-summary-list__row">
+                          <dt class="govuk-summary-list__key">
+                            File name 
+                          </dt>
+                          <dd class="govuk-summary-list__value">
+                            ABCSchemeSection1_31_03_2022 Actuarial Valuation_RP_SchConts V02.pdf
+                          </dd>
+                          <dd class="govuk-summary-list__actions">
+                            <a class="govuk-link" href="upload_actuarial_valuation.html">Change<span class="govuk-visually-hidden"> age (Lead tenant)</span></a>
+                          </dd>
+                        </div>
+                    </div>
+                    <div class="govuk-summary-card__content">
+                      <dl class="govuk-summary-list">
+                        <div class="govuk-summary-list__row">
+                          <dt class="govuk-summary-list__key">
+                            File name 
+                          </dt>
+                          <dd class="govuk-summary-list__value">
+                            ABCSchemeSection1_31_03_2022 Actuarial Valuation_RP_SchConts V02.pdf
+                          </dd>
+                          <dd class="govuk-summary-list__actions">
+                            <a class="govuk-link" href="upload_actuarial_valuation.html">Change<span class="govuk-visually-hidden"> age (Lead tenant)</span></a>
+                          </dd>
+                        </div>
+                    </div>
+                </div>
+
+                  <button type="submit" class="govuk-button govuk-button-submit" data-module="govuk-button">
+                    Submit
+                  </button>
+            </form>
+            </div>
+        </div>
+      </main>
+  </div>
+  
+  
+  {% endblock %}

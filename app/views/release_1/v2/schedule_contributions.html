@@ -1,0 +1,57 @@
+{% extends "includes/layout_index.html" %}
+
+{% block pageTitle %}
+  Home – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-width-container">
+    <main class="tpr-main-wrapper">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+            <form action="check_answers_single" method="post">
+
+              <div class="govuk-notification-banner govuk-notification-banner--success" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+                <div class="govuk-notification-banner__header">
+                </div>
+                <div class="govuk-notification-banner__content">
+                  <h3 class="govuk-notification-banner__heading">
+                    Success ABCSchemeSection1_31_03_2022 Actuarial Valuation_RP_SchConts V02.pdf has been uploaded
+                  </h3>
+                </div>
+              </div> 
+
+            <a href="recovery_plan.html" class="govuk-back-link govuk-!-margin-bottom-3">Back</a>
+          
+          <p class="govuk-heading-xl" style="margin-bottom: 20px;margin-top: 30px;">Upload a copy of the schedule of contributions</p> 
+        
+          <div class="govuk-form-group">
+                <div class="govuk-form-group">
+                  <h3 class="govuk-label-wrapper">
+                    <label class="govuk-label govuk-label--m" for="file-upload-1">
+                      Upload file
+                    </label>
+                  </h3>
+                 
+                  <div id="file-upload-1-hint" class="govuk-hint">
+                    This must be a PDF file                  
+                </div>
+                  <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file" aria-describedby="file-upload-1-hint">
+                </div>
+              
+              </div>
+              
+              <button type="submit" class="govuk-button" data-module="govuk-button">
+                Upload
+              </button>
+
+              </form>
+            </div>
+        </div>
+        </main>
+        </div>
+
+        {% endblock %}             

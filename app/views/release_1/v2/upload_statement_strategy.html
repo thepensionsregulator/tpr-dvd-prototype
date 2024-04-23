@@ -1,0 +1,55 @@
+{% extends "includes/layout_index.html" %}
+
+{% block pageTitle %}
+  Home – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+    <main class="tpr-main-wrapper">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+            <form action="deficit" method="post">
+ 
+            <a href="start_now.html" class="govuk-back-link govuk-!-margin-bottom-3">Back</a>
+                    
+            <p class="govuk-heading-xl" style="margin-bottom: 20px;margin-top: 30px;">Upload a copy of the statement of strategy</p>
+
+            <div id="file-upload-1-hint" class="govuk-hint">
+                This must be a signed copy of the statement of strategy, which has been signed by the chair of trustees.
+              </div>
+              <div id="file-upload-1-hint" class="govuk-hint">
+                You can find more help and guidance on what must be included in our 
+                <a href="exchange/mvp1_my_schemes.html" class="govuk-link"> Funding and investment: Detailed guidance.</a> 
+              </div>
+ 
+            <div class="govuk-form-group">
+                <div class="govuk-form-group">
+                  <h1 class="govuk-label-wrapper">
+                    <label class="govuk-label govuk-label--m" for="file-upload-1">
+                      Upload file
+                    </label>
+                  </h1>
+                 
+
+                  <div id="file-upload-1-hint" class="govuk-hint">
+                    This must be a PDF file.
+                   </div>  
+                   
+                  <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file" aria-describedby="file-upload-1-hint">
+                </div>
+            </div>
+              
+              <button type="submit" class="govuk-button" data-module="govuk-button"> 
+                Upload
+              </button>
+
+              </form>
+        </div>
+     </div>
+    </main>
+</div>
+        
+        {% endblock %}             
