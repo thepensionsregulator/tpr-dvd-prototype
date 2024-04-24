@@ -1,0 +1,154 @@
+{% extends "includes/layout_index.html" %}
+
+{% block pageTitle %}
+  Home – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="tpr-main-wrapper">
+  <div class="govuk-width-container">
+    <p class="govuk-heading-xl" style="margin-bottom: 20px;margin-top: 30px;">Documentation</p>
+
+
+    <p class="govuk-body" style="margin-bottom: 30px;">
+        <!--
+        This page is a public record of our designs and it tells the story of what we’ve designed and why for MVP1. The updates published below describe the development of new features to address user needs or changes in the legislation, iterations of existing features, or findings from user research. 
+        -->
+        This page is a private record of our prototype designs and it tells the progress of what we’ve designed and why. The updates published below describe the development of new features to address user needs or changes in the legislation, iterations of existing features, or findings from user research. 
+      </p>
+
+      <table class="govuk-table">
+        <caption class="govuk-table__caption govuk-table__caption--m">Release 1 & 2 </caption>
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th scope="col" class="govuk-table__header govuk-!-width-one-half">Page</th>
+            <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">UR finding</th>
+            <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Status</th>
+            <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Reason</th>
+            <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Expectation</th>
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">Exchange option</td>
+            <td class="govuk-table__cell">Two of the participants questioned if it could also be recovery plan.</td>
+            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--green">
+                No action
+              </strong></td>
+            <td class="govuk-table__cell">There was no action we can take as changing exchange isn't in scope</td>
+            <td class="govuk-table__cell">Out of scope</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">Start screen & guidance</td>
+            <td class="govuk-table__cell">Most participants expected to be asked to enter figures into entry fields and upload documents.</td>
+            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--red">
+                Iterate
+              </strong></td>
+            <td class="govuk-table__cell">Guidance needs to be written and coummunicated to users so it is clear that they need to input their information into templates.</td>
+            <td class="govuk-table__cell">Users will have a better overall understanding of what is expected of them and what they need to include into their files.</td>
+          </tr>
+
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">Start screen & guidance</td>
+            <td class="govuk-table__cell">One participant questioned if there would be the ability to enter other supporting documents or leave comments.​</td>
+            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--green">
+                No action
+              </strong></td>
+            <td class="govuk-table__cell">Not in scope </td>
+            <td class="govuk-table__cell">To be monitored </td>
+          </tr>
+
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">Start screen & guidance</td>
+            <td class="govuk-table__cell">A link to the recovery plan was suggested.​</td>
+            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--red">
+                Iterate
+              </strong></td>
+            <td class="govuk-table__cell">Guidance needs to be written and communicated to users as soon as possible to migate risk of wrong data being added.</td>
+            <td class="govuk-table__cell">Users will have a better overall understanding of what is expected of them and what they need to include into their files.</td>
+          </tr>
+
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">Upload statement of strategy</td>
+            <td class="govuk-table__cell">Participants noticed the link to guidance but noted they would expect to have this guidance ahead of time.​</td>
+            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--yellow">
+                Monitor
+              </strong></td>
+            <td class="govuk-table__cell">To see how users interact with the guidance when its written. If users still have questions they might need guidance within the journey as well</td>
+            <td class="govuk-table__cell">Monitor - Users may have a better overall understanding of what is expected of them and what they need to include into their files.</td>
+          </tr>
+
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">Upload statement of strategy</td>
+            <td class="govuk-table__cell">One participant questioned the event of an edge case of being at deficit in the effective date but no longer being at deficit at point of submission.​</td>
+            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--green">
+                No action
+              </strong></td>
+            <td class="govuk-table__cell">For release 1 & 2 we are not covering edge cases.</td>
+            <td class="govuk-table__cell">Out of scope for this release.</td>
+          </tr>
+
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">Upload multiple documents</td>
+            <td class="govuk-table__cell">Participants were surprised that the three documents were to be uploaded as one.​</td>
+            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--red">
+                Iterate
+              </strong></td>
+            <td class="govuk-table__cell">Users will now have the option to select whether they are uploading multiple documents together or seperately.</td>
+            <td class="govuk-table__cell">This will cater for all users and avoid any confusion on how to merge their documents together.</td>
+          </tr>
+
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">Upload multiple documents</td>
+            <td class="govuk-table__cell">None of the participants currently knew how to merge documents.​</td>
+            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--red">
+                Iterate
+              </strong></td>
+            <td class="govuk-table__cell">For users that input their information into three seperate documents, we have now given them the option to do so rather than making them merge their documents into one PDF file.</td>
+            <td class="govuk-table__cell">Users won't have to learn to merge their documents together.</td>
+          </tr>
+
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">Check your answers</td>
+            <td class="govuk-table__cell">However, they would like the option to click the file name to download or preview so they can double check it is the correct file.​</td>
+            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--blue">
+                Backlog
+              </strong></td>
+            <td class="govuk-table__cell">Out of scope for this release.</td>
+            <td class="govuk-table__cell">Our of scope for this release.</td>
+          </tr>
+
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">Submission complete</td>
+            <td class="govuk-table__cell">The ability to print (and then save as PDF) was seen as useful.  Some expected the data files to be included.​</td>
+            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--yellow">
+                Monitor
+              </strong></td>
+            <td class="govuk-table__cell">Further investigation is needed into this as there are many ways to resolve this issue and show users their files.</td>
+            <td class="govuk-table__cell">To be monitored</td>
+          </tr>
+
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">Submission complete</td>
+            <td class="govuk-table__cell">All participants were surprised they would not be emailed a confirmation of the submission as this is in line with the behavior of other similar services that they use.​</td>
+            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--blue">
+                Backlog
+              </strong></td>
+            <td class="govuk-table__cell">Out of scope for this release.</td>
+            <td class="govuk-table__cell">Out of schope for this release.</td>
+          </tr>
+
+
+
+        </tbody>
+      </table>
+
+    </div>
+</div>
+
+<br>
+<br>
+<br>
+
+{% endblock %}
