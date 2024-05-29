@@ -1,0 +1,85 @@
+{% extends "includes/layout_index.html" %}
+
+{% block pageTitle %}
+  Home – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+    <main class="tpr-main-wrapper">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+            <form action="upload_statement_strategy" method="post">   
+
+                <a href="start_now.html" class="govuk-back-link govuk-!-margin-bottom-3">Back</a>
+
+
+    <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-fieldset__heading">
+                What was the effective date from the most recent scheme funding (Part 3) valuation? 
+            </h1>
+          </legend>
+
+          <div class="govuk-warning-text">
+            <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+            <strong class="govuk-warning-text__text">
+              <span class="govuk-visually-hidden">Important</span>
+              This service is only for schemes with a valuation effective date on or after 6 April 2024.
+
+              If your valuation effective date is before 6 April 2024, use the Recovery plan service through Exchange
+            </strong>
+          </div>
+
+          <div id="contact-hint" class="govuk-hint">
+          <h3>   What is the effective date? </h3> 
+          This is the date when the scheme's assets and technical provisions were measured.
+          </div>
+          <div id="passport-issued-hint" class="govuk-hint">
+            For example, 27 3 2021
+          </div>
+          <div class="govuk-date-input" id="passport-issued">
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                  Day
+                </label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="passport-issued-day" type="text" inputmode="numeric">
+              </div>
+            </div>
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                  Month
+                </label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="passport-issued-month" type="text" inputmode="numeric">
+              </div>
+            </div>
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+                  Year
+                </label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="passport-issued-year" type="text" inputmode="numeric">
+              </div>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+   
+      <button type="submit" class="govuk-button" data-module="govuk-button"> 
+        Continue
+      </button>
+
+      </form>
+   </div>
+</div>
+</main>
+</div>
+
+
+
+{% endblock %}             

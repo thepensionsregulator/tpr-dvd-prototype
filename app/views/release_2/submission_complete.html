@@ -1,0 +1,42 @@
+{% extends "includes/layout_index.html" %}
+
+{% block pageTitle %}
+  Home – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+    <main class="tpr-main-wrapper">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+             <div class="govuk-panel govuk-panel--confirmation">
+                        <h1 class="govuk-panel__title">
+                        Submission complete
+                        </h1>
+                        <div class="govuk-panel__body">
+                          Your files have been submitted
+                        </div>
+                      </div>
+                      <p class="govuk-body">4 April 2024, 4:06pm</p>
+                      <p class="govuk-body">The Pension Regulator has received your submission. </p>
+                      
+                      <h2 class="govuk-heading-m">What happens next</h2>
+                      <p class="govuk-body">
+                        We will contact the chair of trustees or the scheme actuary if we need more information about this valuation.
+                      </p>
+                      
+                      <p class="govuk-body">
+                        <a href="#" class="govuk-link" onclick="javascript:window.print()">Print this page.</a>
+                      </p>
+
+                      <a href="exchange/mvp1_my_schemes.html" class="govuk-link">Return to your pension scheme's landing page.</a> 
+            
+
+                    </div>
+                  </div>
+                </main>
+            </div>
+
+
+            {% endblock %}

@@ -1,0 +1,83 @@
+{% extends "includes/layout_index.html" %}
+
+{% block pageTitle %}
+  Home – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+    <main class="tpr-main-wrapper">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+                <form onsubmit="event.preventDefault(); NavigateToNextPage();">
+                <a href="upload_statement_strategy.html" class="govuk-back-link govuk-!-margin-bottom-3">Back</a>
+
+             <div class="govuk-notification-banner govuk-notification-banner--success" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+                <div class="govuk-notification-banner__header">
+                </div>
+                <div class="govuk-notification-banner__content">
+                  <h3 class="govuk-notification-banner__heading">
+                    Success ABCSchemeSection1_31_03_2022 Statement of Strategy V05.pdf has been uploaded
+                  </h3>
+                </div>
+              </div> 
+
+    <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-fieldset__heading">
+           At the effective date was the scheme in deficit on a technical provisions basis?
+            </h1>
+          </legend>
+          <div id="contact-hint" class="govuk-hint">
+          <h3> Why we ask this </h3> 
+          If your scheme was in deficit on the effective date of the acturial valuation we will also need copies of the recovery plan, and the schedule of contributions.
+          </div>
+          <div class="govuk-radios" data-module="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="radioForPage3" name="contact" type="radio" value="email" data-aria-controls="conditional-contact">
+              <label class="govuk-label govuk-radios__label" for="contact">
+                Yes, the scheme was in deficit 
+              </label>
+            </div>
+            <div class="govuk-radios"  data-module="govuk-radios">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="radioForPage2" name="contact" type="radio" value="email" data-aria-controls="conditional-contact">
+                <label class="govuk-label govuk-radios__label" for="contact-by-email">
+                 No, the scheme was not in deficit
+                </label>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+
+      <button type="submit" class="govuk-button" data-module="govuk-button" "javascript:void();" onclick="navigatetonextpage();"> 
+        Continue
+      </button>
+
+     
+      </form>
+   </div>
+</div>
+</main>
+</div>
+
+<script>
+    var NavigateToNextPage = function()
+    {
+        if (document.getElementById('radioForPage3').checked)
+        {
+            window.location.href = "upload_valuation_recovery_contributions.html";
+        }
+
+        if (document.getElementById('radioForPage2').checked)
+        {
+            window.location.href = "upload_actuarial_valuation.html";
+        }
+    }
+</script>
+
+{% endblock %}             

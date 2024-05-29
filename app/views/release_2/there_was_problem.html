@@ -1,0 +1,40 @@
+{% extends "includes/layout_index.html" %}
+
+{% block pageTitle %}
+  Home – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-width-container">
+    <main class="tpr-main-wrapper">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+            <h1 class="govuk-heading-xl" style="margin-bottom: 20px;margin-top: 30px;">Sorry, there seems to be a problem with the service</h1>
+
+            <p> We have not saved the information.</p>
+
+            <h3 class="govuk-heading-m" style="margin-bottom: 20px;margin-top: 30px;">What happens next</h3>
+
+            <p class="govuk-body">Try again and check that </p>
+                <ul class="govuk-list govuk-list--bullet">
+                    <li>you are uploading the right file</li>
+                    <li>the file is not too large</li>
+                    <li>the file is a pdf document</li>
+                </ul>
+
+            <p>If there is an issue with the service, try again later.</p>
+
+            <a href="start_now.html" class="govuk-link">Return to submit your scheme valuation reports</a> 
+
+
+            
+          </div>
+        </div>
+      </main>
+  </div>
+
+
+            {% endblock %}
