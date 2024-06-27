@@ -1,0 +1,107 @@
+{% extends "includes/layout_index.html" %}
+
+{% block pageTitle %}
+  Home – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-width-container">
+    <main class="tpr-main-wrapper">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+            <h1 class="govuk-heading-xl" style="margin-bottom: 20px;margin-top: 30px;">There is a problem with your file</h1>
+
+            <p class="govuk-body">We have found [x] errors and [x] items to review on your spreadsheet.</p>
+
+            <div class="govuk-tabs" data-module="govuk-tabs">
+                <h2 class="govuk-tabs__title">
+                  Contents
+                </h2>
+                <ul class="govuk-tabs__list">
+                  <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+                    <a class="govuk-tabs__tab" href="#past-day">
+                        Errors
+                    </a>
+                  </li>
+                  <li class="govuk-tabs__list-item">
+                    <a class="govuk-tabs__tab" href="#past-week">
+                      Items to review
+                    </a>
+                  </li>
+                </ul>
+                <div class="govuk-tabs__panel" id="past-day">
+                  <h2 class="govuk-heading-l">Errors</h2>
+                  <p class="govuk-body">Please fix the items listed below. You will only be able to submit your spreadsheet one they are fixed.</p>
+                  <table class="govuk-table">
+                    <thead class="govuk-table__head">
+                      <tr class="govuk-table__row">
+                        <th scope="col" class="govuk-table__header">Tab</th>
+                        <th scope="col" class="govuk-table__header">Cell</th>
+                        <th scope="col" class="govuk-table__header">Details</th>
+                      </tr>
+                    </thead>
+                    <tbody class="govuk-table__body">
+                      <tr class="govuk-table__row">
+                        <td class="govuk-table__cell">Tab 1</td>
+                        <td class="govuk-table__cell">D14</td>
+                        <td class="govuk-table__cell">The technical provisions addition to curve over the next 100 years should e between -2% and 10%</td>
+                      </tr>
+                      <tr class="govuk-table__row">
+                        <td class="govuk-table__cell">Tab 2</td>
+                        <td class="govuk-table__cell">F12</td>
+                        <td class="govuk-table__cell">Market value of scheme does not have an entry</td>
+                      </tr>
+                      <tr class="govuk-table__row">
+                        <td class="govuk-table__cell">Tab 3</td>
+                        <td class="govuk-table__cell">H12</td>
+                        <td class="govuk-table__cell">Market value of scheme must be a GBP value</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-week">
+                  <h2 class="govuk-heading-l">Items to review</h2>
+                  <p class="govuk-body">Please check the items below before resubmitting your speadsheet</p>
+                  <table class="govuk-table">
+                    <thead class="govuk-table__head">
+                      <tr class="govuk-table__row">
+                        <th scope="col" class="govuk-table__header">Tab</th>
+                        <th scope="col" class="govuk-table__header">Cell</th>
+                        <th scope="col" class="govuk-table__header">Details</th>
+                      </tr>
+                    </thead>
+                    <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell">Tab 1</td>
+                          <td class="govuk-table__cell">D14</td>
+                          <td class="govuk-table__cell">The technical provisions addition to curve over the next 100 years should e between -2% and 10%</td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell">Tab 2</td>
+                          <td class="govuk-table__cell">F12</td>
+                          <td class="govuk-table__cell">Market value of scheme does not have an entry</td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell">Tab 3</td>
+                          <td class="govuk-table__cell">H12</td>
+                          <td class="govuk-table__cell">Market value of scheme must be a GBP value</td>
+                        </tr>
+                      </tbody>
+                  </table>
+                </div>
+            </div>
+
+            <button type="submit" class="govuk-button" data-module="govuk-button"> 
+                Upload
+              </button>
+
+        </div>
+     </div>
+    </main>
+</div>
+
+
+{% endblock %}
