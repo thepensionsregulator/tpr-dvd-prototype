@@ -1,0 +1,73 @@
+{% extends "includes/layout_index.html" %}
+
+{% block pageTitle %}
+  Home – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+    <main class="tpr-main-wrapper">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+            <form onsubmit="event.preventDefault(); NavigateToNextPage();">
+ 
+            <a href="sos.html" class="govuk-back-link govuk-!-margin-bottom-3">Back</a>
+                    
+            <p class="govuk-heading-xl" style="margin-bottom: 20px;margin-top: 30px;">How do you want to upload your supporting documents?</p>
+
+            <p class="govuk-body">We will ask you to upload the following documents:</p>
+            <ul class="govuk-list govuk-list--bullet">
+              <li>a copy of the acturial valuation.</li>
+              <li>a copy of the recovery plan.</li>
+              <li>a cop of the schedule of contributions</li>
+            </ul>
+
+            <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset">
+                  <div class="govuk-radios" data-module="govuk-radios">
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="radioForPage3" name="whereDoYouLive" type="radio" value="england">
+                      <label class="govuk-label govuk-radios__label" for="whereDoYouLive">
+                        I'll upload seperate documents
+                      </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="radioForPage2" name="whereDoYouLive" type="radio" value="scotland">
+                      <label class="govuk-label govuk-radios__label" for="whereDoYouLive-2">
+                        I'll combine the three elements into a single document
+                      </label>
+                    </div>  
+                  </div>
+                </fieldset>
+              </div>
+              
+             
+                 <button type="submit" class="govuk-button" data-module="govuk-button" "javascript:void();" onclick="navigatetonextpage();"> 
+                      Continue
+                 </button>
+
+              </form>
+        </div>
+     </div>
+    </main>
+</div>
+
+
+<script>
+    var NavigateToNextPage = function()
+    {
+        if (document.getElementById('radioForPage3').checked)
+        {
+            window.location.href = "upload_actuarial_valuation.html";
+        }
+
+        if (document.getElementById('radioForPage2').checked)
+        {
+            window.location.href = "upload_valuation_information.html";
+        }
+    }
+</script>
+        
+        {% endblock %}             

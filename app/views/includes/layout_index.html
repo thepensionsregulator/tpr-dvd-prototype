@@ -31,16 +31,16 @@
 {% from "govuk/components/warning-text/macro.njk"        import govukWarningText %}
 
 {% block head %}
-  {% include "includes/head.html" %}
+{% include "includes/head.html" %}
 {% endblock %}
-
+1
 {% block pageTitle %}
    Manage Pension Schemes
 {% endblock %}
 
 {% block header %}
   {% include "includes/cookie-banner2.html" %}
-  {% include "includes/header_index.html" %}
+  {% include "includes/header.html" %}
 {% endblock %}
 
 {% set mainClasses = mainClasses | default("govuk-main-wrapper--auto-spacing") %}

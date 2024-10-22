@@ -1,9 +1,313 @@
 @charset "UTF-8";
 
 /* Import the govuk-frontend stylesheet and add styles that are only relevant for Umbraco.*/
-:root {
+:root { 
   --govuk-frontend-version: "development";
 }
+
+.tpr-header,
+.tpr-context {
+  background: #483b8b;
+}
+
+.tpr-header__inner {
+  display: flex;
+  flex-direction: column;
+  padding: 0.625rem 0;
+}
+
+@media (min-width: 42em) {
+  .tpr-header__inner {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.tpr-header__logo {
+  display: flex;
+  flex: 0 0 auto;
+}
+
+.tpr-header__logo>img {
+  width: 11.25rem;
+  height: 4.6875rem;
+}
+
+@media (min-width: 42em) {
+  .tpr-header__logo {
+    padding: 0 1.875rem 0 0;
+    border-right: 0.0625rem solid #7469ba;
+    margin-right: 30px;
+  }
+}
+
+@media (min-width: 60em) {
+  .tpr-header__logo {
+    min-width: 200px;
+  }
+}
+
+.tpr-header__label {
+  display: none;
+}
+
+@media (min-width: 42em) {
+  .tpr-header__label {
+    display: flex;
+    flex-grow: 1;
+    margin: 0.625rem 30px 0.625rem 0;
+    color: #ffffff;
+    font-weight: normal;
+    line-height: 1.5em;
+  }
+}
+
+.tpr-header__content {
+  color: #ffffff;
+  display: flex;
+  margin: 0;
+}
+
+@media (min-width: 42em) {
+  .tpr-header__content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (min-width: 54em) {
+  .tpr-header__content {
+    flex-direction: row;
+  }
+}
+
+.tpr-header__content>a {
+  font-weight: normal;
+  line-height: 1.5em;
+  white-space: nowrap;
+}
+
+.tpr-header__content>a:link,
+.tpr-header__content>a:visited {
+  color: #ffffff;
+}
+
+.tpr-header__content>a:focus {
+  color: #0b0c0c;
+}
+
+.tpr-header__content>a:active {
+  outline: 3px solid transparent;
+  color: #0b0c0c;
+  background-color: #fed100;
+  box-shadow: 0 -2px #fed100, 0 4px #0b0c0c;
+  text-decoration: none;
+  box-decoration-break: clone;
+}
+
+.tpr-header__content>a {
+  margin-right: 30px;
+}
+
+.tpr-header__content>a:last-child {
+  margin-right: 0;
+}
+
+@media (min-width: 42em) {
+  .tpr-header__content>a {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 54em) {
+  .tpr-header__content>a {
+    margin-right: 30px;
+  }
+}
+
+p {
+  font-family: "open sans", sans-serif;
+  font-size: 1rem;
+}
+
+a {
+  font-family: "open sans", sans-serif;
+  font-size: 1rem;
+}
+
+span {
+  font-family: "open sans", sans-serif;
+  font-size: 1rem;
+}
+
+.govuk-input {
+  font-family: "open sans", sans-serif;
+  font-size: 1rem;
+}
+
+.html {
+  font-family: "open sans", sans-serif;
+  font-size: 1rem;
+}
+
+.govuk-link {
+  font-family: "open sans", sans-serif;
+  font-size: 1rem;
+}
+
+.govuk-back-link {
+  font-family: "open sans", sans-serif;
+  font-size: 1rem;
+}
+
+
+.govuk-body {
+  font-family: "open sans", sans-serif;
+  font-size: 1rem;
+}
+
+.govuk-body-m {
+  font-family: "open sans", sans-serif;
+  font-size: 1rem;
+}
+
+.govuk-caption-l {
+  font-family: "open sans", sans-serif;
+  font-size: 1.2rem;
+}
+
+.govuk-caption-m {
+  font-family: "open sans", sans-serif;
+  font-size: 1rem;
+}
+
+.govuk-heading-xl {
+  font-family: "open sans", sans-serif;
+  font-size: 3rem;
+}
+
+.govuk-heading-l {
+  font-family: "open sans", sans-serif;
+  font-size: 2rem;
+}
+
+.govuk-heading-m {
+  font-family: "open sans", sans-serif;
+  font-size: 1rem;
+}
+
+.govuk-heading-s {
+  font-family: "open sans", sans-serif;
+  font-size: 1rem;
+}
+
+
+
+.govuk-table__cell {
+  font-family: "open sans", sans-serif;
+  font-size: 1rem;
+}
+
+.govuk-panel {
+  font-family: "open sans", sans-serif;
+  font-size: 1rem;
+}
+
+.govuk-list {
+  font-family: "open sans", sans-serif;
+  font-size: 1rem;
+}
+
+.govuk-inset-text {
+  font-family: "open sans", sans-serif;
+  font-size: 1rem;
+}
+
+.govuk-hint {
+  font-family: "open sans", sans-serif;
+  font-size: 1rem;
+}
+
+.govuk-form-group {
+  font-family: "open sans", sans-serif;
+  font-size: 1rem;
+}
+
+.govuk-file-upload {
+  font-family: "open sans", sans-serif;
+  font-size: 1rem;
+}
+
+.govuk-checkboxes {
+  font-family: "open sans", sans-serif;
+  font-size: 1rem;
+}
+
+.govuk-label {
+  font-family: "open sans", sans-serif;
+  font-size: 1rem;
+}
+
+.govuk-table__header {
+  font-family: "open sans", sans-serif;
+  font-size: 1rem;
+}
+
+.govuk-table__caption--m {
+  font-family: "open sans", sans-serif;
+  font-size: 22px;
+}
+
+.govuk-button {
+  font-family: "open sans", sans-serif;
+  font-size: 1rem;
+}
+
+.govuk-button--start {
+  font-family: "open sans", sans-serif;
+  font-size: 1rem;
+}
+
+.dwp-timeline {
+  font-family: "open sans", sans-serif;
+  font-size: 1rem;
+}
+
+.govuk-tag {
+  font-family: "open sans", sans-serif;
+  font-size: 1rem;
+}
+
+.govuk-warning-text {
+  font-family: "open sans", sans-serif;
+  font-size: 1rem;
+}
+
+.govuk-notification-banner {
+  font-family: "open sans", sans-serif;
+  font-size: 1rem;
+}
+
+.govuk-summary-card {
+  font-family: "open sans", sans-serif;
+  font-size: 1rem;
+}
+
+.govuk-summary-card__title {
+  font-family: "open sans", sans-serif;
+  font-size: 1rem;
+}
+
+
+.tpr-footer { 
+  font-family: "open sans", sans-serif;
+  font-size: 1rem;
+  background-color: #f3f2f1;
+  padding-left: 50px;
+  padding-top: 20px;
+  border-top: 1px solid #b1b4b6;
+}
+/*
 
 .govuk-link {
   font-family: "Open Sans", Arial, sans-serif;
@@ -6512,7 +6816,7 @@
 /* The default style is width: 40px, which works fine if the divider is "or" but not for anything longer. 
    Padding is set in px to match the size of checkboxes, which is set in px.
 */
-.govuk-checkboxes__divider {
+/*.govuk-checkboxes__divider {
   width: auto;
   text-align: left;
   padding-left: 12px;
@@ -6531,6 +6835,7 @@
 /* The default style is width: 40px, which works fine if the divider is "or" but not for anything longer. 
    Padding is set in px to match the size of radio buttons, which is set in px.
 */
+/*
 .govuk-radios__divider {
   width: auto;
   text-align: left;
@@ -6541,6 +6846,7 @@
     If there is a fieldset level error we do not want to display an error message for the field, 
     but without an error message the .govuk-select--error class will not be applied.
 */
+/*
 .govuk-task-list-summary {
   margin-bottom: 20px;
 }
@@ -6687,6 +6993,7 @@
     If there is a fieldset level error we do not want to display an error message for the field, 
     but without an error message the .govuk-textarea--error class will not be applied.
 */
+/*
 @font-face {
   font-family: "Open Sans";
   font-style: normal;
@@ -7245,7 +7552,7 @@ a.govuk-button--warning.govuk-button--secondary:active {
 /* html, body {
   height: 100%;
 } */
-
+/*
 .govuk-template__body {
   display: flex;
   flex-direction: column;
@@ -7681,126 +7988,6 @@ p.tpr-add-link a {
   background-image: url(/public/images/add_royal_blue_24dp.svg);
 }
 
-.tpr-header,
-.tpr-context {
-  background: #483b8b;
-}
-
-.tpr-header__inner {
-  display: flex;
-  flex-direction: column;
-  padding: 0.625rem 0;
-}
-
-@media (min-width: 42em) {
-  .tpr-header__inner {
-    flex-direction: row;
-    align-items: center;
-  }
-}
-
-.tpr-header__logo {
-  display: flex;
-  flex: 0 0 auto;
-}
-
-.tpr-header__logo>img {
-  width: 11.25rem;
-  height: 4.6875rem;
-}
-
-@media (min-width: 42em) {
-  .tpr-header__logo {
-    padding: 0 1.875rem 0 0;
-    border-right: 0.0625rem solid #7469ba;
-    margin-right: 30px;
-  }
-}
-
-@media (min-width: 60em) {
-  .tpr-header__logo {
-    min-width: 200px;
-  }
-}
-
-.tpr-header__label {
-  display: none;
-}
-
-@media (min-width: 42em) {
-  .tpr-header__label {
-    display: flex;
-    flex-grow: 1;
-    margin: 0.625rem 30px 0.625rem 0;
-    color: #ffffff;
-    font-weight: normal;
-    line-height: 1.5em;
-  }
-}
-
-.tpr-header__content {
-  color: #ffffff;
-  display: flex;
-  margin: 0;
-}
-
-@media (min-width: 42em) {
-  .tpr-header__content {
-    flex-direction: column;
-    text-align: center;
-  }
-}
-
-@media (min-width: 54em) {
-  .tpr-header__content {
-    flex-direction: row;
-  }
-}
-
-.tpr-header__content>a {
-  font-weight: normal;
-  line-height: 1.5em;
-  white-space: nowrap;
-}
-
-.tpr-header__content>a:link,
-.tpr-header__content>a:visited {
-  color: #ffffff;
-}
-
-.tpr-header__content>a:focus {
-  color: #0b0c0c;
-}
-
-.tpr-header__content>a:active {
-  outline: 3px solid transparent;
-  color: #0b0c0c;
-  background-color: #fed100;
-  box-shadow: 0 -2px #fed100, 0 4px #0b0c0c;
-  text-decoration: none;
-  box-decoration-break: clone;
-}
-
-.tpr-header__content>a {
-  margin-right: 30px;
-}
-
-.tpr-header__content>a:last-child {
-  margin-right: 0;
-}
-
-@media (min-width: 42em) {
-  .tpr-header__content>a {
-    margin-right: 0;
-  }
-}
-
-@media (min-width: 54em) {
-  .tpr-header__content>a {
-    margin-right: 30px;
-  }
-}
-
 .tpr-context .govuk-body {
   font-weight: normal;
   line-height: 1.5em;
@@ -8095,7 +8282,7 @@ p.tpr-add-link a {
 }
 
 /* Extra list styles not in govuk-frontend, but available in the Umbraco UI and therefore supported */
-.govuk-list--lower-alpha {
+/*.govuk-list--lower-alpha {
   padding-left: 20px;
   list-style-type: lower-alpha;
 }
@@ -8129,7 +8316,7 @@ p.tpr-add-link a {
 
 .govuk-file-upload::file-selector-button {
   /*color: #ffffff;*/
-  color:#3D3D3D !important;
+ /* color:#3D3D3D !important;
   border-width: 2px;
   border-color: #0381A2;
   line-height: 1.5rem;
@@ -8137,7 +8324,7 @@ p.tpr-add-link a {
   box-shadow: none;
   background: #ffffff !important;
   /*background: #0381a2 url(/_content/ThePensionsRegulator.Frontend/tpr/chevron_right_white_24dp.svg) right center no-repeat;*/
-  padding-left: 20px;
+  /*padding-left: 20px;
   padding-right: 40px;
 }
 
@@ -8153,3 +8340,171 @@ p.tpr-add-link a {
   padding-right: 20px;  
 }
 /*# sourceMappingURL=tpr.css.map */
+
+/*
+p {
+  font-family: "open sans", sans-serif;
+  font-size: 1rem;
+}
+
+a {
+  font-family: "open sans", sans-serif;
+  font-size: 1rem;
+}
+
+span {
+  font-family: "open sans", sans-serif;
+  font-size: 1rem;
+}
+
+.govuk-input {
+  font-family: "open sans", sans-serif;
+  font-size: 1rem;
+}
+
+.html {
+  font-family: "open sans", sans-serif;
+  font-size: 1rem;
+}
+
+.govuk-body {
+  font-family: "open sans", sans-serif;
+  font-size: 1rem;
+}
+
+.govuk-body-m {
+  font-family: "open sans", sans-serif;
+  font-size: 1rem;
+}
+
+.govuk-caption-l {
+  font-family: "open sans", sans-serif;
+  font-size: 1.2rem;
+}
+
+.govuk-caption-m {
+  font-family: "open sans", sans-serif;
+  font-size: 1rem;
+}
+
+.govuk-heading-xl {
+  font-family: "open sans", sans-serif;
+  font-size: 3rem;
+}
+
+.govuk-heading-l {
+  font-family: "open sans", sans-serif;
+  font-size: 2rem;
+}
+
+.govuk-heading-m {
+  font-family: "open sans", sans-serif;
+  font-size: 1rem;
+}
+
+.govuk-heading-s {
+  font-family: "open sans", sans-serif;
+  font-size: 1rem;
+}
+
+.govuk-footer__link {
+  font-family: "open sans", sans-serif;
+  font-size: 1rem;
+}
+
+.govuk-table__cell {
+  font-family: "open sans", sans-serif;
+  font-size: 1rem;
+}
+
+.govuk-panel {
+  font-family: "open sans", sans-serif;
+  font-size: 1rem;
+}
+
+.govuk-list {
+  font-family: "open sans", sans-serif;
+  font-size: 1rem;
+}
+
+.govuk-inset-text {
+  font-family: "open sans", sans-serif;
+  font-size: 1rem;
+}
+
+.govuk-hint {
+  font-family: "open sans", sans-serif;
+  font-size: 1rem;
+}
+
+.govuk-form-group {
+  font-family: "open sans", sans-serif;
+  font-size: 1rem;
+}
+
+.govuk-file-upload {
+  font-family: "open sans", sans-serif;
+  font-size: 1rem;
+}
+
+.govuk-checkboxes {
+  font-family: "open sans", sans-serif;
+  font-size: 1rem;
+}
+
+.govuk-label {
+  font-family: "open sans", sans-serif;
+  font-size: 1rem;
+}
+
+.govuk-table__header {
+  font-family: "open sans", sans-serif;
+  font-size: 1rem;
+}
+
+.govuk-table__caption--m {
+  font-family: "open sans", sans-serif;
+  font-size: 22px;
+}
+
+.govuk-button {
+  font-family: "open sans", sans-serif;
+  font-size: 1rem;
+}
+
+.govuk-button--start {
+  font-family: "open sans", sans-serif;
+  font-size: 1rem;
+}
+
+.dwp-timeline {
+  font-family: "open sans", sans-serif;
+  font-size: 1rem;
+}
+
+.govuk-tag {
+  font-family: "open sans", sans-serif;
+  font-size: 1rem;
+}
+
+.govuk-warning-text {
+  font-family: "open sans", sans-serif;
+  font-size: 1rem;
+}
+
+/*
+
+.govuk-inset-text {
+  border-left: 10px solid #483b8b;
+}
+
+.govuk-button {
+  background-color: #0381a2;
+  box-shadow: 0 2px 0 #000000;
+}
+
+.govuk-button:hover {
+  background-color: #483b8b;
+}
+
+*/
