@@ -127,181 +127,181 @@
 
 p {
   font-family: "open sans", sans-serif;
-  font-size: 1rem;
+  font-size: 19px;
 }
 
 a {
   font-family: "open sans", sans-serif;
-  font-size: 1rem;
+  font-size: 19px;
 }
 
 span {
   font-family: "open sans", sans-serif;
-  font-size: 1rem;
+  font-size: 19px;
 }
 
 .govuk-input {
   font-family: "open sans", sans-serif;
-  font-size: 1rem;
+  font-size: 19px;
 }
 
 .html {
   font-family: "open sans", sans-serif;
-  font-size: 1rem;
+  font-size: 19px;
 }
 
 .govuk-link {
   font-family: "open sans", sans-serif;
-  font-size: 1rem;
+  font-size: 19px;
 }
 
 .govuk-back-link {
   font-family: "open sans", sans-serif;
-  font-size: 1rem;
+  font-size: 19px;
 }
 
+.govuk-list{
+  font-family: "open sans", sans-serif;
+  font-size: 19px;
+}
 
 .govuk-body {
   font-family: "open sans", sans-serif;
-  font-size: 1rem;
+  font-size: 19px;
 }
 
 .govuk-body-m {
   font-family: "open sans", sans-serif;
-  font-size: 1rem;
+  font-size: 24px;
 }
 
 .govuk-caption-l {
   font-family: "open sans", sans-serif;
-  font-size: 1.2rem;
+  font-size: 36px;
 }
 
 .govuk-caption-m {
   font-family: "open sans", sans-serif;
-  font-size: 1rem;
+  font-size: 21px;
 }
 
 .govuk-heading-xl {
   font-family: "open sans", sans-serif;
-  font-size: 3rem;
+  font-size: 48px;
 }
 
 .govuk-heading-l {
   font-family: "open sans", sans-serif;
-  font-size: 2rem;
+  font-size: 36px;
 }
 
 .govuk-heading-m {
   font-family: "open sans", sans-serif;
-  font-size: 1rem;
+  font-size: 24px;
 }
 
 .govuk-heading-s {
   font-family: "open sans", sans-serif;
-  font-size: 1rem;
+  font-size: 19px;
 }
 
 
 
 .govuk-table__cell {
   font-family: "open sans", sans-serif;
-  font-size: 1rem;
+  font-size: 19px;
 }
 
 .govuk-panel {
   font-family: "open sans", sans-serif;
-  font-size: 1rem;
+  font-size: 19px;
 }
 
-.govuk-list {
-  font-family: "open sans", sans-serif;
-  font-size: 1rem;
-}
 
 .govuk-inset-text {
   font-family: "open sans", sans-serif;
-  font-size: 1rem;
+  font-size: 19px;
 }
 
 .govuk-hint {
   font-family: "open sans", sans-serif;
-  font-size: 1rem;
+  font-size: 19px;
 }
 
 .govuk-form-group {
   font-family: "open sans", sans-serif;
-  font-size: 1rem;
+  font-size: 19px;
 }
 
 .govuk-file-upload {
   font-family: "open sans", sans-serif;
-  font-size: 1rem;
+  font-size: 19px;
 }
 
 .govuk-checkboxes {
   font-family: "open sans", sans-serif;
-  font-size: 1rem;
+  font-size: 19px;
 }
 
 .govuk-label {
   font-family: "open sans", sans-serif;
-  font-size: 1rem;
+  font-size: 19px;
 }
 
 .govuk-table__header {
   font-family: "open sans", sans-serif;
-  font-size: 1rem;
+  font-size: 19px;
 }
 
 .govuk-table__caption--m {
   font-family: "open sans", sans-serif;
-  font-size: 22px;
+  font-size: 24px;
 }
 
 .govuk-button {
   font-family: "open sans", sans-serif;
-  font-size: 1rem;
+  font-size: 19px;
 }
 
 .govuk-button--start {
   font-family: "open sans", sans-serif;
-  font-size: 1rem;
+  font-size: 19px;
 }
 
 .dwp-timeline {
   font-family: "open sans", sans-serif;
-  font-size: 1rem;
+  font-size: 19px;
 }
 
 .govuk-tag {
   font-family: "open sans", sans-serif;
-  font-size: 1rem;
+  font-size: 19px;
 }
 
 .govuk-warning-text {
   font-family: "open sans", sans-serif;
-  font-size: 1rem;
+  font-size: 19px;
 }
 
 .govuk-notification-banner {
   font-family: "open sans", sans-serif;
-  font-size: 1rem;
+  font-size: 19px;
 }
 
 .govuk-summary-card {
   font-family: "open sans", sans-serif;
-  font-size: 1rem;
+  font-size: 19px;
 }
 
 .govuk-summary-card__title {
   font-family: "open sans", sans-serif;
-  font-size: 1rem;
+  font-size: 19px;
 }
 
 
 .tpr-footer { 
   font-family: "open sans", sans-serif;
-  font-size: 1rem;
+  font-size: 19px;
   background-color: #f3f2f1;
   padding-left: 70px;
   padding-top: 40px;
