@@ -1,0 +1,49 @@
+{% extends "includes/layout_index.html" %}
+
+{% block pageTitle %}
+  Home – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+    <main class="tpr-main-wrapper">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+          <nav class="govuk-breadcrumbs" aria-label="Breadcrumb">
+            <ol class="govuk-breadcrumbs__list">
+              <li class="govuk-breadcrumbs__list-item">
+                <a class="govuk-breadcrumbs__link" href="https://url.uk.m.mimecastprotect.com/s/QrdlCLvXrcN0nWRHPi8FyzQwZ?domain=scheme_details.html">PSR 123456789</a>
+              </li>
+            </ol>
+          </nav>
+
+            <form action="SOS1" method="post">
+ 
+            <a href="start_now.html" class="govuk-back-link govuk-!-margin-bottom-3">Back</a>
+                    
+            <p class="govuk-heading-xl" style="margin-bottom: 20px;margin-top: 30px;">There is a problem with your spreadsheet</p>
+
+            <p class="govuk-body">We have found 25 errors on you spreadsheet. You need to review your spreadsheet and fix the errors before we can accept it.</p>
+
+            <p class="govuk-heading-m"> How to fix the errors</h2>
+            <ol class="govuk-list govuk-list--number">
+              <li>Open your spreadsheet ABCSchemeSection1_31_03_2022 Statement of Strategy V05.xlsx </li>
+              <li>Fix the errors on each worksheet</li>
+              <li>All the errors are listed on the 'Errors' tab, once an error has been fixed, it will no longer be displayed.</li>
+              <li>When all errors have been fixed, upload your spreadsheet again.</li>
+            </ol>
+                <br>
+              
+              <button type="submit" class="govuk-button" data-module="govuk-button"> 
+                Upload again
+              </button>
+
+              </form>
+        </div>
+     </div>
+    </main>
+</div>
+        
+        {% endblock %}  
