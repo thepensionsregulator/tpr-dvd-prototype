@@ -1,0 +1,79 @@
+{% extends "includes/layout_index.html" %}
+
+{% block pageTitle %}
+  Home – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+    <main class="tpr-main-wrapper">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+          <nav class="govuk-breadcrumbs" aria-label="Breadcrumb">
+            <ol class="govuk-breadcrumbs__list">
+              <li class="govuk-breadcrumbs__list-item">
+                <a class="govuk-breadcrumbs__link" href="https://url.uk.m.mimecastprotect.com/s/QrdlCLvXrcN0nWRHPi8FyzQwZ?domain=scheme_details.html">PSR 123456789</a>
+              </li>
+            </ol>
+          </nav>
+
+            <form action="validation_all" method="post">
+ 
+            <a href="start_now.html" class="govuk-back-link govuk-!-margin-bottom-3">Back</a>
+
+            <div class="govuk-error-summary" data-module="govuk-error-summary">
+                <div role="alert">
+                  <h2 class="govuk-error-summary__title">
+                    There is a problem
+                  </h2>
+                  <div class="govuk-error-summary__body">
+                    <ul class="govuk-list govuk-error-summary__list">
+                      <li>
+                        <a href="#">Your PSR number is invalid</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+                    
+            <p class="govuk-heading-xl" style="margin-bottom: 20px;margin-top: 30px;">Upload the statement of strategy spreadsheet</p>
+
+            <p class="govuk-body">The copy of the statement of strategy spreadsheet you upload must be signed off by the chair of trustees.</p>
+
+            <p class="govuk-body">You can find out more help and guidance on what must be included in our  <a href="" class="govuk-link"> Funding and investment: Detailed guidance.</a> </p>
+
+ 
+            <div class="govuk-form-group govuk-form-group--error">
+                <div class="govuk-form-group">
+                  <h1 class="govuk-label-wrapper">
+                    <label class="govuk-label govuk-label--m" for="file-upload-1">
+                      Upload a file
+                    </label>
+                  </h1>
+                 
+
+                  <div id="file-upload-1-hint" class="govuk-hint">
+                    This must be a XLSX file
+                   </div>  
+                   
+                   <p class="govuk-error-message">
+                    <span class="govuk-visually-hidden"></span> Your PSR number is unvalid
+                  </p>
+                  <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file" aria-describedby="file-upload-1-hint">
+                </div>
+            </div>
+       
+              
+              <button type="submit" class="govuk-button" data-module="govuk-button"> 
+                Upload
+              </button>
+
+              </form>
+        </div>
+     </div>
+    </main>
+</div>
+        
+        {% endblock %}             
